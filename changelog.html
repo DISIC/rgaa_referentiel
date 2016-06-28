@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Note de révision - RGAA 3 2016</title>
+    <meta content="Note de révision - Référentiel Général d’Accessibilité des Administrations, version 3 2016. Note de révision." name="description" />
+    <meta content="Accessibilité, RGAA, RGAA 3 2016, Référentiel Général d’Accessibilité des Administrations, note de révision" name="keywords" />
+    <meta content="3 2016" name="version" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" media="all" href="css/rgaa.main.css" />
+    <link rel="shortcut icon" href="/sites/default/files/marianne_0.ico" type="image/vnd.microsoft.icon">
+  </head>
+  <body>
+  	<div class="skiplinks">
+  		<div class="inside">
+		    <p>Accès direct&nbsp;:</p>
+		    <ul>
+		      <li><a href="#menu">Menu principal</a></li>
+		      <li><a href="#main">Contenu</a></li>
+		    </ul>
+				<p class="version">RGAA version 3 2016, publié le 23/06/2016 <a href="changelog.html">Note de révision</a></p>
+			</div>
+  	</div>
+    <div class="rgaa-header">
+      <header role="banner" class="main-header">
+        <p class="img"><a title="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" href="../"><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" /></a></p>
+        <p class="slogan">Les documents de référence du S.I. de l’État
+        <span class="ss-titre">un service proposé par <a href="http://modernisation.gouv.fr/">modernisation.gouv.fr</a></span></p>
+      </header>
+	    <nav id="menu" role="navigation" aria-label="menu principal">
+	      <ul>
+ 	        <li class="link-home"><a href="../">Retour à l'accueil</a></li>
+	        <li><a href=".">RGAA</a></li>
+	        <li><a href="introduction-RGAA.html">Introduction au RGAA</a></li>
+	        <li><a href="guide-accompagnement-RGAA.html">Guide d’accompagnement</a></li>
+	        <li><a href="criteres.html">Référentiel technique</a></li>
+	      </ul>
+	    </nav>
+    </div>
+<div id="wrapper">
+<section aria-labelledby="main-title">
+<main id="main" role="main">
+	<h1 id="main-title">Note de révision</h1>
+	<p>Téléchargez la note&nbsp;:De la version 3.0 à la version 3&nbsp;2016&nbsp;: <a href="RGAA-PDF/RGAA-3-2016-PDF/RGAA-3-2016-Note-de-version.pdf">format PDF (393 kilo-octets)</a>, <a href="RGAA-PDF/RGAA-3-2016-Libre-Office/RGAA-3-2016-Note-de-version.odt">format ODT (89 kilo-octets)</a>.</p>
+    <nav role="navigation">
+    	<h2>Documents impactés par la mise à jour</h2>
+			<ul>
+				<li><a href="#ndv-referentiel">Référentiel technique</a></li>
+				<li><a href="#ndv-glossaire">Glossaire</a></li>
+				<li><a href="#ndv-caspart">Cas particuliers</a></li>
+				<li><a href="#ndv-bdr">Base de référence</a></li>
+				<li><a href="#ndv-accompagnement">Guide d’accompagnement</a></li>
+			</ul>
+    </nav>
+
+
+		 	<section id="ndv-referentiel">
+		 		<h2>Référentiel technique</h2>
+
+		 		<article>
+					<h3>Modification du test 1.1.4</h3>
+					<h4>Ancien test 1.1.4</h4>
+					<p>Test 1.1.4&nbsp;: Chaque zone (balise <code>area</code>) d’une image réactive côté serveur est-t-elle doublée d’un lien dans la page&nbsp;?</p>
+					<h4>Nouveau test 1.1.4</h4>
+					<p>Test 1.1.4&nbsp;: Chaque <strong>zone cliquable</strong> d’une image réactive côté serveur est-t-elle doublée d’un lien dans la page&nbsp;?</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 1.2</h3>
+					<p>Il manque le support de <code>embed</code>.</p>
+					<p>Le test 1.2.4 contient beaucoup d’erreurs, par exemple  «&nbsp;une de ces conditions&nbsp;» au lieu de «&nbsp;toutes ces conditions&nbsp;».</p>
+					<p>Il manque le cas d’une image de décoration avec des propriétés aria visant à la labelliser.</p>
+					<p>Les tests devraient être circonscrits à une image de décoration sans légende.</p>
+					<p>L’ensemble des tests sont modifiés.</p>
+					<h4>Modification du test 1.2.1</h4>
+					<h5>Ancien test 1.2.1</h5>
+					<p>Test 1.2.1&nbsp;: Chaque image de décoration sans légende(balise <code>img</code>) et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions&nbsp;:</p>
+					<ul>
+					<li>le contenu de l’attribut alt est vide (<code>alt=""</code>)&nbsp;;</li>
+					<li>l’image de décoration ne possède pas d’attribut <code>title</code>.</li>
+					</ul>
+					<h5>Nouveau test 1.2.1</h5>
+					<p>Test 1.2.1&nbsp;: Chaque image de décoration (balise <code>img</code>) sans légende et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions&nbsp;:</p>
+					<ul>
+					<li>le contenu de l’attribut alt est vide (<code>alt=""</code>)&nbsp;;</li>
+					<li>l’image de décoration ne possède pas d’attribut <code>title</code>&nbsp;;</li>
+					<li><strong>la balise <code>img</code> est dépourvue de role, propriété ou état ARIA visant à labelliser l’image (<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple)</strong>.</li>
+					</ul>
+					<h4>Modification du test 1.2.2</h4>
+					<h5>Ancien test 1.2.2</h5>
+					<p>Test 1.2.2&nbsp;: Chaque zone non cliquable (balise <code>area</code> sans attribut <code>href</code>), non porteuse d’information et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> est vide (<code>alt=""</code>)&nbsp;;</li>
+					<li>la zone cliquable ne possède pas d’attribut <code>title</code>.</li>
+					</ul>
+					<h5>Nouveau test 1.2.2</h5>
+					<p>Test 1.2.2&nbsp;: Chaque zone non cliquable (balise <code>area</code> sans attribut <code>href</code>), non porteuse d’information et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> est vide (<code>alt=""</code>)&nbsp;;</li>
+					<li>la zone cliquable ne possède pas d’attribut <code>title</code>&nbsp;;</li>
+					<li><strong>la balise <code>img</code> est dépourvue de role, propriété ou état ARIA visant à labelliser l’image (<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple)</strong>.</li>
+					</ul>
+					<h4>Modification du test 1.2.3</h4>
+					<h4>Ancien test 1.2.3</h4>
+					<p>Test 1.2.3&nbsp;: Pour chaque image objet sans légende(balise <code>object</code> avec l’attribut <code>type="image/..."</code>) non porteuse d’information, l’alternative textuelle entre <code>&lt;object&gt;</code> et <code>&lt;/object&gt;</code> est-elle vide&nbsp;?</p>
+					<h5>Nouveau test 1.2.3</h5>
+					<p>Test 1.2.3&nbsp;: Pour chaque image objet (balise <code>object</code> avec l’attribut <code>type="image/..."</code>) sans légende non porteuse d’information <strong>vérifie-t-elle ces conditions&nbsp;:</strong></p>
+					<ul>
+					<li><strong>La balise object possède un attribut <code>aria-hidden="true"</code>&nbsp;;</strong></li>
+					<li>L’alternative textuelle entre <code>&lt;object&gt;</code> et <code>&lt;/object&gt;</code> est vide&nbsp;;</li>
+					<li><strong>La balise <code>object</code> ou l’un des ses enfants est dépourvu de role, propriété ou état ARIA visant à labelliser l’image (<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple)</strong>.</li>
+					</ul>
+					<h4>Modification du test 1.2.4</h4>
+					<h5>Ancien test 1.2.4</h5>
+					<p>Test 1.2.4&nbsp;: Chaque image vectorielle de décoration (balise <code>svg</code>) non porteuse d’information et possédant une alternative vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>La balise <code>svg</code> possède un <code>role="img"</code>&nbsp;;</li>
+					<li>La balise <code>svg</code> ou l’un de ses enfants est dépourvue de role, propriété ou état ARIA visant à labelliser l’image vectorielle (<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple)&nbsp;;</li>
+					<li>Les balises <code>title</code> et <code>desc</code> sont absentes ou vides&nbsp;;</li>
+					<li>La balise <code>svg</code> ou l’un de ses enfants est dépourvue d’attribut <code>title</code>.</li>
+					</ul>
+					<h5>Nouveau test 1.2.4</h5>
+					<p>Test 1.2.4&nbsp;: Chaque image vectorielle de décoration (balise <code>svg</code>) <strong>sans légende</strong> non porteuse d’information vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li><strong>La balise svg possède un attribut <code>aria-hidden="true"</code></strong>&nbsp;;</li>
+					<li>Les balises <code>title</code> et <code>desc</code> sont absentes ou vides&nbsp;;</li>
+					<li>La balise <code>svg</code> ou l’un de ses enfants est dépourvue d’attribut <code>title</code>&nbsp;;</li>
+					<li>La balise <code>svg</code> ou l’un de ses enfants est dépourvue de role, propriété ou état ARIA visant à labelliser l’image vectorielle (<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple).</li>
+					</ul>
+					<h4>Modification du test 1.2.5</h4>
+					<h5>Ancien test 1.2.5</h5>
+					<p>Test 1.2.5&nbsp;: Pour chaque image bitmap de décoration (balise <code>canvas</code>), le contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> doit être dépourvu de contenus textuels, cette règle est-elle respectée&nbsp;?</p>
+					<h5>Nouveau test 1.2.5</h5>
+					<p>Test 1.2.5&nbsp;: Chaque image bitmap de décoration (balise canvas) <strong>sans légende</strong> <strong>vérifie-t-elle ces conditions</strong>&nbsp;?</p>
+					<ul>
+					<li><strong>La balise <code>canvas</code> possède un attribut <code>aria-hidden="true"</code></strong>&nbsp;;</li>
+					<li>le contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> est dépourvue de contenus textuels&nbsp;;</li>
+					<li><strong>La balise <code>canvas</code> ou l’un des ses enfants est dépourvu de role, propriété ou état ARIA visant à labelliser l’image (<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple)</strong>.</li>
+					</ul>
+					<h4>Nouveau test 1.2.6</h4>
+					<p>Test 1.2.6&nbsp;: Chaque image embarquée (balise <code>embed</code> avec l’attribut <code>type="image/..."</code>) sans légende non porteuse d’information vérifie-t-elle ces conditions&nbsp;:</p>
+					<ul>
+					<li>La balise <code>embed</code> possède un attribut <code>aria-hidden="true"</code>&nbsp;;</li>
+					<li>La balise <code>embed</code> ou l’un des ses enfants est dépourvu de role, propriété ou état ARIA visant à labelliser l’image (<code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code> par exemple).</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 1.3</h3>
+					<p>Il est possible d’avoir des images ayant une alternative renseignée surchargée via ARIA avec <code>aria-label</code> ou <code>aria-labelledby</code> par exemple.
+					Dans ce cas, selon le calcul du nom accessible (<a href="http://w3c.github.io/aria/html-aam/html-aam.html#img-element">http://w3c.github.io/aria/html-aam/html-aam.html#img-element</a>), l’alternative sera représentée par les textes liés par <code>aria-labelledby</code>.
+					Dans le cas de l’utilisation d’un <code>aria-label</code>, l’alternative ne sera pas disponible dans le cas de la désactivation des images.
+					Il est donc nécessaire, la présence de l’attribut <code>alt</code> étant obligatoire, que l’ensemble de ces valeurs est identique.</p>
+					<p>Le test 1.3.6 fait référence à une image <code>svg</code> possédant une alternative, ce qui peut poser des problèmes dans le cas d’une image vectorielle, porteuse d’information sans alternative car aucun autre critère ne prend ce cas en charge.</p>
+					<p>Il est possible d’utiliser un mécanisme de remplacement dans le cas des images vectorielles pour afficher une alternative quelconque.</p>
+					<p>Le test 1.3.6 sur les images vectorielles faisait référence à «&nbsp;une de ces conditions&nbsp;» alors qu’il s’agit de «&nbsp;ces conditions&nbsp;».</p>
+					<p>Comme le test 1.1 ne teste pas la présence d’une alternative pour les images svg et canvas, il faut implémenter les tests de présence et pertinence sur les tests du critère 1.3, à l’image de ce qui est fait avec <code>object</code>et <code>canvas</code>.</p>
+					<p>L’ensemble des tests est réécrit.</p>
+					<h4>Modification du test 1.3.1</h4>
+					<h5>Ancien test 1.3.1</h5>
+					<p>Test 1.3.1&nbsp;: Chaque image porteuse d’information (balise <code>img</code>) ayant un attribut <code>alt</code> vérifie-t-elle ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’attribut <code>alt</code> est pertinent&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>.</li>
+					</ul>
+					<h5>Nouveau test 1.3.1</h5>
+					<p>Test 1.3.1&nbsp;: Chaque image porteuse d’information (balise <code>img</code>) ayant un attribut <code>alt</code> vérifie-t-elle ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’attribut <code>alt</code> est pertinent&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu de la propriété <code>aria-label</code> est identique au contenu de l’attribut <code>alt</code></strong>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu du passage de texte lié via la propriété <code>aria-labelledby</code> est identique au contenu de l’attribut <code>alt</code></strong>.</li>
+					</ul>
+					<h4>Modification du test 1.3.2</h4>
+					<h5>Ancien test 1.3.2</h5>
+					<p>Test 1.3.2&nbsp;: Chaque zone (balise area) d’une image réactive, porteuse d’information et ayant un attribut <code>alt</code>, vérifie-t-elle ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’attribut <code>alt</code> est pertinent&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					</ul>
+					<h5>Nouveau test 1.3.2</h5>
+					<p>Test 1.3.2&nbsp;: Chaque zone (balise area) d’une image réactive, porteuse d’information et ayant un attribut <code>alt</code>, vérifie-t-elle ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’attribut <code>alt</code> est pertinent&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu de la propriété <code>aria-label</code> est identique au contenu de l’attribut <code>alt</code></strong>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu du passage de texte lié via la propriété <code>aria-labelledby</code> est identique au contenu de l’attribut <code>alt</code></strong>.</li>
+					</ul>
+					<h4>Modification du test 1.3.3</h4>
+					<h5>Ancien test 1.3.3</h5>
+					<p>Test 1.3.3&nbsp;: Pour chaque bouton associé à une image (balise <code>input</code> avec l’attribut <code>type="image"</code>) ayant un attribut <code>alt</code>, le contenu de cet attribut est-il pertinent (hors cas particuliers)&nbsp;?</p>
+					<h5>Nouveau test 1.3.3</h5>
+					<p>Test 1.3.3&nbsp;: Pour chaque bouton associé à une image (balise <code>input</code> avec l’attribut <code>type="image"</code>) ayant un attribut <code>alt</code>, <strong>vérifie-t-il ces conditions</strong> (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’attribut <code>alt</code> est pertinent&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code></strong>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu de la propriété <code>aria-label</code> est identique au contenu de l’attribut <code>alt</code></strong>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu du passage de texte lié via la propriété <code>aria-labelledby</code> est identique au contenu de l’attribut <code>alt</code></strong>.</li>
+					</ul>
+					<h4>Nouveau test 1.3.5</h4>
+					<p>Test 1.3.5&nbsp;: Chaque image objet (balise <code>object</code> avec l’attribut <code>type="image/..."</code>) porteuse d’information, qui utilise une propriété <code>aria-label</code>, <code>aria-labelledby</code> ou un attribut <code>title</code>, vérifie-t-elle ces conditions(hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>aria-label</code>&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au passage de texte lié par la propriété <code>aria-labelledby</code>.</li>
+					</ul>
+					<h4>Nouveau test 1.3.6</h4>
+					<p>1.3.5 devient 1.3.6</p>
+					<h4>Nouveau test 1.3.7</h4>
+					<p>Test 1.3.7&nbsp;: Chaque image embarquée (balise <code>embed</code> avec l’attribut <code>type="image/..."</code>) porteuse d’information, qui utilise une propriété <code>aria-label</code>, <code>aria-labelledby</code> ou un attribut <code>title</code>, vérifie-t-elle ces conditions(hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>aria-label</code>&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au passage de texte lié par la propriété <code>aria-labelledby</code>.</li>
+					</ul>
+					<h4>Modification du test 1.3.6 (renuméroté en 1.3.8)</h4>
+					<p>1.3.6 devient 1.3.8</p>
+					<p>Suppression de la condition 4 et ajout d’une nouvelle définition pour <a href="#ndv-glossaire-alt-svg">«&nbsp;alternative à une image <code>svg</code>&nbsp;»</a>.</p>
+					<h5>Ancien test 1.3.6</h5>
+					<p>Test 1.3.6&nbsp;: Chaque image vectorielle porteuse d’information (balise <code>svg</code>) et possédant une alternative vérifie-t-elle une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+						<li>La balise svg possède un <code>role="img"</code>&nbsp;;</li>
+    				<li>La balise svg possède une propriété <code>aria-label</code> dont le contenu est pertinent et identique à l’attribut <code>title</code> s’il est présent&nbsp;;</li>
+    				<li>La balise svg possède une balise <code>desc</code> dont le contenu est pertinent et identique à l’attribut <code>title</code> de la balise <code>svg</code> s’il est présent&nbsp;;</li>
+    				<li>Un lien adjacent permet d’accéder à une alternative dont le contenu est pertinent et identique à l’attribut <code>title</code> de la balise <code>svg</code> s’il est présent.</li>
+    			</ul>
+					<h5>Nouveau test 1.3.8</h5>
+					<p>Test 1.3.8&nbsp;: Chaque image vectorielle (balise <code>svg</code>) porteuse d’information, en l’absence d’alternative, <strong>vérifie-t-elle ces conditions</strong> (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>La balise <code>svg</code> possède un <code>role="img"</code>&nbsp;;</li>
+					<li>La balise <code>svg</code> possède une propriété <code>aria-label</code> dont le contenu est pertinent et identique à l’attribut <code>title</code> s’il est présent&nbsp;;</li>
+					<li>La balise <code>svg</code> possède une balise <code>desc</code> dont le contenu est pertinent et contient un passage de texte identique à la propriété <code>aria-label</code> et à l’attribut <code>title</code> de la balise <code>svg</code> s’il est présent.</li>
+					</ul>
+					<h4>Nouveau test 1.3.9</h4>
+					<p>1.3.7 devient 1.3.9</p>
+					<h4>Modification du test 1.3.9 (renuméroté en 1.3.10)</h4>
+					<p>1.3.9 devient 1.3.10</p>
+					<h5>Ancien test</h5>
+					<p>Test 1.3.9&nbsp;: Pour chaque image bitmap porteuse d’information (balise <code>canvas</code>) et possédant une alternative (contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>), cette alternative est-elle pertinente&nbsp;?</p>
+					<h5>Nouveau test</h5>
+					<p>Test 1.3.10 Chaque image <code>bitmap</code> (balise <code>canvas</code>) porteuse d’information vérifie-t-elle une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’alternative (contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>) est pertinent&nbsp;;</li>
+					<li>L’image <code>bitmap</code> est immédiatement suivie d’un lien adjacent permettant d’afficher une page ou un passage de texte contenant une alternative pertinente&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image <code>bitmap</code> par un texte alternatif pertinent&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image <code>bitmap</code> par une image possédant une alternative pertinente.</li>
+					</ul>
+					<h4>Nouveau test 1.3.11</h4>
+					<p>Test 1.3.11&nbsp;: Chaque image <code>bitmap</code> (balise <code>canvas</code>) porteuse d’information, qui utilise une propriété <code>aria-label</code>, <code>aria-labelledby</code> ou un attribut <code>title</code>, vérifie-t-elle ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>aria-label</code>&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au passage de texte lié par la propriété <code>aria-labelledby</code>.</li>
+					</ul>
+					<h4>Nouveau test 1.3.12</h4>
+					<p>1.3.8 devient 1.3.12</p>
+					<h4>Nouveau test 1.3.13</h4>
+					<p>1.3.10 devient 1.3.13</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 1.4</h3>
+					<p>Harmonisation avec les changements opérés sur le critère 1.3.</p>
+					<h4>Modification du test 1.4.1</h4>
+					<h5>Ancien test 1.4.1</h5>
+					<p>Test 1.4.1&nbsp;: Chaque image (balise <code>img</code>) utilisée comme CAPTCHA ou comme image-test, ayant un attribut <code>alt</code>, vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> permet d’identifier la nature et la fonction de l’image&nbsp;;</li>
+					<li>s’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					</ul>
+					<h5>Nouveau test 1.4.1</h5>
+					<p>Test 1.4.1&nbsp;: Chaque image (balise <code>img</code>) utilisée comme CAPTCHA ou comme image-test, ayant un attribut <code>alt</code>, vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> permet de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>s’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu de la propriété <code>aria-label</code> est identique au contenu de l’attribut <code>alt</code></strong>&nbsp;;</li>
+					<li><strong>S’il est présent, le contenu du passage de texte lié via la propriété <code>aria-labelledby</code> est identique au contenu de l’attribut <code>alt</code></strong>.</li>
+					</ul>
+					<h4>Modification du test 1.4.2</h4>
+					<h5>Ancien test 1.4.2</h5>
+					<p>Test 1.4.2&nbsp;: Chaque zone (balise <code>area</code>) d’une image réactive, utilisée comme CAPTCHA ou comme image-test, et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> permet de comprendre la nature et la fonction de la zone&nbsp;;</li>
+					<li>s’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>.</li>
+					</ul>
+					<h5>Nouveau test 1.4.2</h5>
+					<p>Test 1.4.2&nbsp;: Chaque zone (balise <code>area</code>) d’une image réactive, utilisée comme CAPTCHA ou comme image-test, et ayant un attribut <code>alt</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> permet de comprendre la nature et la fonction de la zone&nbsp;;</li>
+					<li>s’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					<li><strong>s’il est présent, le contenu de la propriété <code>aria-label</code> est identique au contenu de l’attribut <code>alt</code></strong>&nbsp;;</li>
+					<li><strong>s’il est présent, le contenu du passage de texte lié via la propriété <code>aria-labelledby</code> est identique au contenu de l’attribut <code>alt</code></strong>.</li>
+					</ul>
+					<h4>Modification du test 1.4.3</h4>
+					<h5>Ancien test 1.4.3</h5>
+					<p>Test 1.4.3&nbsp;: Chaque bouton associé à une image (balise <code>input</code> avec l’attribut <code>type="image"</code>) utilisée comme CAPTCHA ou comme image-test, ayant un attribut <code>alt</code> vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> permet de comprendre la nature et la fonction du bouton&nbsp;;</li>
+					<li>s’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					</ul>
+					<h5>Nouveau test 1.4.3</h5>
+					<p>Test 1.4.3&nbsp;: Chaque bouton associé à une image (balise <code>input</code> avec l’attribut <code>type="image"</code>) utilisée comme CAPTCHA ou comme image-test, ayant un attribut <code>alt</code> vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>le contenu de l’attribut <code>alt</code> permet de comprendre la nature et la fonction du bouton&nbsp;;</li>
+					<li>s’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					<li><strong>s’il est présent, le contenu de la propriété <code>aria-label</code> est identique au contenu de l’attribut <code>alt</code></strong>&nbsp;;</li>
+					<li><strong>s’il est présent, le contenu du passage de texte lié via la propriété <code>aria-labelledby</code> est identique au contenu de l’attribut <code>alt</code></strong>.</li>
+					</ul>
+					<h4>Modification du test 1.4.4</h4>
+					<h5>Ancien test 1.4.4</h5>
+					<p>Test 1.4.4&nbsp;: Pour chaque image objet (balise <code>object</code> avec l’attribut <code>type="image/..."</code>) utilisée comme CAPTCHA ou comme image-test, et ayant une alternative textuelle, l’alternative textuelle permet-elle d’identifier la nature et la fonction de l’image&nbsp;?</p>
+					<h5>Nouveau test 1.4.4</h5>
+					<p>Test 1.4.4&nbsp;: Chaque image objet (balise <code>object</code> avec l’attribut <code>type="image/..."</code>) utilisée comme CAPTCHA ou comme image-test vérifie-t-elle une de ces conditions(hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’image objet est immédiatement suivie d’un lien adjacent permettant d’afficher une page ou un passage de texte contenant une alternative permettant de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image objet par un texte alternatif permettant de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image objet par une image possédant une alternative permettant de comprendre la nature et la fonction de l’image.</li>
+					</ul>
+					<h4>Nouveau test 1.4.5</h4>
+					<p>Test 1.4.5&nbsp;: Chaque image objet (balise <code>object</code> avec l’attribut <code>type="image/..."</code>) utilisée comme CAPTCHA ou comme image-test qui utilise une propriété <code>aria-label</code>, <code>aria-labelledby</code> ou un attribut <code>title</code>, vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>aria-label</code>&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au passage de texte lié par la propriété <code>aria-labelledby</code></li>
+					</ul>
+					<h4>Modification du test 1.4.5 (renuméroté en 1.4.6)</h4>
+					<h5>Ancien test 1.4.6</h5>
+					<p>1.4.5 devient 1.4.6</p>
+					<p>Test 1.4.5&nbsp;: Pour chaque image embarquée (balise <code>embed</code> avec l’attribut <code>type="image/..."</code>) utilisée comme CAPTCHA ou comme image-test, et ayant une alternative textuelle, l’alternative textuelle permet-elle d’identifier la nature et la fonction de l’image&nbsp;?</p>
+					<h5>Nouveau test 1.4.6</h5>
+					<p>Test 1.4.6&nbsp;: Chaque image embarquée (balise <code>embed</code> avec l’attribut <code>type="image/..."</code>) utilisée comme CAPTCHA ou comme image-test vérifie-t-elle une de ces conditions(hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’image embarquée est immédiatement suivie d’un lien adjacent permettant d’afficher une page ou un passage de texte contenant une alternative permettant de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image embarquée par un texte alternatif permettant de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image emabarquée par une image possédant une alternative permettant de comprendre la nature et la fonction de l’image.</li>
+					</ul>
+					<h4>Nouveau test 1.4.7</h4>
+					<p>Test 1.4.7&nbsp;: Chaque image embarquée (balise <code>embed</code> avec l’attribut <code>type="image/..."</code>) utilisée comme CAPTCHA ou comme image-test, qui utilise une propriété <code>aria-label</code>, <code>aria-labelledby</code> ou un attribut <code>title</code>, vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>aria-label</code>&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au passage de texte lié par la propriété <code>aria-labelledby</code>.</li>
+					</ul>
+					<h4>Modification du test 1.4.6 (renuméroté en 1.4.8)</h4>
+					<p>1.4.6 devient 1.4.8</p>
+					<p>Ajout d’une nouvelle définition pour <a href="#ndv-glossaire-alt-svg">«&nbsp;alternative à une image <code>svg</code>&nbsp;»</a>.</p>
+					<h5>Ancien test</h5>
+					<p>Test 1.4.6&nbsp;: Chaque image vectorielle (balise <code>svg</code>) utilisée comme CAPTCHA ou comme image-test et ayant une alternative textuelle via la propriété <code>aria-label</code> ou la balise <code>desc</code> vérifie-t-elle ces conditions&nbsp;?v</p>
+					<ul>
+					<li>l’alternative textuelle implémentée via la propriété <code>aria-label</code> permet de comprendre la nature et la fonction de l’image et est identique à l’attribut <code>title</code> s’il est présent&nbsp;;</li>
+					<li>l’alternative textuelle implémentée via la balise <code>desc</code> permet de comprendre la nature et la fonction de l’image et est identique à l’attribut <code>title</code> de la balise <code>svg</code> s’il est présent.</li>
+					</ul>
+					<h5>Nouveau test</h5>
+					<p>Test 1.4.8&nbsp;: Chaque image vectorielle (balise <code>svg</code>) utilisée comme CAPTCHA ou comme image-test, en l’absence d’alternative, vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>La balise <code>svg</code> possède un <code>role="img"</code>&nbsp;;</li>
+					<li>La balise <code>svg</code> possède une propriété <code>aria-label</code> dont le contenu permet de comprendre la nature et la fonction de l’image et identique à l’attribut <code>title</code> s’il est présent&nbsp;;</li>
+					<li>La balise <code>svg</code> possède une balise <code>desc</code> dont le contenu permet de comprendre la nature et la fonction de l’image et identique à la propriété <code>aria-label</code> et à l’attribut <code>title</code> de la balise <code>svg</code> s’il est présent.</li>
+					</ul>
+					<h4>Modification du test 1.4.7 (renuméroté en 1.4.9)</h4>
+					<p>1.4.7 devient 1.4.9</p>
+					<h5>Ancien test</h5>
+					<p>Test 1.4.7&nbsp;: Pour chaque image vectorielle (balise <code>svg</code>) utilisée comme CAPTCHA ou comme image-test et ayant une alternative textuelle , l’alternative textuelle est-elle correctement restituée par les technologies d’assistance&nbsp;?</p>
+					<h5>Nouveau test</h5>
+					<p>Test 1.4.9&nbsp;: Pour chaque image vectorielle (balise <code>svg</code>) utilisée comme CAPTCHA ou comme image-test et possédant une alternative, cette alternative est-elle correctement restituée par les technologies d’assistance&nbsp;?</p>
+					<h4>Modification du test 1.4.8 (renuméroté en 1.4.10)</h4>
+					<p>1.4.8 devient 1.4.10</p>
+					<h5>Ancien test</h5>
+					<p>Test 1.4.8&nbsp;: Pour chaque image bitmap (balise <code>canvas</code>) utilisée comme CAPTCHA ou comme image-test et ayant une alternative textuelle, l’alternative textuelle permet-elle d’identifier la nature et la fonction de l’image&nbsp;?</p>
+					<h5>Nouveau test</h5>
+					<p>Test 1.4.10 Chaque image <code>bitmap</code> (balise <code>canvas</code>) utilisée comme CAPTCHA ou comme image-test vérifie-t-elle une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’alternative (contenu entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>) permet de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>un passage de texte contenant une alternative permettant de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image <code>bitmap</code> par un texte alternatif permettant de comprendre la nature et la fonction de l’image&nbsp;;</li>
+					<li>Un mécanisme permet à l’utilisateur de remplacer l’image <code>bitmap</code> par une image possédant une alternative permettant de comprendre la nature et la fonction de l’image.</li>
+					</ul>
+					<h4>Nouveau test 1.4.11</h4>
+					<p>Test 1.4.11&nbsp;: Chaque image <code>bitmap</code> (balise <code>canvas</code>) utilisée comme CAPTCHA ou comme image-test, qui utilise une propriété <code>aria-label</code>, <code>aria-labelledby</code> ou un attribut <code>title</code>, vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au contenu de l’attribut <code>aria-label</code>&nbsp;;</li>
+					<li>S’il est présent, le contenu de l’attribut <code>title</code> est identique au passage de texte lié par la propriété <code>aria-labelledby</code>.</li>
+					</ul>
+					<h4>Nouveau test 1.4.12</h4>
+					<p>1.4.9 devient 1.4.12</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 1.6</h3>
+					<p>Les boutons de type image peuvent utiliser la propriété <code>aria-describedby</code>, ce cas n’est pas prévu actuellement.</p>
+					<p>La propriété <code>aria-describedby</code> peut être utilisée en association avec une description détaillée existante.</p>
+					<p>Un test est modifié.</p>
+					<p>Deux tests sont créés.</p>
+					<p>Les autres tests sont rénumérotés.</p>
+					<h4>Modification du test 1.6.4</h4>
+					<h5>Ancien test 1.6.4</h5>
+					<p>Test 1.6.4&nbsp;: Chaque bouton de formulaire de type image (balise <code>input</code> avec l’attribut <code>type="image"</code>), qui nécessite une description détaillée, vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>Il existe un attribut <code>alt</code> contenant la référence à une description détaillée adjacente à l’image&nbsp;;</li>
+					<li>Il existe un lien adjacent (via une <code>url</code> ou une <code>ancre</code>) permettant d’accéder au contenu de la description détaillée.</li>
+					</ul>
+					<h5>Nouveau test 1.6.4</h5>
+					<p>Test 1.6.4&nbsp;: Chaque bouton de formulaire de type image (balise <code>input</code> avec l’attribut <code>type="image"</code>), qui nécessite une description détaillée, vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>Il existe un attribut <code>alt</code> contenant la référence à une description détaillée adjacente à l’image&nbsp;;</li>
+					<li>Il existe un lien adjacent (via une <code>url</code> ou une <code>ancre</code>) permettant d’accéder au contenu de la description détaillée&nbsp;;</li>
+					<li>Il existe une propriété <code>aria-describedby</code> référençant un passage de texte faisant office de description détaillée.</li>
+					</ul>
+					<h4>Nouveau test 1.6.5</h4>
+					<p>Test 1.6.5&nbsp;: Chaque bouton de type image (balise <code>input</code> avec l’attribut <code>type="image"</code>) qui implémente une référence à une description détaillée adjacente via une propriété <code>aria-describedby</code>, vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte est identifié via un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li>La valeur de la propriété ARIA <code>aria-describedby</code> est égale à la valeur de l’attribut <code>id</code>.</li>
+					</ul>
+					<h4>Nouveau test 1.6.10</h4>
+					<p>Test 1.6.10 Pour chaque image (balise <code>img</code>, <code>area</code>, <code>object</code>, <code>embed</code>, <code>svg</code>, <code>canvas</code>) qui implémente une description détaillée et qui utilise une propriété <code>aria-describedby</code>, la propriété <code>aria-describedby</code> référence-t-elle la description détaillée&nbsp;?</p>
+					<h4>Renumérotation</h4>
+					<ul>
+					<li>1.6.5 devient 1.6.6&nbsp;;</li>
+					<li>1.6.6 devient 1.6.7&nbsp;;</li>
+					<li>1.6.7 devient 1.6.8&nbsp;;</li>
+					<li>1.6.8 devient 1.6.9.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 1.7</h3>
+					<h4>Modification du test 1.7.1</h4>
+					<h5>Ancien test 1.7.1</h5>
+					<p>Test 1.7.1&nbsp;: Chaque image porteuse d’information (balise <code>img</code> ou <code>input</code> avec l’attribut <code>type="image"</code>) ayant une description détaillée vérifie-t-elle une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>La description détaillée via l’adresse référencée dans l’attribut <code>longdesc</code> est pertinente&nbsp;;</li>
+					<li>La description détaillée dans la page et signalée dans l’attribut <code>alt</code> est pertinente&nbsp;;</li>
+					<li>La description détaillée via un lien adjacent est pertinente.</li>
+					</ul>
+					<h5>Nouveau test 1.7.1</h5>
+					<p>Test 1.7.1&nbsp;: Chaque image (<strong>balise <code>img</code></strong>) porteuse d’information ayant une description détaillée vérifie-t-elle une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>La description détaillée via l’adresse référencée dans l’attribut <code>longdesc</code> est pertinente&nbsp;;</li>
+					<li>La description détaillée dans la page et signalée dans l’attribut <code>alt</code> est pertinente&nbsp;;</li>
+					<li>La description détaillée via un lien adjacent est pertinente.</li>
+					</ul>
+					<h4>Nouveau test 1.7.2</h4>
+					<p>Test 1.7.2&nbsp;: Chaque bouton image (balise <code>input</code> avec l’attribut <code>type="image"</code>) porteur d’information ayant une description détaillée vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>La description détaillée via l’adresse référencée dans l’attribut <code>longdesc</code> est pertinente&nbsp;;</li>
+					<li>La description détaillée dans la page et signalée dans l’attribut <code>alt</code> est pertinente&nbsp;;</li>
+					<li>La description détaillée via un lien adjacent est pertinente&nbsp;;</li>
+					<li>Le passage de texte référencé via la propriété <code>aria-describedby</code>est pertinent.</li>
+					</ul>
+					<h4>Renumérotation</h4>
+					<ul>
+						<li>1.7.2 devient 1.7.3&nbsp;;</li>
+						<li>1.7.3 devient 1.7.4&nbsp;;</li>
+						<li>1.7.4 devient 1.7.5&nbsp;;</li>
+						<li>1.7.6 devient 1.7.7&nbsp;;</li>
+						<li>1.7.7 devient 1.7.8.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des test des critères 1.8 et 1.9</h3>
+					<p>Les tests 1.8.2 et 1.9.2 font référence à des images-textes utilisant des zones sensibles <code>area</code>.</p>
+					<p>C’est l’image de support qui doit être traitée (tests 1.8.1 et 1.9.1).</p>
+					<p>Les deux tests sont supprimés.</p>
+					<p>Les tests suivants sont renumérotés.</p>
+					<p>La définition de glossaire sur «&nbsp;zones texte&nbsp;» est supprimée.</p>
+					<h4>Renumérotation des tests du critère 1.8</h4>
+					<ul>
+						<li>1.8.1&nbsp;;</li>
+						<li>1.8.2 (supprimé)&nbsp;;</li>
+						<li>1.8.3 devient 1.8.2&nbsp;;</li>
+						<li>1.8.4 devient 1.8.3&nbsp;;</li>
+						<li>1.8.5 devient 1.8.4&nbsp;;</li>
+						<li>1.8.6 devient 1.8.5.</li>
+					</ul>
+					<h4>Renumérotiation des tests du critère 1.9</h4>
+					<ul>
+						<li>1.9.1&nbsp;;</li>
+						<li>1.9.2 (supprimé)&nbsp;;</li>
+						<li>1.9.3 devient 1.9.2&nbsp;;</li>
+						<li>1.9.4 devient 1.9.3&nbsp;;</li>
+						<li>1.9.5 devient 1.9.4&nbsp;;</li>
+						<li>1.9.6 devient 1.9.5&nbsp;;</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification dss tests 1.10.1 et 1.10.4</h3>
+					<p>Suppression de la condition relative (condition 4) au critère des images porteuses d’information et enrichissement de <a href="">la note technique.</a></p>
+					<h4>Modification du test 1.10.1</h4>
+					<h5>Ancien test 1.10.1</h5>
+					<p>Test 1.10.1&nbsp;: Chaque image légendée (balise <code>img</code> ou <code>input</code> avec l’attribut <code>type="image"</code> associée à une légende adjacente) vérifie-t-elle, si nécessaire, ces conditions&nbsp;?</p>
+					<ul>
+						<li>L’image (balise <code>img</code>) et sa légende sont contenues dans une balise <code>figure</code>&nbsp;;</li>
+						<li>la balise figure possède un attribut <code>role="group"</code>&nbsp;;</li>
+    				<li>Le contenu de l’attribut alt de l’image contient une référence à la légende adjacente&nbsp;;</li>
+    				<li>L’attribut <code>title</code> de l’image s’il est présent, est strictement identique au contenu de l’attribut <code>alt</code>.</li>
+    			</ul>
+
+					<h5>Nouveau test 1.10.1</h5>
+					<p>Test 1.10.1&nbsp;: Chaque image légendée (balise <code>img</code> ou <code>input</code> avec l’attribut <code>type="image"</code> associée à une légende adjacente) vérifie-t-elle, si nécessaire, ces conditions&nbsp;?</p>
+					<ul>
+						<li>L’image (balise <code>img</code>) et sa légende sont contenues dans une balise <code>figure</code>&nbsp;;</li>
+						<li>la balise figure possède un attribut <code>role="group"</code>&nbsp;;</li>
+    				<li>Le contenu de l’attribut alt de l’image contient une référence à la légende adjacente.</li>
+    			</ul>
+					<h4>Modification du test 1.10.4</h4>
+					<h5>Ancien test 1.10.4</h5>
+					<p>Test 1.10.4&nbsp;: Chaque image vectorielle légendée (balise <code>svg</code> associée à une légende adjacente) vérifie-t-elle, si nécessaire, ces conditions&nbsp;?</p>
+					<ul>
+						<li>L’image (balise <code>svg</code>) et sa légende sont contenues dans une balise <code>figure</code>&nbsp;;</li>
+						<li>la balise figure possède un <code>role="group"</code>&nbsp;;</li>
+						<li>Le contenu de la propriété <code>aria-label</code> ou de la balise <code>desc</code> de l’image vectorielle contient une référence à la légende adjacente&nbsp;;</li>
+						<li>L’attribut title de l’image vectorielle (balise <code>svg</code>) s’il est présent, est strictement identique au contenu de la propriété <code>aria-label</code> ou de la balise <code>desc</code> utilisé comme alternative.</li>
+					</ul>
+					<h5>Nouveau test 1.10.4</h5>
+					<p>Test 1.10.4&nbsp;: Chaque image vectorielle légendée (balise <code>svg</code> associée à une légende adjacente) vérifie-t-elle, si nécessaire, ces conditions&nbsp;?</p>
+					<ul>
+						<li>L’image (balise <code>svg</code>) et sa légende sont contenues dans une balise <code>figure</code>&nbsp;;</li>
+						<li>la balise figure possède un <code>role="group"</code>&nbsp;;</li>
+						<li>Le contenu de la propriété <code>aria-label</code> ou de la balise <code>desc</code> de l’image vectorielle contient une référence à la légende adjacente.</li>
+					</ul>
+				</article>
+
+		 		<article>
+					<h3>Modification du test 1.10.3</h3>
+					<p>Les conditions de test font référence aux attributs <code>alt</code> et <code>title</code> d’un image, ce qui n’a pas de sens dans le contexte d’une image embarquée via <code>embed</code>.</p>
+					<p>Les conditions de test sont modifiées.</p>
+					<h4>Ancien test 1.10.3</h4>
+					<p>Test 1.10.3&nbsp;: Chaque image embarquée légendée (balise <code>embed</code> associée à une légende adjacente) vérifie-t-elle, si nécessaire, ces conditions&nbsp;?</p>
+					<ul>
+					<li>L’image embarquée (balise <code>embed</code>) et sa légende sont contenues dans une balise <code>figure</code>&nbsp;;</li>
+					<li>la balise <code>figure</code> possède un attribut <code>role="group"</code>&nbsp;;</li>
+					<li>Le contenu de l’attribut <code>alt</code> de l’image contient une référence à la légende adjacente&nbsp;;</li>
+					<li>L’attribut <code>title</code> de l’image s’il est présent, est strictement identique au contenu de l’attribut <code>alt</code>.</li>
+					</ul>
+					<h4>Nouveau test 1.10.3</h4>
+					<p>Test 1.10.3&nbsp;: Chaque image embarquée légendée (balise <code>embed</code> associée à une légende adjacente) vérifie-t-elle, si nécessaire, ces conditions&nbsp;?</p>
+					<ul>
+					<li>L’image embarquée (balise <code>embed</code>) et sa légende sont contenues dans une balise <code>figure</code>&nbsp;;</li>
+					<li>La balise <code>figure</code> possède un attribut <code>role="group"</code>&nbsp;;</li>
+					<li>L’alternative contient une référence à la légende adjacente.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification du test 4.1.2</h3>
+					<h4>Ancien test 4.1.2</h4>
+					<p>Test 4.1.2&nbsp;: Chaque média temporel pré-enregistré seulement vidéo vérifie-t-il, si nécessaire, une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Il existe une version alternative <q>audio seulement</q> accessible via un lien adjacent (une <code>url</code> ou une <code>ancre</code>)&nbsp;;</li>
+					<li>Il existe une transcription textuelle adjacente clairement identifiable&nbsp;;</li>
+					<li>Il existe une audio-description synchronisée&nbsp;;</li>
+					<li>Il existe une version alternative avec une audio-description synchronisée accessible via un [lien adjacent (une <code>url</code> ou une <code>ancre</code>).</li>
+					</ul>
+					<h4>Nouveau test 4.1.2</h4>
+					<p>Test 4.1.2&nbsp;: Chaque média temporel pré-enregistré seulement vidéo vérifie-t-il, si nécessaire, une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>Il existe une version alternative «&nbsp;audio seulement&nbsp;» accessible via un lien adjacent (une url ou une ancre)&nbsp;;</li>
+					<li><strong>Il existe une transcription textuelle accessible via un lien adjacent (une url ou une ancre)&nbsp;;</strong></li>
+					<li>Il existe une transcription textuelle adjacente clairement identifiable&nbsp;;</li>
+					<li>Il existe une audio-description synchronisée&nbsp;;</li>
+					<li>Il existe une version alternative avec une audio-description synchronisée accessible via un lien adjacent (une url ou une ancre).</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modifications des tests 4.18.1 et 4.19.1</h3>
+					<p><code>bgsound</code> n’est pas une propriété, mais un élément.</p>
+					<p>Les tests sont modifiés.</p>
+					<h4>Modification du test 4.18.1</h4>
+					<h5>Ancien test 4.18.1</h5>
+					<p>Test 4.18.1&nbsp;: Chaque séquence sonore déclenchée automatiquement via une balise <code>object</code>, <code>video</code>, <code>audio</code>, <code>embed</code>, un <code>code JavaScript</code> ou une propriété <code>bgsound</code> vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>La séquence sonore a une durée inférieure ou égale à 3 secondes&nbsp;;</li>
+					<li>La séquence sonore peut être stoppée sur action de l’utilisateur&nbsp;;</li>
+					<li>Le volume de la séquence sonore peut être contrôlé par l’utilisateur indépendamment du contrôle de volume du système.</li>
+					</ul>
+					<h5>Nouveau test 4.18.1</h5>
+					<p>Test 4.18.1&nbsp;: Chaque séquence sonore déclenchée automatiquement via une balise <code>object</code>, <code>video</code>, <code>audio</code>, <code>embed</code>, <strong><code>bgsound</code></strong> ou un code JavaScript vérifie-t-elle une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>La séquence sonore a une durée inférieure ou égale à 3 secondes&nbsp;;</li>
+					<li>La séquence sonore peut être stoppée sur action de l’utilisateur&nbsp;;</li>
+					<li>Le volume de la séquence sonore peut être contrôlé par l’utilisateur indépendamment du contrôle de volume du système.</li>
+					</ul>
+					<h4>Modification du test 4.19.1</h4>
+					<h5>Ancien test 4.19.1</h5>
+					<p>Test 4.19.1&nbsp;: Chaque média temporel audio pré-enregistré et diffusé via une balise <code>object</code>, <code>video</code>, <code>audio</code>, <code>embed</code> ou proposé en téléchargement vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’arrière-plan sonore peut être désactivé&nbsp;;</li>
+					<li>La ou les pistes de dialogue sont 20 décibels plus élevées que l’arrière-plan sonore&nbsp;;</li>
+					<li>Il existe une version alternative pour laquelle l’arrière-plan sonore peut être désactivé&nbsp;;</li>
+					<li>Il existe une version alternative pour laquelle la ou les pistes de dialogue sont 20 décibels plus élevées que l’arrière-plan sonore.</li>
+					</ul>
+					<h5>Nouveau test 4.19.1</h5>
+					<p>Test 4.19.1&nbsp;: Chaque média temporel audio pré-enregistré et diffusé via une balise <code>object</code>, <code>video</code>, <code>audio</code>, <code>embed</code>, <code>bgound</code> ou proposé en téléchargement vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’arrière-plan sonore peut être désactivé&nbsp;;</li>
+					<li>La ou les pistes de dialogue sont 20 décibels plus élevées que l’arrière-plan sonore&nbsp;;</li>
+					<li>Il existe une version alternative pour laquelle l’arrière-plan sonore peut être désactivé&nbsp;;</li>
+					<li>Il existe une version alternative pour laquelle la ou les pistes de dialogue sont 20 décibels plus élevées que l’arrière-plan sonore.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification du critère 5.3</h3>
+					<p>Le critère ne prend pas en compte l’utilisation de table surchargée via ARIA. <a href="#ndv-caspart-5.3">Un cas particulier est ajouté.</a></p>
+					<h4>Modification du critère 5.3</h4>
+					<h5>Ancien critère 5.3</h5>
+					<p>Critère 5.3 [A] Pour chaque tableau de mise en forme, le contenu linéarisé reste-t-il compréhensible&nbsp;?</p>
+					<ul>
+						<li>Test 5.3.1&nbsp;: Chaque tableau de mise en forme vérifie-t-il ces conditions&nbsp;?</li>
+					</ul>
+					<h5>Nouveau critère 5.3</h5>
+					<p>Critère 5.3 [A] Pour chaque tableau de mise en forme, le contenu linéarisé reste-t-il compréhensible (hors cas particuliers)&nbsp;?</p>
+					<ul>
+						<li>Test 5.3.1&nbsp;: Chaque tableau de mise en forme vérifie-t-il ces conditions (hors cas particuliers)&nbsp;?</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 6.1</h3>
+					<h4>Modification du test 6.1.2</h4>
+					<p>Généralisation du test pour les liens images (voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images).</p>
+					<h5>Ancien test 6.1.2</h5>
+					<p>Test 6.1.2&nbsp;: Chaque lien image (contenu de l’attribut <code>alt</code>, texte entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> ou texte entre <code>&lt;object&gt;</code> et <code>&lt;/object&gt;</code>) vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’intitulé de lien seul permet d’en comprendre la fonction et la destination&nbsp;;</li>
+					<li>Le contexte du lien permet d’en comprendre la fonction et la destination.</li>
+					</ul>
+					<h5>Nouveau test 6.1.2</h5>
+					<p>Test 6.1.2&nbsp;: Chaque lien image vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’intitulé de lien seul permet d’en comprendre la fonction et la destination&nbsp;;</li>
+					<li>Le contexte du lien permet d’en comprendre la fonction et la destination.</li>
+					</ul>
+					<h4>Suppression du test 6.1.3</h4>
+					<p>Les liens doublant une zone cliquable côté serveur sont un cas général de liens (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.1.3</h5>
+					<p>Test 6.1.3&nbsp;: Chaque lien doublant une zone cliquable d’une image réactive côté serveur vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’intitulé de lien seul permet d’en comprendre la fonction et la destination&nbsp;;</li>
+					<li>Le contexte du lien permet d’en comprendre la fonction et la destination.</li>
+					</ul>
+					<h4>Renumérotation du test 6.1.4 en 6.1.3</h4>
+					<p>Suite à la suppression du test 6.1.3, le test 6.1.4 est renuméroté 6.1.3.</p>
+					<p>Test 6.1.4&nbsp;: Chaque lien composite vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<p>Devient</p>
+					<p>Test 6.1.3&nbsp;: Chaque lien composite vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<h4>Suppression du test 6.1.5</h4>
+					<p>Les liens vectoriels sont un cas général des liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.1.5</h5>
+					<p>Test 6.1.5&nbsp;: Chaque lien vectoriel vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’intitulé de lien seul permet d’en comprendre la fonction et la destination&nbsp;;</li>
+					<li>Le contexte du lien permet d’en comprendre la fonction et la destination.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 6.2</h3>
+					<h4>Suppression du test 6.2.3</h4>
+					<p>Les liens doublant une zone cliquable côté serveur sont un cas général de liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.2.3</h5>
+					<p>Test 6.2.3&nbsp;: pour chaque zone cliquable (balise <code>area</code>) ayant un titre de lien (attribut <code>title</code>), le contenu de cet attribut est-il pertinent&nbsp;?</p>
+					<h4>Renumérotation du test 6.2.4 en 6.2.3</h4>
+					<p>Suite à la suppression du test 6.2.3, le test 6.2.4 est renuméroté 6.2.3.</p>
+					<p>Test 6.2.4&nbsp;: Pour chaque lien composite ayant un titre de lien (attribut <code>title</code>), le contenu de cet attribut est-il pertinent&nbsp;?</p>
+					<p>Devient</p>
+					<p>Test 6.2.3&nbsp;: Pour chaque lien composite ayant un titre de lien (attribut <code>title</code>), le contenu de cet attribut est-il pertinent&nbsp;?</p>
+					<h4>Suppression du test 6.2.5</h4>
+					<p>Les liens vectoriels sont un cas général des liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.2.5</h5>
+					<p>Test 6.2.5&nbsp;: Pour chaque lien vectoriel ayant un titre de lien (attribut <code>title</code>), le contenu de cet attribut est-il pertinent&nbsp;?</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 6.3</h3>
+					<h4>Modification du test 6.3.2</h4>
+					<p>Généralisation du test pour les liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.3.2</h5>
+					<p>Test 6.3.2&nbsp;: Chaque intitulé de lien image (contenu de l’attribut <code>alt</code>, texte entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> ou texte entre <code>&lt;object&gt;</code> et <code>&lt;/object&gt;</code>) est-il explicite hors contexte (hors cas particuliers)&nbsp;?</p>
+					<h5>Nouveau test 6.3.2</h5>
+					<p>Test 6.3.2&nbsp;: Chaque intitulé de lien image est-il explicite hors contexte (hors cas particuliers)&nbsp;?</p>
+					<h4>Suppression du test 6.3.3</h4>
+					<p>Les liens doublant une zone cliquable côté serveur sont un cas général de liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.3.3</h5>
+					<p>Test 6.3.3&nbsp;: Chaque intitulé de lien de type zone cliquable (contenu de l’attribut <code>alt</code> d’une balise <code>area</code>) est-il explicite hors contexte (hors cas particuliers)&nbsp;?</p>
+					<h4>Renumérotation du test 6.3.4 en 6.3.3</h4>
+					<p>Suite à la suppression du test 6.3.3, le test 6.2.4 est renuméroté 6.3.3.</p>
+					<p>Test 6.3.4&nbsp;: Chaque lien composite (contenu texte et de l’attribut <code>alt</code>) est-il explicite hors contexte (hors cas particuliers)</p>
+					<p>Devient</p>
+					<p>Test 6.3.3&nbsp;: Chaque lien composite (contenu texte et de l’attribut <code>alt</code>) est-il explicite hors contexte (hors cas particuliers)</p>
+					<h4>Suppression du test 6.3.5</h4>
+					<p>Les liens vectoriels sont un cas général des liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.3.5</h5>
+					<p>Test 6.3.5&nbsp;: Chaque intitulé de lien vectoriel (contenu de l’alternative de l’image vectorielle, balise <code>svg</code>) est-il explicite hors contexte (hors cas particuliers)&nbsp;?</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 6.4</h3>
+					<h4>Suppression du test 6.4.3</h4>
+					<p>Les liens doublant une zone cliquable côté serveur sont un cas général de liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.4.3</h5>
+					<p>Test 6.4.3&nbsp;: Pour chaque page Web, chaque lien identique de type zone cliquable a-t-il les mêmes fonction et destination&nbsp;?</p>
+					<h4>Renumérotation du test 6.4.4 en 6.4.3</h4>
+					<p>Suite à la suppression du test 6.4.3, le test 6.4.4 est renuméroté 6.4.3.</p>
+					<p>Test 6.4.4&nbsp;: Pour chaque page Web, chaque lien identique de type composite a-t-il les mêmes fonction et destination&nbsp;?</p>
+					<p>Devient</p>
+					<p>Test 6.4.3&nbsp;: Pour chaque page Web, chaque lien identique de type composite a-t-il les mêmes fonction et destination&nbsp;?</p>
+					<h4>Suppression du test 6.4.5</h4>
+					<p>Les liens vectoriels sont un cas général des liens images (<a href="#ndv-glossaire-lien-image">voir la modification de l’entrée de glossaire pour «&nbsp;Lien image&nbsp;» et l’ajout des différents cas de types de liens images</a>).</p>
+					<h5>Ancien test 6.4.5</h5>
+					<p>Test 6.4.5&nbsp;: Pour chaque page Web, chaque lien identique de type vectoriel a-t-il les mêmes fonction et destination&nbsp;?</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modifications des tests du critère 7.3</h3>
+					<p>Le test 7.3.1 n’est pas impacté.</p>
+					<p>Le test 7.3.2 est supprimé, les tests 7.3.3 et 7.3.4 sont rénumérotés.</p>
+					<h4>Suppression du test 7.3.2</h4>
+					<h5>Ancien test 7.3.2</h5>
+					<p>Test 7.3.2&nbsp;: Chaque élément possédant un gestionnaire d’événement contrôlé par un script vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’élément est activable par le clavier et la souris&nbsp;;</li>
+					<li>Un élément activable par le clavier et la souris permettant de réaliser la même action est présent dans la page.</li>
+					</ul>
+					<h4>Renumérotation</h4>
+					<ul>
+					<li>7.3.3 devient 7.3.2&nbsp;;</li>
+					<li>7.3.4 devient 7.3.3.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modifications du test 8.10.2</h3>
+					<p>Le critère ne prend en charge que les passages de texte dont le sens de lecture est différent du sens de lecture de la page.</p>
+					<p>Il peut y avoir des cas où une erreur d’utilisation de l’attribut <code>dir</code> concerne des textes dont le sens de lecture est identique à celui de la page.</p>
+					<p>Un test est ajouté.</p>
+					<h4>Nouveau test 8.10.2</h4>
+					<p>Test 8.10.2&nbsp;: Dans chaque page Web, chaque changement du sens de lecture (attribut <code>dir</code>) vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>La valeur de l’attribut <code>dir</code> est conforme (<code>rtl</code> ou <code>ltr</code>).</li>
+					<li>La valeur de l’attribut <code>dir</code> est pertinente.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 10.13</h3>
+					<h4>Suppression du test 10.13.2</h4>
+					<p>Le test 10.13.2 est couvert par le 10.13.1 et la définition de «&nbsp;texte caché&nbsp;».</p>
+					<h5>Ancien test 10.13.2</h5>
+					<p>Test 10.13.2&nbsp;: Dans chaque page Web, chaque texte caché qui utilise une propriété ARIA aria-hidden vérifie-t-il une de ces conditions&nbsp;?</p>
+					<h4>Suppression du test 10.13.3</h4>
+					<p>Le test 10.13.3 est couvert par le 10.13.1 et la définition de «&nbsp;texte caché&nbsp;».</p>
+					<h5>Ancien test 10.13.3</h5>
+					<p>Test 10.13.3&nbsp;: Dans chaque page Web, chaque texte caché qui utilise un attribut hidden vérifie-t-il une de ces conditions&nbsp;?</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 11.1</h3>
+					<h4>Modification du test 11.1.3</h4>
+					<p>Ajoute l’obligation d’une étiquette visible.</p>
+					<p>Ajoute la possibilité d’avoir plusieurs labels référencés via ARIA.</p>
+					<h5>Ancien test 11.1.3</h5>
+					<p>Test 11.1.3&nbsp;: Chaque champ de formulaire associé à une étiquette via la propriété ARIA <code>aria-labelledby</code>, vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>l’étiquette possède un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li>La valeur de la propriété ARIA <code>aria-labelledby</code> est égale à la valeur de l’attribut <code>id</code> de l’étiquette.</li>
+					</ul>
+					<h5>Nouveau test 11.1.3</h5>
+					<p>Test 11.1.3&nbsp;: Chaque champ de formulaire associé à une étiquette via la propriété ARIA <code>aria-labelledby</code>, vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>l’étiquette possède un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li><strong>Les valeurs de la propriété ARIA <code>aria-labelledby</code> sont égales à la valeur des attributs <code>id</code> des passages de textes utilisés pour créer l’étiquette.</strong>&nbsp;;</li>
+					<li><strong>L’étiquette liée par la propriété ARIA <code>aria-labelledby</code> est visible à la prise de focus au moins.</strong></li>
+					</ul>
+					<h4>Nouveau test 11.1.4</h4>
+					<p>Un champ de formulaire qui utilise un <code>aria-label</code> comme label (conforme 11.1.1) doit être accompagné d’un <strong>texte visible</strong> qui permet de comprendre la fonction du champ de formulaire.</p>
+					<p>Test 11.1.4&nbsp;: Chaque champ de formulaire qui utilise une propriété ARIA <code>aria-label</code> doit être accompagné d’un passage de texte visible et accolé au champ permettant de comprendre la nature de la saisie attendue. Cette règle est-elle respectée&nbsp;?</p>
+					<h4>Nouveau test 11.1.5</h4>
+					<p>Ajout d’un test pour l’attribut <code>placeholder</code>, conformément à l’ordre de restitution des éléments sur un champ de formulaire (<a href="#ndv-glossaire-etiquette-champ">voir la modification de l’entrée de glossaire pour «&nbsp;Étiquette de champ de formulaire&nbsp;»</a>).</p>
+					<p>Test 11.1.4&nbsp;: Chaque champ de formulaire qui utilise un attribut <code>title</code> comme étiquette, vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>L’attribut <code>placeholder</code> est absent&nbsp;;</li>
+					<li>L’attribut <code>placeholder</code> est identique à l’attribut <code>title</code>.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 11.9</h3>
+					<h4>Modification du test 11.9.1</h4>
+					<p>Ajout de la méthode <code>aria-labelledby</code> comme moyen de labelliser un bouton.</p>
+					<h5>Ancien test 11.9.1</h5>
+					<p>Test 11.9.1&nbsp;: Dans chaque formulaire, l’intitulé de chaque bouton vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’attribut <code>value</code> des boutons de formulaire de type <code>submit</code>, <code>reset</code> ou <code>button</code> est pertinent&nbsp;;</li>
+					<li>Le contenu de la balise <code>&lt;button&gt;</code> est pertinent&nbsp;;</li>
+					<li>Le contenu de l’attribut <code>title</code> est pertinent&nbsp;;</li>
+					<li>Le contenu de la propriété ARIA <code>aria-label</code> est pertinent.</li>
+					</ul>
+					<h4>Nouveau test 11.9.1</h4>
+					<p>Test 11.9.1&nbsp;: Dans chaque formulaire, l’intitulé de chaque bouton vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le contenu de l’attribut <code>value</code> des boutons de formulaire de type <code>submit</code>, <code>reset</code> ou <code>button</code> est pertinent&nbsp;;</li>
+					<li>Le contenu de la balise <code>&lt;button&gt;</code> est pertinent&nbsp;;</li>
+					<li>Le contenu de l’attribut <code>title</code> est pertinent&nbsp;;</li>
+					<li>Le contenu de la propriété ARIA <code>aria-label</code> est pertinent&nbsp;;</li>
+					<li><strong>Un passage de texte est lié au bouton via une propriété <code>aria-labelledby</code>.</strong></li>
+					</ul>
+					<h4>Modification du test 11.9.2</h4>
+					<p>Ajoute la possibilité d’avoir plusieurs labels référencés via ARIA.</p>
+					<h5>Ancien test 11.9.2</h5>
+					<p>Test 11.9.2&nbsp;: Dans chaque formulaire, l’intitulé de chaque bouton implémenté via une propriété ARIA <code>aria-labelledby</code> vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte servant d’intitulé possède un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li>La valeur de la propriété ARIA <code>aria-labelledby</code> est égale à la valeur de l’attribut <code>id</code> du passage de texte&nbsp;;</li>
+					<li>Le passage de texte est pertinent.</li>
+					</ul>
+					<h5>Nouveau test 11.9.2</h5>
+					<p>Test 11.9.2&nbsp;: Dans chaque formulaire, l’intitulé de chaque bouton implémenté via une propriété ARIA <code>aria-labelledby</code> vérifie-t-il ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte servant d’intitulé possède un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li><strong>Les valeurs de la propriété ARIA <code>aria-labelledby</code> sont égales aux valeurs des attributs <code>id</code> des passages de texte utilisés pour créer l’étiquette</strong>&nbsp;;</li>
+					<li>Le passage de texte est pertinent.</li>
+					</ul>
+		 		</article>
+
+		 		<article>
+					<h3>Modification des tests du critère 11.10</h3>
+					<h4>Modification du test 11.10.3</h4>
+					<p>Ajoute la possibilité d’avoir plusieurs labels référencés via ARIA.</p>
+					<h5>Ancien test 11.10.3</h5>
+					<p>Test 11.10.3&nbsp;: Chaque indication de champ obligatoire qui utilise un passage de texte lié par la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte est identifié via un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li>La valeur de la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> est égale à la valeur de l’attribut <code>id</code>&nbsp;;</li>
+					</ul>
+					<h5>Nouveau test 11.10.3</h5>
+					<p>Test 11.10.3&nbsp;: Chaque indication de champ obligatoire qui utilise un passage de texte lié par la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte est identifié via un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li><strong>Les valeurs de la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> sont égales aux valeurs des attributs <code>id</code>&nbsp;;</strong></li>
+					</ul>
+					<h4>Modification du test 11.10.6</h4>
+					<p>Ajoute la possibilité d’avoir plusieurs labels référencés via ARIA.</p>
+					<h5>Ancien test 11.10.6</h5>
+					<p>Test 11.10.6&nbsp;: Chaque erreur de saisie qui utilise un passage de texte lié par la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte est identifié via un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li>La valeur de la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> est égale à la valeur de l’attribut <code>id</code>.</li>
+					</ul>
+					<h5>Nouveau test 11.10.6</h5>
+					<p>Test 11.10.6&nbsp;: Chaque erreur de saisie qui utilise un passage de texte lié par la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte est identifié via un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li><strong>Les valeurs de la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> sont égales aux valeurs des attributs <code>id</code>&nbsp;;</strong></li>
+					</ul>
+					<h4>Modification du test 11.10.9</h4>
+					<p>Ajoute la possibilité d’avoir plusieurs labels référencés via ARIA.</p>
+					<h5>Ancien test 11.10.9</h5>
+					<p>Test 11.10.9&nbsp;: Chaque indication de type de donnée et/ou de format qui utilise un passage de texte lié par la propriété ARIA <code>aria-describedby</code> ou ARIA <code>aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte est identifié via un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li>La valeur de la propriété ARIA <code>aria-describedby</code> ou ARIA <code>aria-labelledby</code> est égale à la valeur de l’attribut <code>id</code>&nbsp;;</li>
+					</ul>
+					<h5>Nouveau test 11.10.9</h5>
+					<p>Test 11.10.9&nbsp;: Chaque indication de type de donnée et/ou de format qui utilise un passage de texte lié par la propriété ARIA <code>aria-describedby</code> ou ARIA <code>aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?</p>
+					<ul>
+					<li>Le passage de texte est identifié via un attribut <code>id</code>&nbsp;;</li>
+					<li>La valeur de l’attribut <code>id</code> est unique&nbsp;;</li>
+					<li><strong>Les valeurs de la propriété ARIA <code>aria-describedby</code> ou <code>aria-labelledby</code> sont égales aux valeurs des attributs <code>id</code>.</strong></li>
+					</ul>
+					<h4>Nouveau test 11.10.10</h4>
+					<p>Ajout d’un test pour l’attribut <code>placeholder</code>, conformément à l’ordre de restitution des éléments sur un champ de formulaire (<a href="#ndv-glossaire-etiquette-champ">voir la modification de l’entrée de glossaire pour «&nbsp;Étiquette de champ de formulaire&nbsp;»</a>).</p>
+					<p>Test 11.10.10&nbsp;: Chaque champ de formulaire qui utilise un attribut <code>title</code> comme aide à la saisie, vérifie-t-il une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>L’attribut <code>placeholder</code> est absent&nbsp;;</li>
+					<li>L’attribut <code>placeholder</code> est identique à l’attribut <code>title</code>.</li>
+					</ul>
+		 		</article>
+
+				<article>
+					<h3>Modification des tests du critère 13.1</h3>
+					<h4>Modification du test 13.1.1</h4>
+					<p>Le test fait référence à une redirection automatique qui n’est pas concernée.</p>
+					<p>Les test est modifié.</p>
+					<p><a href="#ndv-glossaire-redirection-auto">La définition de glossaire pour «&nbsp;Redirection automatique&nbsp;» est modifiée.</a></p>
+					<h5>Ancien test 13.1.1</h5>
+					<p>Test 13.1.1&nbsp;: Pour chaque page Web, chaque procédé de rafraîchissement ou de redirection automatique ( balise <code>object</code>, balise <code>embed</code>, balise <code>svg</code>, balise <code>canvas</code>, balise <code>meta</code>) vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’utilisateur peut arrêter ou relancer le rafraîchissement&nbsp;;</li>
+					<li>L’utilisateur peut augmenter la limite de temps entre deux rafraîchissements de dix fois, au moins&nbsp;;</li>
+					<li>L’utilisateur est averti de l’imminence du rafraîchissement et dispose de vingt secondes, au moins, pour augmenter la limite de temps avant le prochain rafraîchissement&nbsp;;</li>
+					<li>La limite de temps entre deux rafraîchissements est de vingt heures, au moins.</li>
+					</ul>
+					<h5>Nouveau test 13.1.1</h5>
+					<p>Test 13.1.1&nbsp;: Pour chaque page Web, chaque procédé de rafraîchissement ( balise <code>object</code>, balise <code>embed</code>, balise <code>svg</code>, balise <code>canvas</code>, balise <code>meta</code>) vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<ul>
+					<li>L’utilisateur peut arrêter ou relancer le rafraîchissement&nbsp;;</li>
+					<li>L’utilisateur peut augmenter la limite de temps entre deux rafraîchissements de dix fois, au moins&nbsp;;</li>
+					<li>L’utilisateur est averti de l’imminence du rafraîchissement et dispose de vingt secondes, au moins, pour augmenter la limite de temps avant le prochain rafraîchissement&nbsp;;</li>
+					<li>La limite de temps entre deux rafraîchissements est de vingt heures, au moins.</li>
+					</ul>
+					<h4>Suppression du test 13.1.4 et renumérotaion</h4>
+					<h5>Ancien test 13.1.4 et numérotation</h5>
+					<p>Test 13.1.4&nbsp;: Pour chaque page Web, chaque procédé de redirection effectué côté serveur vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<p>Test 13.1.5&nbsp;: Pour chaque page Web, chaque procédé limitant le temps d’une session vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+					<h5>Renumérotation 13.1.5 en 13.1.4</h5>
+					<p>Test 13.1.4&nbsp;: Pour chaque page Web, chaque procédé limitant le temps d’une session vérifie-t-il une de ces conditions (hors cas particuliers)&nbsp;?</p>
+				</article>
+
+				<article>
+					<h3>Modification du test 13.2.1</h3>
+					<p>Le test 13.2.1 est limité aux attributs <code>target</code> dont la valeur est égale à <code>_blank</code>, or d’autres valeurs pour cet attribut provoquent l’ouverture d’une nouvelle fenêtre. <a href="#ndv-glossaire-target">Une entrée de glossaire est également ajoutée pour l’attribut <code>target</code></a> et une explication des différents comportements en fonction des valeurs.</p>
+					<h4>Ancien test 13.2.1</h4>
+					<p>Test 13.2.1&nbsp;: Dans chaque page Web, pour chaque ouverture d’une nouvelle fenêtre effectuée via un lien (attribut <code>target="_blank"</code>) ou une commande JavaScript, l’utilisateur est-il averti&nbsp;?</p>
+					<h4>Nouveau test 13.2.1</h4>
+					<p>Test 13.2.1&nbsp;: Dans chaque page Web, pour chaque ouverture d’une nouvelle fenêtre effectuée via un lien (attribut <code>target</code>) ou une commande JavaScript, l’utilisateur est-il averti&nbsp;?)</p>
+				</article>
+
+				<article>
+					<h3>Modification du test 13.15.1</h3>
+					<p>Le test 13.15.1 est limité aux images animées de type <code>img</code>,<code>svg</code>, <code>object</code>. Il manque les images embarquées via <code>embed</code> ou <code>canvas</code>.</p>
+					<p>Le test est corrigé.</p>
+					<h4>Ancien test 13.15.1</h4>
+					<p>Test 13.15.1&nbsp;: Dans chaque page Web, chaque image animée (balise <code>img</code>, balise <code>svg</code> ou balise <code>object</code>) qui provoque un changement brusque de luminosité ou un effet de flash vérifie-t-elle une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>La fréquence de l’effet est inférieure à 3 par seconde&nbsp;;</li>
+					<li>La surface totale cumulée des effets est inférieure ou égale à 21 824 pixels.</li>
+					</ul>
+					<h4>Nouveau test 13.15.1</h4>
+					<p>Test 13.15.1&nbsp;: Dans chaque page Web, chaque image (balise <code>img</code>, balise <code>svg</code>, <strong>balise <code>canvas</code>, balise <code>embed</code></strong> ou balise <code>object</code>) qui provoque un changement brusque de luminosité ou un effet de flash vérifie-t-elle une de ces conditions&nbsp;?</p>
+					<ul>
+					<li>La fréquence de l’effet est inférieure à 3 par seconde&nbsp;;</li>
+					<li>La surface totale cumulée des effets est inférieure ou égale à 21 824 pixels.</li>
+					</ul>
+				</article>
+
+				<article>
+					<h3>Mise à jour des références des techniques WCAG</h3>
+					<h4>Techniques supprimées de WCAG</h4>
+					<ul>
+					<li>F17 (liaison supprimée pour le critère 11.1)&nbsp;;</li>
+					<li>F68 (liaison supprimée pour le critère 11.1)&nbsp;;</li>
+					<li>H50 (liaison supprimée pour le critère 12.10).</li>
+					</ul>
+					<h4>Modification de liaison WCAG 2.1.3</h4>
+					<p>Le critère de succès WCAG 2.1.3 est supprimé du critère RGAA 7.3 et ajouté au critère 13.4.</p>
+				</article>
+
+		 	</section>
+
+		 	<section id="ndv-glossaire">
+		 		<h2>Glossaire</h2>
+
+				<article id="ndv-glossaire-alt-svg">
+					<h3>Nouvelle définition de glossaire pour «&nbsp;alternative à une image <code>svg</code>&nbsp;»</h3>
+					<p>Sont considérés comme des alternatives possibles à une image <code>svg</code>&nbsp;:</p>
+					<ul>
+						<li>un mécanisme de remplacement&nbsp;;</li>
+						<li>lien adjacent qui permet d’accéder à une alternative dont le contenu est pertinent, et identique à la propriété aria-label et à l’attribut title de la balise , s’il est présent.</li>
+					</ul>
+				</article>
+
+				<article id="ndv-glossaire-target">
+					<h3>Nouvelle définition de glossaire pour «&nbsp;Attribut <code>target</code>&nbsp;»</h3>
+					<p>Suite à la modification du test 13.2.1, une entrée de glossaire est ajoutée pour l’attribut <code>target</code> et l’explication des différents comportements en fonction des valeurs.</p>
+					<p>L’attribut <code>target</code> ouvre une nouvelle fenêtre ou un nouvel onglet du navigateur selon sa valeur. Les valeurs suivantes de <code>target</code> n’ouvrent pas de nouvelles fenêtres&nbsp;:</p>
+					<ul>
+					<li><code>_self</code>&nbsp;;</li>
+					<li><code>_top</code>&nbsp;;</li>
+					<li><code>_parent</code>.</li>
+					</ul>
+					<p>Pour toutes les autres valeurs de <code>target</code>, l’élément sur lequel il est positionné ouvrira une nouvelle fenêtre ou un nouvel onglet. C’est le cas de la valeur <code>_blank</code> par exemple, mais également de toute autre valeur (numérique ou alphabétique) non définie par la spécification. Il est à noter d’ailleurs que ces valeurs ne provoquent pas d’erreur lors de la validation du code source en HTML5.</p>
+				</article>
+
+				<article>
+					<h3>Suppression de la définition «&nbsp;Contrôlable par le clavier et la souris&nbsp;»</h3>
+					<p>La définition est lacunaire et l’entrée de glossaire «&nbsp;Accessible et activable par le clavier et la souris&nbsp;» est plus pertinente et complète.</p>
+					<h4>Ancienne définition de glossaire</h4>
+					<p>Le contrôle d’une fonctionnalité par le clavier signifie que celle-ci est accessible via la touche tabulation et activable par la touche entrée à l’exception&nbsp;:</p>
+					<ul>
+    				<li>Des composants d’interface implémentés via WAI-ARIA lorsqu’un motif de conception définit un ensemble d’interactions au clavier à respecter&nbsp;;</li>
+    				<li>Lorsque un composant utilise une technologie qui nécessite l’utilisation de raccourcis clavier et que la touche de tabulation n’est pas disponible.</li>
+    			</ul>
+				</article>
+
+				<article>
+					<h3>Nouvelle définition pour «&nbsp;Étiquettes cohérentes&nbsp;</h3>
+					<p>La notion de «&nbsp;cohérente&nbsp;» n’est pas définie pour le critère 11.3.</p>
+					<p>Une définition de glossaire est ajoutée.</p>
+					<h4>Nouvelle définition de glossaire «&nbsp;Etiquettes cohérentes&nbsp;»</h4>
+					<p>Les étiquettes de champs de formulaire présentes dans une même page ou dans un ensemble de pages et réclamant la saisie d’une même information doivent être formulées sans ambiguïté pour que l’utilisateur sache que l’information qu’il doit communiquer est la même.</p>
+				</article>
+
+				<article id="ndv-glossaire-etiquette-champ">
+					<h3>Modification définition de glossaire pour «&nbsp;Étiquette de champs de formulaire&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire pour «&nbsp;Étiquette de champs de formulaire&nbsp;»</h4>
+					<p>Texte à proximité du champ de formulaire permettant d’en connaître la nature, le type ou le format des informations attendues. L’étiquette peut être associée au champ de formulaire de plusieurs manières&nbsp;: par l’utilisation d’une balise <code>label</code>, l’utilisation de la propriété WAI-ARIA <code>aria-label</code>, l’utilisation d’une liaison entre le texte et le champ par la propriété WAI-ARIA <code>aria-labelledby</code>, l’utilisation de l’attribut <code>title</code>.</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Étiquette de champs de formulaire&nbsp;»</h4>
+					<p>Texte à proximité du champ de formulaire permettant d’en connaître la nature, le type ou le format des informations attendues. L’étiquette peut être associée au champ de formulaire de plusieurs manières&nbsp;:</p>
+					<ul>
+					<li>par l’utilisation d’une balise <code>label</code>&nbsp;;</li>
+					<li>l’utilisation de la propriété WAI-ARIA <code>aria-label</code>&nbsp;;</li>
+					<li>l’utilisation d’une liaison entre le texte et le champ par la propriété WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
+					<li>l’utilisation de l’attribut <code>title</code>.</li>
+					</ul>
+					<p><strong>Note importante</strong>&nbsp;: lorsque plusieurs de ces techniques sont présentes sur un même champ, le calcul du «&nbsp;nom accessible&nbsp;», c’est-à-dire ce qui sera restitué, obéit à un ordre strict&nbsp;:</p>
+					<ul>
+					<li><code>aria-labelledby</code>&nbsp;;</li>
+					<li>sinon <code>aria-label</code>&nbsp;;</li>
+					<li>sinon <code>label</code>&nbsp;;</li>
+					<li>sinon <code>title</code>.</li>
+					</ul>
+					<p>Cet ordre doit être utilisé pour l’évaluation de la pertinence de l’étiquette (critère 11.2). Par exemple, même dans le cas de la présence d’un <code>label</code>, c’est le passage de texte référencé par <code>aria-labelledby</code> qui doit pris en compte.</p>
+					<p>Référence&nbsp;: <a href="http://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-calculation">http://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-calculation</a></p>
+					<p><strong>Note importante au sujet de l’utilisation de <code>placeholder</code></strong>&nbsp;: lorsque l’attribut <code>placeholder</code> est présent, il est susceptible d’être restitué à la place de l’attribut <code>title</code>. Par conséquent, lorsque ces deux attributs <code>title</code> et <code>placeholder</code> sont présents, ils doivent être identiques.</p>
+				</article>
+
+				<article id="ndv-glossaire-intitule-lien">
+					<h3>Modification définition de glossaire pour «&nbsp;Intitulé de lien&nbsp;»</h3>
+					<p>Modification de la Note 1 qui renvoie maintenant à la définition de lien image.</p>
+					<h4>Ancienne définition de glossaire pour «&nbsp;Intitulé de lien&nbsp;»</h4>
+					<p>Information textuelle comprise entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> d’un lien complété si nécessaire d’informations de contexte.</p>
+					<p>Les 4 différents types de liens sont&nbsp;:</p>
+					<ul>
+					<li>lien texte&nbsp;: il s’agit du texte compris entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> complété si nécessaire d’informations de contexte&nbsp;;</li>
+					<li>lien image&nbsp;: il s’agit du contenu de l’alternative textuelle de l’image comprise entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> complété si nécessaire d’informations de contexte&nbsp;;</li>
+					<li>lien composite&nbsp;: il s’agit de l’ensemble du texte et du contenu de l’alternative textuelle de la ou des images compris entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> complété si nécessaire d’informations de contexte&nbsp;;</li>
+					<li>lien vectoriel&nbsp;: il s’agit du contenu de l’alternative textuelle de l’image vectorielle (balise <code>svg</code> comprise entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> complété si nécessaire d’informations de contexte.</li>
+					</ul>
+					<p><strong>Note 1</strong>&nbsp;: un lien image peut être constitué d’une image (balise <code>img</code>), d’une image objet (balise <code>object</code>) ou d’une image bitmap (balise <code>canvas</code>).</p>
+					<p><strong>Note 2</strong>&nbsp;: Un lien image pour lequel l’attribut <code>alt</code> est absent est considéré comme non applicable pour le critère 6.5.</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Intitulé de lien&nbsp;»</h4>
+					<p>Information textuelle comprise entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> d’un lien, complété si nécessaire d’informations de contexte.</p>
+					<p>Les 4 différents types de liens sont&nbsp;:</p>
+					<ul>
+					<li>Lien texte&nbsp;: il s’agit du texte compris entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code>, complété si nécessaire d’informations de contexte&nbsp;;</li>
+					<li>Lien image&nbsp;: il s’agit du contenu de l’alternative textuelle de l’image comprise entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code>, complété si nécessaire d’informations de contexte&nbsp;;</li>
+					<li>Lien composite&nbsp;: il s’agit de l’ensemble du texte et du contenu de l’alternative textuelle de la ou des images compris entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code>, complété si nécessaire d’informations de contexte&nbsp;;</li>
+					<li>Lien vectoriel&nbsp;: il s’agit du contenu de l’alternative textuelle de l’image vectorielle (balise svg) comprise entre <code>&lt;a href="…"&gt;</code> et <code>&lt;/a&gt;</code> complété si nécessaire d’informations de contexte. L’intitulé de lien pour un lien vectoriel est le contenu de l’alternative textuelle de l’image vectorielle.</li>
+					</ul>
+					<p><strong>Note 1</strong>&nbsp;: voir la définition de lien image pour plus de précisions.**</p>
+					<p><strong>Note 2</strong>&nbsp;: un lien image pour lequel l’attribut <code>alt</code> est absent est considéré comme non applicable pour le critère 6.5.</p>
+				</article>
+
+				<article>
+					<h3>Modification définition de glossaire «&nbsp;Le nom, le rôle, la valeur, le paramétrage et les changements d’états&nbsp;»</h3>
+					<p>La définition de glossaire ne prend pas en compte le cas des boutons hors formulaire.</p>
+					<p>La définition est modifiée.</p>
+					<h4>Ancienne définition</h4>
+					<p>Un composant doit avoir un rôle et un nom appropriés, ses valeurs, états et paramètres éventuels doivent également être accessibles et correctement transmis aux APIs d’accessibilité notamment.</p>
+					<p>Le nom peut être l’intitulé du composant comme l’intitulé d’un bouton par exemple.</p>
+					<p>La valeur est, par exemple, l’élément sélectionné d’une liste déroulante ou la valeur actuelle d’un curseur (slider).</p>
+					<p>Le rôle correspond au type d’élément défini par la spécification HTML ou l’API WAI-ARIA (comme la balise <code>button</code> ou le rôle ARIA <code>role="button"</code>).</p>
+					<p>Le paramétrage correspond aux informations particulières d’un composant, généralement mis à disposition par l’API WAI-ARIA. Par exemple <code>aria-controls</code> est un paramètre qui transmet aux APIs l’information que le composant contrôle tel ou tel contenu (référencé par son identifiant - attribut <code>id</code>).</p>
+					<p>Les changements d’états sont également mis à disposition par l’API WAI-ARIA. Par exemple <code>aria-expanded</code> est un état permettant de signaler aux APIs que le composant est «&nbsp;ouvert&nbsp;» ou «&nbsp;fermé&nbsp;». <strong>Note&nbsp;:</strong> un état peut également être transmis via le nom, lorsque l’intitulé est changé dynamiquement pour correspondre à l’état de la zone contrôlée notamment.</p>
+					<p>Ces paramètres ne sont pas obligatoires mais peuvent être requis s’ils sont indispensables pour rendre le composant accessible. C’est à l’auditeur de considérer les cas où ces paramètres sont indispensables en fonction du contexte lié à l’utilisation du composant.</p>
+					<p>L’auditeur doit également vérifier que, lorsqu’il sont présents, ces paramètres sont correctement utilisés.</p>
+					<p><strong>Note&nbsp;:</strong> les rôles, propriétés et états ARIA s’implémentent via des attributs, par exemple <code>role="banner"</code>, <code>aria-hidden="true"</code>.</p>
+					<h4>Nouvelle définition de glossaire</h4>
+					<p>Un composant doit avoir un rôle et un nom appropriés, ses valeurs, états et paramètres éventuels doivent également être accessibles et correctement transmis aux APIs d’accessibilité notamment.</p>
+					<p><strong>Un composant peut s’appuyer sur un élément interactif HTML ou sur un élément non interactif surchargé par l’API ARIA via un rôle adh’oc. Important&nbsp;: les boutons (balises button ou input type="button") lorsqu’ils sont contrôlés via JavaScript sont à évaluer avec le critère 7.1.</strong></p>
+					<p>Le nom peut être l’intitulé du composant comme l’intitulé d’un bouton par exemple.</p>
+					<p>La valeur est, par exemple, l’élément sélectionné d’une liste déroulante ou la valeur actuelle d’un curseur (slider).</p>
+					<p>Le rôle correspond au type d’élément défini par la spécification HTML ou l’API WAI-ARIA (comme la balise <code>button</code> ou le rôle ARIA <code>role="button"</code>).</p>
+					<p>Le paramétrage correspond aux informations particulières d’un composant, généralement mis à disposition par l’API WAI-ARIA. Par exemple <code>aria-controls</code> est un paramètre qui transmet aux APIs l’information que le composant contrôle tel ou tel contenu (référencé par son identifiant - attribut <code>id</code>).</p>
+					<p>Les changements d’états sont également mis à disposition par l’API WAI-ARIA. Par exemple <code>aria-expanded</code> est un état permettant de signaler aux APIs que le composant est «&nbsp;ouvert&nbsp;» ou «&nbsp;fermé&nbsp;».</p>
+					<p><strong>Note&nbsp;:</strong> un état peut également être transmis via le nom, lorsque l’intitulé est changé dynamiquement pour correspondre à l’état de la zone contrôlée notamment.</p>
+					<p>Ces paramètres ne sont pas obligatoires mais peuvent être requis s’ils sont indispensables pour rendre le composant accessible. C’est à l’auditeur de considérer les cas où ces paramètres sont indispensables en fonction du contexte lié à l’utilisation du composant.</p>
+					<p>L’auditeur doit également vérifier que, lorsqu’il sont présents, ces paramètres sont correctement utilisés.</p>
+					<p><strong>Note&nbsp;:</strong> les rôles, propriétés et états ARIA s’implémentent via des attributs, par exemple <code>role="banner"</code>, <code>aria-hidden="true"</code></p>
+				</article>
+
+				<article id="ndv-glossaire-lien-image">
+					<h3>Modification définition de glossaire pour «&nbsp;Lien image&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire pour «&nbsp;Lien image&nbsp;»</h4>
+					<p>Lien dont le contenu entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> est uniquement constitué d’une image. L’intitulé de lien pour un lien image est le contenu de l’alternative textuelle de l’image.</p>
+					<p><strong>Note</strong>&nbsp;: un lien image peut être constitué d’une image (balise <code>img</code>), d’une image objet (balise <code>object</code>) ou d’une image bitmap (balise <code>canvas</code>).</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Lien image&nbsp;»</h4>
+					<p>Lien dont le contenu entre <code>&lt;a href="..."&gt;</code> et <code>&lt;/a&gt;</code> est uniquement constitué d’une image. L’intitulé de lien pour un lien image est le contenu de l’alternative textuelle de l’image.</p>
+					<p>Un lien image peut être constitué&nbsp;:</p>
+					<ul>
+					<li>d’une image (balise <code>img</code>), l’alternative est le contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					<li>d’une zone cliquable (balise <code>area</code>) possédant un attribut <code>href</code>, l’alternative est le contenu de l’attribut <code>alt</code>&nbsp;;</li>
+					<li>d’une image objet (balise <code>object</code>), l’alternative est contenue entre <code>&lt;object&gt;</code> et <code>&lt;/object&gt;</code>&nbsp;;</li>
+					<li>d’une image bitmap (balise <code>canvas</code>), l’alternative est contenue entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>&nbsp;;</li>
+					<li>d’une image embarquée (balise <code>embed</code>), l’alternative est contenue entre <code>&lt;embed&gt;</code> et <code>&lt;/embed&gt;</code>&nbsp;;</li>
+					<li>d’une image vectorielle (balise <code>svg</code>), l’alternative est contenue dans les attributs <code>title</code>, <code>aria-label</code> ou la balise <code>&lt;desc&gt;</code>.</li>
+					</ul>
+					<p><strong>Note au sujet de <code>embed</code></strong>&nbsp;: en HTML5, la balise <code>embed</code> a été modifiée. C’est une balise autofermante qui ne peut pas embarquer de contenu alternatif. Les propriétés ARIA, comme <code>aria-label</code> qui permettrait d’embarquer une alternative, n’étant pas supportées de manière uniforme, il n’est pas possible d’utiliser une image embarquée, porteuse d’information, via l’élément <code>embed</code> HTML5.</p>
+				</article>
+
+				<article>
+					<h3>Suppression de l’entrée de glossaire «&nbsp;Lien vectoriel&nbsp;»</h3>
+					<p>La définition de lien vectoriel est maintenant incorporée dans l’entrée de glossaire <a href="#ndv-glossaire-intitule-lien">«&nbsp;Intitulé de lien&nbsp;»</a>.</p>
+					<h4>Ancienne définition de «&nbsp;Lien vectoriel&nbsp;»</h4>
+					<p>Lien dont le contenu entre <code lang="en">&lt;a href="..."&gt;</code> et <code lang="en">&lt;/a&gt;</code> est uniquement constitué d’une image vectorielle (balise <code lang="en">svg</code>). L’intitulé de lien pour un lien vectoriel est le contenu de l’alternative textuelle de l’image vectorielle.</p>
+				</article>
+
+				<article>
+					<h3>Modification définition de glossaire pour «&nbsp;Média temporel (type son, vidéo et synchronisé)&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire</h4>
+					<ul>
+					<li>Média temporel seulement audio&nbsp;: contenu sonore (Wawe, Mp3...)&nbsp;;</li>
+					<li>Média temporel seulement vidéo&nbsp;: images ou photos en mouvement ou en séquence&nbsp;;</li>
+					<li>Média temporel synchronisé&nbsp;: flux audio ou vidéo synchronisé avec un autre format pour présenter de l’information et/ou comportant des composants temporels interactifs. Un média temporel peut être consulté de 2 manières différentes&nbsp;:
+					<ul>
+					<li>fichier à télécharger consultable avec un logiciel externe à la page Web&nbsp;;</li>
+					<li>contenu embarqué dans la page Web et consultable dans la page Web via&nbsp;:
+					<ul>
+					<li>un plugin (par exemple une vidéo diffusée par un lecteur Flash)&nbsp;;</li>
+					<li>l’élément <code>video</code> (par exemple une vidéo)&nbsp;;</li>
+					<li>l’élément <code>audio</code> (par exemple un podcast)&nbsp;;</li>
+					<li>l’élément <code>svg</code> (par exemple un dessin animé vectoriel)&nbsp;;</li>
+					<li>l’élément <code>canvas</code> (par exemple un dessin animé en image bitmap).</li>
+					</ul>
+					</li>
+					</ul>
+					</li>
+					</ul>
+					<p>Un média temporel peut être diffusé en temps réel ou être proposé en lecture de manière asynchrone (média pré-enregistré).</p>
+					<p><strong>Note 1</strong>&nbsp;: l’utilisation du paramètre <code>wmode</code> pour un objet Flash avec les valeurs <code>"transparent"</code> et <code>"opaque"</code> invalide de fait le critère 4.20 (La consultation de chaque média temporel est-elle contrôlable par le clavier et la souris&nbsp;?). En effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash vue du côté des utilisateurs de lecteur d’écran est invisible.</p>
+					<p><strong>Note 2</strong>&nbsp;: les gif animés, les animations d’images réalisées par JavaScript ou CSS ne sont pas considérés comme étant des médias temporels.</p>
+					<h4>Nouvelle défintion de glossaire</h4>
+					<ul>
+					<li>Média temporel seulement audio&nbsp;: contenu sonore (Wawe, Mp3...)&nbsp;;</li>
+					<li>Média temporel seulement vidéo&nbsp;: images ou photos en mouvement ou en séquence&nbsp;;</li>
+					<li>Média temporel synchronisé&nbsp;: flux audio ou vidéo synchronisé avec un autre format pour présenter de l’information et/ou comportant des composants temporels interactifs. Un média temporel peut être consulté de 2 manières différentes&nbsp;:
+					<ul>
+					<li>fichier à télécharger consultable avec un logiciel externe à la page Web&nbsp;;</li>
+					<li>contenu embarqué dans la page Web et consultable dans la page Web via&nbsp;:
+					<ul>
+					<li>un plugin (par exemple une vidéo diffusée par un lecteur Flash)&nbsp;;</li>
+					<li>l’élément <code>video</code> (par exemple une vidéo)&nbsp;;</li>
+					<li>l’élément <code>audio</code> (par exemple un podcast)&nbsp;;</li>
+					<li>l’élément <code>svg</code> (par exemple un dessin animé vectoriel)&nbsp;;</li>
+					<li>l’élément <code>canvas</code> (par exemple un dessin animé en image bitmap)&nbsp;;</li>
+					<li>l’élément <code>bgsound</code> pour diffuser un arrière-plan sonore à la page Web.</li>
+					</ul>
+					</li>
+					</ul>
+					</li>
+					</ul>
+					<p>Un média temporel peut être diffusé en temps réel ou être proposé en lecture de manière asynchrone (média pré-enregistré).</p>
+					<p><strong>Note 1</strong>&nbsp;: l’utilisation du paramètre <code>wmode</code> pour un objet Flash avec les valeurs <code>"transparent"</code> et <code>"opaque"</code> invalide de fait le critère 4.20 (La consultation de chaque média temporel est-elle contrôlable par le clavier et la souris&nbsp;?). En effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash vue du côté des utilisateurs de lecteur d’écran est invisible.</p>
+					<p><strong>Note 2</strong>&nbsp;: les gif animés, les animations d’images réalisées par JavaScript ou CSS ne sont pas considérés comme étant des médias temporels.</p>
+					<p><strong>Note 3</strong>&nbsp;: l’élément <code>bgsound</code> est spécifique à Internet Explorer et ne devrait pas être utilisé.</p>
+				</article>
+
+				<article>
+					<h3>Modification définition de glossaire pour «&nbsp;Présentation de l’information&nbsp;»</h3>
+					<p>Il manque des attributs de présentation dans la liste proposée par le glossaire.</p>
+					<p>Les attribut manquants sont ajoutés.</p>
+					<h4>Ancienne définition de glossaire pour «&nbsp;Présentation de l’information&nbsp;»</h4>
+					<p>Restitution visuelle des contenus via un navigateur en mode graphique. La présentation concerne le style, la position et les dimensions des éléments HTML et de leur contenu. La présentation de l’information doit être réalisée via CSS. Les éléments (<code>basefont</code>, <code>blink</code>, <code>center</code>, <code>font</code>, <code>marquee</code>, <code>s</code>, <code>strike</code>, <code>tt</code>, <code>u</code>) et les attributs (<code>align</code>, <code>alink</code>, <code>background</code>, <code>basefont</code>, <code>bgcolor</code>, <code>border</code>, <code>color</code>, <code>link</code>, <code>text</code>, <code>vlink</code>) sont interdits. Les attributs <code>width</code> et <code>height</code> utilisés sur d’autres éléments que les balises <code>img</code>, <code>object</code>, <code>embed</code>, <code>canvas</code> et <code>svg</code>, sont également interdits.</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Présentation de l’information&nbsp;»</h4>
+					<p>Restitution visuelle des contenus via un navigateur en mode graphique. La présentation concerne le style, la position et les dimensions des éléments HTML et de leur contenu. La présentation de l’information doit être réalisée via CSS. Les éléments (<strong><code>basefont</code>, <code>blink</code>, <code>center</code>, <code>font</code>, <code>marquee</code>, <code>s</code>, <code>strike</code>, <code>tt</code>, <code>u</code>, <code>big</code>, <code>small</code></strong>) et les attributs (<strong><code>align</code>, <code>alink</code>, <code>background</code>, <code>bgcolor</code>, <code>border</code>, <code>cellpading</code>, <code>cellspacing</code>, <code>char</code>, <code>charoff</code>, <code>clear</code>, <code>compact</code>, <code>color</code>, <code>frameborder</code>,<code>hspace</code>, <code>link</code>, <code>marginheight</code>, <code>marginwidth</code>, <code>text</code>, <code>valign</code>, <code>vlink</code>, <code>vspace</code>, <code>size</code></strong>) sont interdits.</p>
+					<p>Note&nbsp;: les attributs <code>width</code> et <code>height</code> utilisés sur d’autres éléments que les balises <code>img</code>, <code>object</code>, <code>embed</code>, <code>canvas</code> et <code>svg</code> sont également interdits.</p>
+				</article>
+
+				<article>
+					<h3>Modification définition de glossaire pour «&nbsp;Propriétés et méthodes conformes à la spécification DOM&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire pour «&nbsp;Propriétés et méthodes conformes à la spécification DOM&nbsp;»</h4>
+					<p>Les méthodes d’insertion de contenu conformes à la spécification DOM font appel aux propriétés et méthodes de l’objet Node par opposition aux méthodes propriétaires. Par exemple <code>document.write</code>, spécifique à la plateforme IE/Microsoft pour les navigateurs IE anciens.</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Propriétés et méthodes conformes à la spécification DOM&nbsp;»</h4>
+					<p>Les méthodes d’insertion de contenu conformes à la spécification DOM <strong>permettent de créer, insérer et manipuler des éléments via le DOM (par exemple <code>document.createElement</code> et <code>element.appendChild</code>) par opposition à la méthode <code>document.write</code> qui peut poser des problèmes dans certains contextes (voir&nbsp;: <a href="https://www.w3.org/TR/html5/webappapis.html#dom-document-write">https://www.w3.org/TR/html5/webappapis.html#dom-document-write</a>).</strong></p>
+				</article>
+
+				<article id="ndv-glossaire-redirection-auto">
+					<h3>Modification définition de glossaire pour «&nbsp;Redirection automatique&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire</h4>
+					<p>Procédé qui consiste pour l’affichage d’une page sur le poste client à rediriger automatiquement l’utilisateur vers une autre page, sur le même domaine ou sur un domaine différent.</p>
+					<h4>Nouvelle définition de glossaire</h4>
+					<p>Procédé qui consiste pour l’affichage d’une page sur le poste client à rediriger l’utilisateur vers une autre page, sur le même domaine ou sur un domaine différent.</p>
+				</article>
+
+				<article>
+					<h3>Modification définition de glossaire pour «&nbsp;Taille des caractères&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire pour «&nbsp;Taille des caractères&nbsp;»</h4>
+					<p>Valeur attribuée aux polices de caractères présentes sur une page Web. Pour les contenus Web, les tailles de caractères doivent être définies avec des unités relatives (%, em ou rem) ou des mots clés (xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, or larger).</p>
+					<p>Note&nbsp;: l’utilisation du pixel (px) est proscrite.</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Taille des caractères&nbsp;»</h4>
+					<p>Valeur attribuée aux polices de caractères présentes sur une page Web. Pour les contenus Web, les tailles de caractères doivent être définies avec des unités relatives (<code>%</code>, <code>em</code>, <code>rem</code>, <strong><code>vw</code>, <code>vh</code>, <code>vmin</code> ou <code>vmax</code></strong>) ou des mots clés (<code>xx-small</code>, <code>x-small</code>, <code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>, <code>xx-large</code>, <code>xsmaller</code>, <code>larger</code>).</p>
+					<p>Note&nbsp;: l’utilisation du pixel (px) est proscrite.</p>
+				</article>
+
+				<article>
+					<h3>Modification de la définition de glossaire pour «&nbsp;Zone (d’une image réactive)&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire pour «&nbsp;Zone (d’une image réactive)&nbsp;»</h4>
+					<p>Zone cliquable ou zone non cliquable d’une image réactive.</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Zone (d’une image réactive)&nbsp;»</h4>
+					<p>Zone cliquable ou zone non cliquable d’une image réactive côté client ou zone cliquable d’une image réactive côté serveur.</p>
+				</article>
+
+				<article>
+					<h3>Modification de la définition de glossaire pour «&nbsp;Zone non cliquable&nbsp;»</h3>
+					<h4>Ancienne définition de glossaire «&nbsp;Zone non cliquable&nbsp;»</h4>
+					<p>Région d’une image réactive à laquelle aucune action n’est associée (pour une zone cliquable côté client&nbsp;: balise <code>area</code> avec l’attribut <code>nohref</code>). Les balises <code>area</code> sont contenues dans la balise <code>map</code>.</p>
+					<h4>Nouvelle définition de glossaire pour «&nbsp;Zone non cliquable&nbsp;»</h4>
+					<p>Région d’une image réactive à laquelle aucune action n’est associée. Une zone cliquable côté client est contenue dans une balise <code>area</code>&nbsp;:</p>
+					<ul>
+					<li>avec l’attribut <code>nohref</code> lorsque le code HTML de la page n’est pas du HTML5&nbsp;;</li>
+					<li>sans attribut <code>href</code> en HTML5.</li>
+					</ul>
+					<p>Les balises <code>area</code> sont contenues dans la balise <code>map</code>.</p>
+				</article>
+
+				<article>
+					<h3>Suppression de la définition de glossaire pour «&nbsp;zones texte&nbsp;»</h3>
+					<p>La définition de glossaire sur «&nbsp;zones texte&nbsp;» est supprimée.</p>
+				</article>
+
+		 	</section>
+
+		 	<section id="ndv-caspart">
+		 		<h2>Cas particuliers</h2>
+
+		 		<article id="ndv-caspart-5.3">
+					<h3>Ajout d’un cas particulier pour le critère 5.3</h3>
+					<p>L’API ARIA propose un mécanisme permettant de surcharger le rôle natif d’un élément pour proposer des composants Ainsi, il est possible d’utiliser des tableaux de mise en forme pour construire des listes&nbsp;:</p>
+					<pre>&lt;table role="list"&gt;
+							 &lt;tr role="listitem"&gt;
+								 &lt;td role="presentation"&gt;&lt;img src="puce.png" alt=""/&gt;&lt; &gt;/td&gt;
+								 &lt;td role="presentation"&gt;lorem ipsum&lt;/td&gt;
+							 &lt;/tr&gt;
+							 ...
+					&lt;/table&gt;
+					</pre>
+					<p>Si cet usage est fortement déconseillé, il est néanmoins conforme.</p>
+					<p>Le tableau n’étant pas restitué comme un tableau mais comme une liste, il n’est pas utile de signaler qu’il s’agit d’un tableau de présentation.</p>
+					<p>Dans ce cas, le critère est non applicable.</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modification du cas particulier pour le critère 8.7</h3>
+					<p>Le cas des langues dont la pronociation est inconnue comme les langues mortes devrait rendre le critère Non Applicable.</p>
+					<p>La définition du cas particulier est modifiée.</p>
+					<h4>Ancien cas particulier</h4>
+					<p>Il y a une gestion de cas particulier sur le changement de langue pour les cas suivants&nbsp;:</p>
+					<ul>
+					<li>nom propre, le critère est <strong>non applicable</strong>&nbsp;;</li>
+					<li>nom commun de langue étrangère présent dans le dictionnaire officiel de la langue par défaut de la page Web, le critère est <strong>non applicable</strong> (<strong>Note&nbsp;:</strong> le dictionnaire officiel est celui recommandé par l’académie en charge de la langue en question). Pour la France, par exemple, le lien vers le dictionnaire officiel se trouve sur le site de l’Académie française à l’adresse suivante&nbsp;: <a href="http://www.academie-francaise.fr/dictionnaire/index.html">http://www.academie-francaise.fr/dictionnaire/index.html</a>. Pour toute demande auprès du service du dictionnaire de l’Académie française, utiliser le formulaire en ligne <a href="http://www.academie-francaise.fr/contact/dico.asp">formulaire de contact académie française</a>&nbsp;;</li>
+					<li>le terme de langue étrangère soumis, via un champ de formulaire et réaffiché dans la page (par exemple comme indication du terme recherché dans le cas d’un moteur de recherche), le critère est <strong>non applicable</strong>&nbsp;;</li>
+					<li>passage de texte dont la langue ne peut pas être déterminée&nbsp;: le critère est <strong>non applicable</strong>.</li>
+					</ul>
+					<p><strong>Note&nbsp;:</strong> pour les noms commun de langue étrangère, absents dans le dictionnaire officiel de la langue par défaut de la page Web et qui sont passés dans le langage commun (exemple&nbsp;: newsletter)&nbsp;: le critère est <strong>applicable</strong>, uniquement lorsque l’absence d’indication de langue peut provoquer une incompréhension pour la restitution</p>
+					<h4>Nouveau cas particulier</h4>
+					<p>Il y a une gestion de cas particulier sur le changement de langue pour les cas suivants&nbsp;:</p>
+					<ul>
+					<li>nom propre, le critère est <strong>non applicable</strong>&nbsp;;</li>
+					<li>nom commun de langue étrangère présent dans le dictionnaire officiel de la langue par défaut de la page Web, le critère est <strong>non applicable</strong> (<strong>Note&nbsp;:</strong> le dictionnaire officiel est celui recommandé par l’académie en charge de la langue en question). Pour la France, par exemple, le lien vers le dictionnaire officiel se trouve sur le site de l’Académie française à l’adresse suivante&nbsp;: <a href="http://www.academie-francaise.fr/dictionnaire/index.html">http://www.academie-francaise.fr/dictionnaire/index.html</a>. Pour toute demande auprès du service du dictionnaire de l’Académie française, utiliser le formulaire en ligne <a href="http://www.academie-francaise.fr/contact/dico.asp">formulaire de contact académie française</a>&nbsp;;</li>
+					<li>le terme de langue étrangère soumis, via un champ de formulaire et réaffiché dans la page (par exemple comme indication du terme recherché dans le cas d’un moteur de recherche), le critère est <strong>non applicable</strong>&nbsp;;</li>
+					<li>passage de texte dont la langue ne peut pas être déterminée&nbsp;: le critère est <strong>non applicable</strong>.</li>
+					<li><strong>terme ou passage de texte issus d’une langue morte ou imaginaire pour laquelle il n’existe pas d’interprétation vocale&nbsp;: le critère est non applicable.</strong></li>
+					</ul>
+					<p><strong>Note&nbsp;:</strong> pour les noms commun de langue étrangère, absents dans le dictionnaire officiel de la langue par défaut de la page Web et qui sont passés dans le langage commun (exemple&nbsp;: newsletter)&nbsp;: le critère est <strong>applicable</strong>, uniquement lorsque l’absence d’indication de langue peut provoquer une incompréhension pour la restitution</p>
+		 		</article>
+
+		 		<article>
+					<h3>Modifications des cas particulier pour une SPA (<span lang="en">Single Page Application</span>) pour les critères 12.2, 12.3, 12.8, 12.11.</h3>
+					<p>Le cas des SPA n’est pas suffisamment clair dans les cas particuliers associés à la thématique 12 «&nbsp;Navigation&nbsp;».</p>
+					<p>Les définitions des cas particuliers pour les critères 12.2, 12.3, 12.8, 12.11 sont modifiés.</p>
+					<h4>Modification du cas particulier pour les critères 12.2 et 12.3</h4>
+					<h5>Ancien cas particulier pour les critères 12.2 et 12.3</h5>
+					<p>Il existe une gestion de cas particulier lorsque les pages d’un ensemble de pages sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple) Dans ces situations, le critère est non applicable.</p>
+					<h5>Nouveau cas particulier critères 12.2 et 12.3</h5>
+					<p>Il existe une gestion de cas particulier lorsque&nbsp;:</p>
+					<ul>
+					<li>les pages d’un ensemble de pages sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple)&nbsp;;</li>
+					<li><strong>la page est la page d’accueil</strong>&nbsp;;</li>
+					<li><strong>le site Web est constitué d’une seule page</strong>.</li>
+					</ul>
+					<p>Dans ces situations, le critère est non applicable.</p>
+					<h4>Modification du cas particulier pour les critères 12.8</h4>
+					<h5>Ancien cas particulier critère 12.8</h5>
+					<p>Il existe une gestion de cas particulier lorsque la page est la page d’accueil. Dans ce cas, le critère est non applicable.</p>
+					<h5>Nouveau cas particulier critère 12.8</h5>
+					<p>Il existe une gestion de cas particulier lorsque la page est la page d’accueil <strong>ou lorsque le site Web est constitué d’une seule page</strong>. Dans ce cas, le critère est non applicable.</p>
+					<h4>Modification du cas particulier pour les critères 12.11</h4>
+					<h5>Ancien cas particulier critère 12.11</h5>
+					<p>Il existe une gestion de cas particulier lorsque le site Web est constitué d’une seule page qui ne possède pas de menu de navigation. Dans cette circonstance, le critère est non applicable.</p>
+					<h5>Nouveau cas particulier critère 12.11</h5>
+					<p>Il existe une gestion de cas particulier lorsque le site Web est <strong>constitué d’une seule page</strong>.</p>
+					<p><strong>Dans ce cas de figure, l’obligation de la présence d’un lien d’accès rapide est liée au contexte de la page&nbsp;: présence ou absence de navigation ou de contenus additionnels par exemple. Le critère peut être considéré comme non applicable lorsqu’il est avéré qu’un lien d’accès rapide est inutile.</strong></p>
+		 		</article>
+
+		 	</section>
+
+		 	<section id="ndv-bdr">
+		 		<h2>Base de référence</h2>
+
+				<article>
+				<h3>Suppression des combinaisons incluant <span lang="en">Window-Eyes</span></h3>
+				<p>Suite à une étude réalisée en 2016 par la Fédération des Aveugles de France (FAF), il s'avère que le logiciel <span lang="en">Window-Eyes</span> semble très peu utilisé en France, contrairement à d'autres pays. Les combinaisons incluant ce logiciel, ainsi que la note afférente, ont donc été supprimées de la base de référence du RGAA.</p>
+			</article>
+
+		 	</section>
+
+		 	<section id="ndv-accompagnement">
+		 		<h2>Guide d’accompagnement</h2>
+
+				<article>
+				<h3>Modification de l’encart sur le handicap intellectuel</h3>
+				<p>Le texte sur le handicap intellectuel a été retravaillé en collaboration avec l’Unapei. Y est corrigé un lien vers le Guide du Facile à lire et à comprendre, ainsi que le texte de l’encart lui-même.</p>
+				<h4>Ancienne version du texte</h4>
+				<p>La difficile prise en compte du handicap intellectuel</p>
+				<p>Notons que les règles d’accessibilité visent à rendre une même interface accessible à chacun quelles que soient ses capacités, en évitant la multiplication des supports, dans un esprit de conception universelle.</p>
+				<p>La prise en compte du handicap intellectuel nécessite une réécriture (ou une lecture orale) des textes en les simplifiant selon la méthode «&nbsp;Facile À Lire et à Comprendre&nbsp;»12</p>
+				<p>Cette opération n’étant pas automatisable, l’effort est pour l’heure jugé déraisonnable pour faire l’objet d’une obligation systématique. Cette exigence relève des critères triple A (AAA) supérieurs aux critères minimaux attendus pour être conforme aux recommandations du Parlement européen.</p>
+				<h4>Nouvelle version du texte</h4>
+				<p>La prise en compte du handicap intellectuel</p>
+				<p>Notons que les règles d’accessibilité du Web visent à rendre une même interface accessible à chacun quelles que soient ses capacités, en évitant la multiplication des supports, dans un esprit de conception universelle.</p>
+				<p>Or, la prise en compte du handicap intellectuel nécessite souvent de produire une version alternative des textes pour les simplifier, selon la méthode «&nbsp;Facile À Lire et à Comprendre&nbsp;»12</p>
+				<p>La prise en compte du handicap intellectuel consiste à faire simple tant sur le fond que sur la forme, ce qui peut s’avérer fort utile à tous les internautes&nbsp;:</p>
+				<ul>
+				<li>Penser ses contenus textuels dans un langage simple, utilisant des phrases courtes, des mots simples, des sigles explicités&nbsp;;</li>
+				<li>Illustrer les contenus avec des exemples concrets, des visuels explicites en rapport avec le sujet&nbsp;;</li>
+				<li>Structurer les pages et le texte dans un ordre logique et chronologique&nbsp;;</li>
+				<li>Privilégier la lisibilité et la clarté du texte par rapport aux effets graphiques&nbsp;;</li>
+				<li>Utiliser une mise en page claire et aérée faisant ressortir l’information essentielle.</li>
+				</ul>
+				<p>Pour aller au-delà de l’obligation légale (double A), et s’assurer d’une véritable accessibilité de l’information textuelle, il est recommandé de se reporter à la méthode européenne du Facile à lire et à comprendre qui regroupe l’ensemble des préconisations pour écrire et présenter des informations faciles à lire et à comprendre.</p>
+			</article>
+
+			<article>
+				<h3>Ajout d’une note sur les SPA (Single Page Application)&nbsp;: préciser l’échantillon à faire figurer dans la déclaration de conformité</h3>
+				<h4>Texte ajouté</h4>
+				<p>À noter que dans le cas d’application de type <span lang="en">Single Page Application</span> (SPA), toutes les pages requises dans l’échantillon décrites ci-dessus ne sont pas forcément présente. Il faudra alors ajuster l’échantillon pour le rendre représentatif.</p>
+			</article>
+			<article>
+				<h3>Ajout d’un paragraphe explicitant le principe des dérogations</h3>
+				<h4>Texte ajouté</h4>
+				<p>4.2.6 Liste des dérogations admises et principe de la compensation</p>
+				<p>À noter qu’une dérogation ne s’applique qu’à un contenu et non à un critère du RGAA. Une fois le contenu dérogé, il sort du champ de l’audit.</p>
+				<p>Lorsqu’il s’agit d’un contenu ou d’une fonctionnalité essentielle dans le cadre du site ou de l’application Web, il ne peut y avoir de dérogation sans une alternative sophistiquée permettant d’apporter le même niveau d’information à l’utilisateur.</p>
+				</article>
+		 	</section>
+
+		</main>
+	</section>
+	</div>
+	<footer role="contentinfo">
+		<h2>Licence</h2>
+		<p><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Secrétariat général pour la modernisation de l’action publique" /> Ce document est un document de l’État placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ultérieure</a>, comme tous les documents hébergés sur <a href="../">references.modernisation.gouv.fr</a>. Voir les conditions d’utilisation de la licence dans les <a href="../mentions-legales">mentions légales</a>.</p>
+		<p>Le référentiel technique (liste des critères, glossaire, cas particuliers, notes techniques, base de référence) est une copie adaptée du <a href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">référentiel AccessiWeb HTML5/ARIA</a> - Version de travail du 19/12/2013 - &Eacute;dité par l’association BrailleNet.</p>
+	<hr/>
+	<div class="legal-info">
+		<p>Réalisation SGMAP - 2016</p>
+		<ul>
+			<li><a href="../contact">Contact</a></li>
+			<li><a href="../mentions-legales">Mentions légales</a></li>
+			<li><a href="../declaration-de-conformite-rgaa-30">Déclaration de conformité</a></li>
+		</ul>
+	</div>
+	</footer>
+
+	</body>
+</html>

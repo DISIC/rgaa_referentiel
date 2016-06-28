@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guide d’accompagnement - RGAA 3 2016</title>
+    <meta content="Référentiel Général d’Accessibilité des Administrations, version 3 2016. Guide d’accompagnement." name="description" />
+    <meta content="Accessibilité, RGAA, RGAA 3 2016, Référentiel Général d’Accessibilité des Administrations, Guide d’accompagnement" name="keywords" />
+    <meta content="3 2016" name="version" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" media="all" href="css/rgaa.main.css" />
+    <link rel="shortcut icon" href="/sites/default/files/marianne_0.ico" type="image/vnd.microsoft.icon">
+  </head>
+  <body>  
+  	<div class="skiplinks">
+  		<div class="inside">
+		    <p>Accès direct&nbsp;:</p>
+		    <ul>
+		      <li><a href="#menu">Menu principal</a></li>
+		      <li><a href="#main">Contenu</a></li>
+		    </ul>
+				<p class="version">RGAA version 3 2016, publié le 23/06/2016 <a href="changelog.html">Note de révision</a></p>
+			</div>
+  	</div>
+    <div class="rgaa-header">
+      <header role="banner" class="main-header">
+        <p class="img"><a title="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" href="../"><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" /></a></p>
+        <p class="slogan">Les documents de référence du S.I. de l’État 
+        <span class="ss-titre">un service proposé par <a href="http://modernisation.gouv.fr/">modernisation.gouv.fr</a></span></p>
+      </header>
+	    <nav id="menu" role="navigation" aria-label="menu principal">
+	      <ul>
+          <li class="link-home"><a href="../">Retour à l'accueil</a></li>
+	        <li><a href=".">RGAA</a></li>
+	        <li><a href="introduction-RGAA.html">Introduction au RGAA</a></li>
+	        <li><a href="guide-accompagnement-RGAA.html" class="active" title="Guide d’accompagnement, page active">Guide d’accompagnement</a></li>
+	        <li><a href="criteres.html">Référentiel technique</a></li>
+	      </ul>
+	    </nav>
+    </div>
+
+    
+		<div id="wrapper">
+	<section aria-labelledby="main-title">
+<main id="main" role="main">
+  <h1 id="main-title">Guide d’accompagnement</h1>
+ <aside id="sommaire">
+  <h2 id="titre-sommaire">Sommaire</h2>
+  <ul id="list-sommaire">
+    <li><a href="#Organisation-du-guide-d-accompagnement">1. Organisation du guide d’accompagnement</a>
+      <ul>
+        <li><a href="#Avant-propos-problematique-et-vue-d-ensemble-du-RGAA">1.1. Avant-propos&nbsp;: problématique et vue d’ensemble du RGAA</a></li>
+        <li><a href="#Cadre-d-accessibilite-contexte-demarche-et-evolution-du-RGAA">1.2. Cadre d’accessibilité&nbsp;: contexte, démarche et évolution du RGAA</a></li>
+        <li><a href="#Guide-d-application-du-RGAA">1.3. Guide d’application du RGAA</a></li>
+      </ul>
+    </li>
+    <li><a href="#Avant-propos-Problematique-et-vue-d-ensemble-du-RGAA">2. Avant-propos&nbsp;: Problématique et vue d’ensemble du RGAA</a>
+      <ul>
+        <li><a href="#Deficiences-incapacite-et-handicap-une-question-de-contexte">2.1. Déficiences, incapacité et handicap&nbsp;: une question de contexte</a></li>
+        <li><a href="#Le-defaut-d-accessibilite-generateur-d-exclusion">2.2. Le défaut d’accessibilité, générateur d’exclusion</a></li>
+        <li><a href="#Comment-resoudre-un-defaut-d-accessibilite">2.3. Comment résoudre un défaut d’accessibilité&nbsp;?</a></li>
+        <li><a href="#Domaine-d-application-du-RGAA">2.4. Domaine d’application du RGAA</a></li>
+        <li><a href="#Rendre-le-Web-plus-accessible">2.5. Rendre le Web plus accessible</a></li>
+        <li><a href="#La-chaine-de-responsabilite-de-l-accessibilite-numerique">2.6. La chaîne de responsabilité de l’accessibilité numérique</a>
+          <ul>
+            <li><a href="#L-Etat">2.6.1. L’État</a></li>
+            <li><a href="#Donneur-d-ordre---maitrise-d-ouvrage">2.6.2. Donneur d’ordre - maîtrise d’ouvrage</a></li>
+            <li><a href="#Maitrise-d-oeuvre">2.6.3. Maîtrise d’&oelig;uvre</a></li>
+            <li><a href="#Responsables-editoriaux">2.6.4. Responsables éditoriaux</a></li>
+            <li><a href="#Direction-des-systemes-d-information">2.6.5. Direction des systèmes d’information</a></li>
+            <li><a href="#Utilisateurs-et-utilisatrices-des-services-en-ligne-sur-Internet">2.6.6. Utilisateurs et utilisatrices des services en ligne sur Internet</a></li>
+          </ul>
+        </li>
+        <li><a href="#Questions--reponses">2.7. Questions - réponses</a>
+          <ul>
+              <li><a href="#Qu-est-ce-que-le-RGAA">2.7.1. Qu’est-ce que le RGAA&nbsp;?</a></li>
+              <li><a href="#Qui-est-concerne-par-l-obligation-de-mise-aux-normes">2.7.2. Qui est concerné par l’obligation de mise aux normes&nbsp;?</a></li>
+              <li><a href="#Quels-sont-les-documents-du-RGAA-legalement-opposables">2.7.3. Quels sont les documents du RGAA légalement opposables&nbsp;?</a></li>
+              <li><a href="#Quel-est-le-niveau-d-accessibilite-legalement-exige">2.7.4. Quel est le niveau d’accessibilité légalement exigé&nbsp;?</a></li>
+              <li><a href="#Quel-est-le-delai-de-mise-en-conformite">2.7.5. Quel est le délai de mise en conformité&nbsp;?</a></li>
+              <li><a href="#En-plus-de-la-mise-en-conformite-du-site-ou-de-l-application-y-a-t-il-des-documents-à-publier-pour-remplir-l-obligation-legale">2.7.6. En plus de la mise en conformité du site ou de l’application, y a-t-il des documents à publier pour remplir l’obligation légale&nbsp;?</a></li>
+              <li><a href="#Quelles-sont-les-sanctions-en-cas-de-non-respect-des-normes">2.7.7. Quelles sont les sanctions en cas de non respect des normes&nbsp;?</a></li>
+              <li><a href="#Qui-verifie-que-l-obligation-legale-est-respectee">2.7.8. Qui vérifie que l’obligation légale est respectée&nbsp;?</a></li>
+              <li><a href="#Quels-sont-les-canaux-traites-par-le-RGAA">2.7.9. Quels sont les canaux traités par le RGAA&nbsp;?</a></li>
+              <li><a href="#Le-RGAA-concerne-t-il-aussi-les-applications-mobiles">2.7.10. Le RGAA concerne-t-il aussi les applications mobiles&nbsp;?</a></li>
+              <li><a href="#Le-RGAA-est-il-applicable-pour-rendre-les-postes-de-travail-accessibles">2.7.11. Le RGAA est-il applicable pour rendre les postes de travail accessibles&nbsp;?</a></li>
+              <li><a href="#Le-RGAA-impose-t-il-des-solutions-techniques">2.7.12. Le RGAA impose-t-il des solutions techniques&nbsp;?</a></li>
+              <li><a href="#Le-RGAA-est-il-exhaustif-dans-ses-preconisations">2.7.13. Le RGAA est-il exhaustif dans ses préconisations&nbsp;?</a></li>
+              <li><a href="#Est-il-autorise-d-utiliser-un-autre-referentiel-technique-que-celui-preconise-par-le-RGAA-pour-verifier-la-conformite-aux-WCAG">2.7.14. Est-il autorisé d’utiliser un autre référentiel technique que celui préconisé par le RGAA pour vérifier la conformité aux WCAG&nbsp;2.0&nbsp;?</a></li>
+              <li><a href="#Quels-sont-les-couts-lies-à-la-mise-aux-normes-d-accessibilite-pour-un-dispositif-numerique">2.7.15. Quels sont les coûts liés à la mise aux normes d’accessibilité pour un dispositif numérique&nbsp;?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#Partie-1-Cadre-d-accessibilite-Contexte-demarche-et-evolution-du-RGAA">3. Partie 1&nbsp;: Cadre d’accessibilité&nbsp;: Contexte, démarche et évolution du RGAA</a>
+      <ul>
+        <li><a href="#Contexte-et-environnement">3.1. Contexte et environnement</a>
+          <ul>
+              <li><a href="#Les-enjeux">3.1.1. Les enjeux</a></li>
+              <li><a href="#L-administration-en-ligne">3.1.2. L’administration en ligne</a></li>
+              <li><a href="#Le-cadre-legislatif">3.1.3. Le cadre législatif</a></li>
+          </ul>
+        </li>
+        <li><a href="#Demarche-d-elaboration">3.2. Démarche d’élaboration</a>
+          <ul>
+            <li><a href="#Demarche-et-parti-pris">3.2.1. Démarche et parti pris</a></li>
+            <li><a href="#Evolution-du-RGAA-vers-la-version-3">3.2.2. Évolution du RGAA vers la version 3</a></li>
+            <li><a href="#Mise-à-jour-des-documents-composant-le-RGAA">3.2.3. Mise à jour des documents composant le RGAA</a></li>
+            <li><a href="#Gouvernance-du-processus-de-mise-à-jour">3.2.4. Gouvernance du processus de mise à jour</a></li>
+          </ul>
+        </li>
+        <li><a href="#Modalites-d-evolution-du-document">3.3. Modalités d’évolution du document</a>
+          <ul>
+            <li><a href="#Evolution-du-document">3.3.1. Évolution du document</a></li>
+            <li><a href="#Propriete-et-responsabilite">3.3.2. Propriété et responsabilité</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#Partie-2-Guide-d-application-du-RGAA">4. Partie 2&nbsp;: Guide d’application du RGAA</a>
+      <ul>
+        <li><a href="#Perimetre-d-application-du-RGAA">4.1. Périmètre d’application du RGAA</a>
+          <ul>
+            <li><a href="#Services-concernes">4.1.1. Services concernés</a></li>
+            <li><a href="#Contenus-concernes">4.1.2. Contenus concernés</a></li>
+          </ul>
+        </li>
+        <li><a href="#Modalites-d-application-du-RGAA">4.2. Modalités d’application du RGAA</a>
+          <ul>
+            <li><a href="#Niveaux-de-conformite-aux-normes-d-accessibilite">4.2.1. Niveaux de conformité aux normes d’accessibilité</a></li>
+            <li><a href="#Demarche-de-mise-en-accessibilite">4.2.2. Démarche de mise en accessibilité</a></li>
+            <li><a href="#Obligation-d-amenagement-raisonnable">4.2.3. Obligation d’aménagement raisonnable</a></li>
+            <li><a href="#La-notion-de-base-de-reference">4.2.4. La notion de «&nbsp;base de référence&nbsp;»</a></li>
+            <li><a href="#Declaration-de-conformite">4.2.5. Déclaration de conformité</a></li>
+            <li><a href="#Liste-des-derogations-admises-et-principe-de-la-compensation">4.2.6. Liste des dérogations admises et principe de la compensation</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#Gestion-des-versions">5. Gestion des versions</a></li>
+    <li><a href="#Licence">Licence</a></li>
+  </ul>
+ </aside>
+
+ <h2 id="Organisation-du-guide-d-accompagnement">1. Organisation du guide d’accompagnement</h2>
+    <p>Le guide d’accompagnement précise le contexte du Référentiel général d’accessibilité pour les administrations (RGAA) et en définit les modalités d’application&nbsp;: il indique notamment les obligations en terme de conformité, de publication des résultats et encadre la gestion des dérogations.</p>
+    <p>Il est organisé en trois parties&nbsp;: l’ «&nbsp;avant-propos&nbsp;», le «&nbsp;cadre d’accessibilité&nbsp;» et le «&nbsp;guide d’application du RGAA&nbsp;».</p>
+    <p>Le RGAA représente un ensemble cohérent de documents dont le respect est imposé par décret. Il est composé de trois documents&nbsp;:</p>
+    <ul>
+      <li>Le document «&nbsp;Introduction au RGAA&nbsp;», qui définit la problématique et les enjeux de l’accessibilité numérique&nbsp;;</li>
+      <li>Le présent «&nbsp;Document d’accompagnement&nbsp;»&nbsp;;</li>
+      <li>Le «&nbsp;Référentiel technique&nbsp;», lui-même composé de 6 sections&nbsp;:
+        <ul>
+          <li><a href="criteres.html">Liste des critères et des tests</a>&nbsp;;</li>
+          <li><a href="glossaire.html">Glossaire</a>&nbsp;;</li>
+          <li><a href="cas-particuliers.html">Cas particuliers</a>&nbsp;;</li>
+          <li><a href="notes-techniques.html">Notes techniques</a>&nbsp;;</li>
+          <li><a href="base-de-reference.html">Base de référence</a>&nbsp;;</li>
+          <li><a href="references.html">Références</a>.</li>
+        </ul>
+      </li>
+    </ul>
+  
+
+
+  <h3 id="Avant-propos-problematique-et-vue-d-ensemble-du-RGAA">1.1. Avant-propos&nbsp;: problématique et vue d’ensemble du RGAA</h3>
+  
+    <p>L’avant-propos introduit la problématique de l’accessibilité et présente une vue d’ensemble du RGAA. Il vise à apporter des réponses concrètes à certaines questions qui peuvent se poser, sous forme de questions/réponses.</p>
+    <p>Il s’adresse en priorité aux décideurs et responsables des autorités administratives.</p>
+  
+
+
+  <h3 id="Cadre-d-accessibilite-contexte-demarche-et-evolution-du-RGAA">1.2. Cadre d’accessibilité&nbsp;: contexte, démarche et évolution du RGAA</h3>
+  
+    <p>Le cadre d’accessibilité présente le contexte qui a amené à élaborer le RGAA, ainsi que les principes adoptés pour sa conception, son évolution et le périmètre de ce document.</p>
+    <p>Il s’adresse aux directions et aux maîtrises d’ouvrage des autorités administratives œuvrant dans les domaines de l’organisation et des systèmes d’information.</p>
+  
+
+
+  <h3 id="Guide-d-application-du-RGAA">1.3. Guide d’application du RGAA</h3>
+  
+    <p>Cette partie décrit les modalités d’application du RGAA&nbsp;: son périmètre d’application, les actions à mettre en œuvre dans le cadre d’une mise en accessibilité, la vérification de conformité des contenus et la déclaration de conformité.</p>
+    <p>Il s’adresse plus particulièrement aux chefs de projet, architectes et développeurs travaillant sur des projets Web relatifs à l’administration électronique.</p>
+  
+
+
+  <h2 id="Avant-propos-Problematique-et-vue-d-ensemble-du-RGAA">2. Avant-propos&nbsp;: Problématique et vue d’ensemble du RGAA</h2>
+  
+    <p>Le RGAA (Référentiel général d’accessibilité pour les administrations) a pour objectif de qualifier l’accessibilité des contenus et applications présentés sous forme numérique et consultables à travers un navigateur Web, quel que soit le support.</p>
+    <p>Dans sa version actuelle, il guide les autorités administratives dans l’adoption et la mise en œuvre de bonnes pratiques assurant l’accessibilité de ces contenus Web à tous les publics, quelles que soient leurs aptitudes physiques ou mentales. Pour ce faire, il met à disposition un référentiel technique permettant de vérifier le respect effectif des normes et de mesurer la conformité des contenus Web au regard des standards internationaux.</p>
+  
+
+
+  <h3 id="Deficiences-incapacite-et-handicap-une-question-de-contexte">2.1. Déficiences, incapacité et handicap&nbsp;: une question de contexte</h3>
+  
+    <p>L’Organisation mondiale de la santé, dans sa <a id="body-ftn1" href="#ftn1">première définition de 1980<sup aria-hidden="true">1</sup></a>, faisait une distinction entre les notions de déficience, d’incapacité et de handicap.</p>
+    <p>Les déficiences sont des écarts de fonctionnement d’un organe ou d’un sens par rapport au fonctionnement normal de cet organe. Les principales déficiences sont de trois types&nbsp;:</p>
+    <ul>
+      <li>Sensorielles&nbsp;;</li>
+      <li>Mentales&nbsp;;</li>
+      <li>Motrices.</li>
+    </ul>
+    <p>Ces déficiences peuvent conduire à des incapacités, c’est-à-dire des impossibilités pour la personne déficiente de faire certaines actions.</p>
+    <p>Le handicap se définit quant à lui comme la perte ou la restriction pour un individu de participer à la vie de la collectivité à égalité avec les autres. La traduction française de la classification internationale du handicap parlait de «&nbsp;désavantage&nbsp;».</p>
+    <p>Cette première définition, bien qu’intéressante, était insatisfaisante car elle centrait la problématique sur l’individu. La <a id="body-ftn2" href="#ftn2">dernière définition de l’OMS, qui date de 2001<sup aria-hidden="true">2</sup></a>, emploie «&nbsp;handicap&nbsp;» comme un terme générique pour les déficiences, les limitations de l’activité et restrictions à la participation. Le handicap est décrit comme l’interaction entre des sujets présentant une affection médicale et des facteurs personnels et environnementaux.</p>
+    <p>Cela s’est traduit en France par la notion de «&nbsp;situation de handicap&nbsp;».</p>
+    <p>La <a id="body-ftn3" href="#ftn3">loi française<sup aria-hidden="true">3</sup></a> définit le handicap comme&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;Toute limitation d’activité ou restriction de participation à la vie en société subie dans son environnement par une personne en raison d’une altération substantielle, durable ou définitive d’une ou plusieurs fonctions physiques, sensorielles, mentales, cognitives ou psychiques, d’un polyhandicap ou d’un trouble de santé invalidant.&nbsp;»</p>
+    </blockquote>
+    <p>Le handicap est donc directement lié à un contexte, par exemple&nbsp;:</p>
+    <ul>
+      <li>Une personne paraplégique a une déficience motrice. Cette déficience n’induit pas obligatoirement de handicap pour se servir d’un ordinateur si seul le bas du corps est touché, mais induit un handicap pour accéder à certains bâtiments ou moyens de transport.</li>
+      <li>Certaines personnes déficientes auditives seront handicapées sans appareillage pour communiquer par téléphone, mais ne seront pas handicapées si elles savent lire et peuvent communiquer par courrier électronique ou SMS.</li>
+      <li>Une personne sourde pratiquant la langue des signes est handicapée dans une assemblée d’entendants et, à l’inverse, une personne entendante est également handicapée dans une assemblée de personnes sourdes qui utilisent la langue des signes.</li>
+    </ul>
+    <p>Tous les êtres humains peuvent être déficients à un moment ou à un autre de leur existence. Ces déficiences peuvent être présentes dès la naissance, mais également arriver plus tardivement et être liées à des maladies, à des accidents, à l’âge.</p>
+      
+
+    
+
+  <h3 id="Le-defaut-d-accessibilite-generateur-d-exclusion">2.2. Le défaut d’accessibilité, générateur d’exclusion</h3>
+  
+    <p>C’est souvent un défaut d’accessibilité qui met le mieux en évidence le concept et l’intérêt de l’accessibilité.</p>
+    <p>Lorsqu’on met en place une application, un service ou une communication en ligne, si le dispositif n’est pas accessible, il créera de fait une inégalité de traitement entre les citoyens pouvant y accéder et celles et ceux ne le pouvant pas.</p>
+    <p>Dans la vie de tous les jours, le manque d’accessibilité de bâtiments publics ou privés par le simple fait de n’avoir que des escaliers comme seul moyen d’accès est l’un des exemples les plus flagrants de l’inégalité d’accès à une information ou un service qui existe entre des personnes présentant un handicap ou âgées et des personnes ne présentant pas de handicap.</p>
+    <p>Le défaut d’accessibilité existe aussi dans le monde des systèmes d’information. La mise en œuvre d’interfaces utilisateurs est souvent l’occasion d’observer des lacunes d’accessibilité notamment par l’absence de solutions alternatives pour pallier à diverses déficiences visuelles, auditives, motrices ou cognitives. Le contenu Web est particulièrement concerné puisqu’il met en œuvre de nombreux modes de diffusion (texte, audio, vidéo).</p>
+  
+
+
+  <h3 id="Comment-resoudre-un-defaut-d-accessibilite">2.3. Comment résoudre un défaut d’accessibilité&nbsp;?</h3>
+  
+    <p>Pour améliorer l’accessibilité, il est indispensable de prendre en compte l’ensemble des handicaps et de mettre en œuvre des normes et standards permettant d’améliorer l’accessibilité, et le cas échéant, des solutions alternatives permettant de mettre à disposition un même niveau d’information et des fonctionnalités similaires pour l’ensemble de la population.</p>
+    <p>Il ne s’agit pas de développer des solutions techniques spécifiques mais de permettre à toutes et à tous d’accéder aux mêmes contenus et fonctionnalités, quelle que soit la façon pour les utilisateurs du service d’utiliser l’ordinateur (au clavier seulement –&nbsp;sans souris&nbsp;–, avec des technologies spécifiques comme un clavier virtuel, un lecteur d’écran couplé à une plage braille&hellip;).</p>
+  
+
+
+  <h3 id="Domaine-d-application-du-RGAA">2.4. Domaine d’application du RGAA</h3>
+  
+    <p>À l’instar de nombreux autres pays, pour améliorer l’accessibilité des services en ligne et par conséquent l’accès à l’information et aux services, l’État français a souhaité référencer un certain nombre de règles et standards et proposer un ensemble de tests permettant de s’assurer de la conformité des contenus Web aux dites règles. Le RGAA répond à cet objectif. Il résulte de l’<a id="body-ftn4" href="#ftn4">article 47 de la loi n° 2005-102 du 11 février 2005<sup aria-hidden="true">4</sup></a> pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, qui dispose notamment&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;Les services de communication publique en ligne des services de l’État, des collectivités territoriales et des établissements publics qui en dépendent doivent être accessibles aux personnes handicapées.
+        L’accessibilité des services de communication publique en ligne concerne l’accès à tout type d’information sous forme numérique quels que soient le moyen d’accès, les contenus et le mode de consultation. Les recommandations internationales pour l’accessibilité de l’internet doivent être appliquées pour les services de communication publique en ligne. [&hellip;]&nbsp;»
+      </p>
+    </blockquote>
+    <p>On notera que l’objectif de la loi est de donner aux personnes handicapées accès à «&nbsp;tout type d’information sous forme numérique&nbsp;» et que pour ce faire, elle demande le respect des recommandations internationales.
+      Les recommandations internationales étant peu opérationnelles, il est difficile de les utiliser directement. C’est pour cette raison que l’État a mis à disposition le RGAA doté d’un référentiel technique permettant de vérifier la bonne application des règles internationales.
+    </p>
+
+  <h3 id="Rendre-le-Web-plus-accessible">2.5. Rendre le Web plus accessible</h3>
+  
+    <p>Des travaux ont été engagés sur le plan international pour améliorer l’accessibilité des contenus Web, avec l’initiative pour l’accessibilité du Web (<span lang="en">Web Accessibility Initiative</span> - WAI) lancée en 1999 par le <span lang="en">World Wide Web Consortium</span> (W3C).</p>
+    <p>La principale mission que s’est donnée la WAI est de proposer des solutions techniques pour rendre le Web accessible aux personnes handicapées. Ces recommandations nommées «&nbsp;règles d’accessibilité pour les contenus Web&nbsp;» ou <a id="body-ftn5" href="#ftn5">WCAG<sup aria-hidden="true">5</sup></a> (pour l’anglais <span lang="en">Web Content Accessibility Guidelines</span>) émises et actualisées par la WAI constituent aujourd’hui un consensus technique, suivi par les praticiens du domaine et transposées en tant que <a id="body-ftn6" href="#ftn6">norme ISO<sup aria-hidden="true">6</sup></a> depuis le 26 octobre 2012.</p>
+    <p>Portant sur des technologies en constante évolution, le RGAA est un document vivant et qui devra connaître des actualisations régulières. La présente version expose l’état actuel des questions sur l’accessibilité des contenus Web. Elle est destinée à appuyer les autorités administratives dans leurs choix stratégiques et techniques à travers la mise à disposition d’un référentiel technique comprenant une liste précise de critères d’accessibilité et de tests.</p>
+    
+  
+
+
+  <h3 id="La-chaine-de-responsabilite-de-l-accessibilite-numerique">2.6. La chaîne de responsabilité de l’accessibilité numérique</h3>
+  
+    <p>Les règles techniques pour rendre des contenus numériques accessibles sont rarement complexes. La difficulté tient davantage au fait que l’accessibilité numérique ne peut se réaliser sans la participation de tous les acteurs impliqués dans la création, le maintien et l’utilisation des dispositifs numériques. Chaque acteur a ainsi une responsabilité à assumer.</p>
+  
+
+
+  <h4 id="L-Etat">2.6.1. L’État</h4>
+  
+    <p>Le rôle de l’État est de garantir que chaque citoyenne et citoyen puisse jouir de ses droits et libertés publiques à égalité avec les autres, sans discrimination.</p>
+    <p>Son premier devoir était de mettre en place le cadre juridique permettant de couvrir les nouvelles formes de participation à la vie en société <i>via</i> le numérique. Ce qui fut fait par l’article 47 de la loi 2005-102 du 11 février 2005, le décret d’application et l’arrêté qui suivirent.
+      En mettant à disposition des ressources opérationnelles et à jour pour comprendre et appliquer les règles internationales avec le RGAA, l’État accompagne la mise en œuvre de sa politique.
+    </p>
+    <p>Enfin, en mettant à disposition des ressources documentaires et d’accompagnement permettant d’informer, de sensibiliser et de développer la formation de tous les acteurs, l’État doit œuvrer à rendre le RGAA encore plus opérationnel pour accompagner le changement.</p>
+    <p>L’État est à prendre ici dans son sens politique. La mise en œuvre concrète par les employeurs publics est couverte par les sections suivantes.</p>
+  
+
+
+  <h4 id="Donneur-d-ordre---maitrise-d-ouvrage">2.6.2. Donneur d’ordre - maîtrise d’ouvrage</h4>
+  
+    <p>La maîtrise d’ouvrage a un rôle de décision. Elle doit fixer comme prioritaire la livraison de produits conformes à la législation et non discriminants.</p>
+    <p>Le respect du RGAA doit faire l’objet d’une demande explicite dans tout cahier des charges concernant le choix d’un équipement numérique (site Web, application métier, logiciel en ligne&hellip;). Cette exigence doit faire partie des critères de sélection d’un candidat.</p>
+    <p>De même que le donneur d’ordre a la responsabilité de s’assurer que le produit livré est conforme au besoin exprimé, il a la responsabilité de vérifier l’accessibilité du produit livré. À charge pour lui de vérifier ou faire vérifier que les règles sont respectées.</p>
+    <p>Par ailleurs, en cas d’exigences contradictoires, il a le devoir d’arbitrer en faveur de l’accessibilité. Cela se traduit notamment par le fait de ne pas exiger de choses impossibles à rendre accessible ou d’accepter des compromis permettant de donner accès à tous aux mêmes contenus et fonctionnalités similaires sous une autre forme.</p>
+    <p>Par exemple, si une charte graphique est imposée par le donneur d’ordre. Soit il s’assure en amont que cette charte est suffisamment contrastée, soit il accepte que soit proposée en plus de la charte graphique originale une version alternative avec des contrastes renforcés conforme aux exigences du RGAA.</p>
+    <p>Afin de s’assurer que le travail livré est conforme, il est vivement recommandé de confier la vérification de la conformité aux règles à un expert indépendant du service ou de l’organisme ayant réalisé l’ouvrage pour éviter les conflits d’intérêts. Cet expert peut être un membre formé de l’administration n’ayant pas directement travaillé sur le projet ou un prestataire extérieur.</p>
+  
+
+
+  <h4 id="Maitrise-d-oeuvre">2.6.3. Maîtrise d’œuvre</h4>
+  
+    <p>La maîtrise d’œuvre réalise le site, l’application ou le logiciel commandé.</p>
+    <p>Elle a le devoir de se former, voire de se faire accompagner si nécessaire, et de prendre en compte les règles d’accessibilité.
+      Il est de sa responsabilité de livrer un travail conforme au RGAA.
+    </p>
+    <p>En tant que professionnel ayant les connaissances utiles à l’appréciation des enjeux techniques, elle a le devoir d’alerter la maîtrise d’ouvrage si elle détecte des contraintes techniques insurmontables pour l’accessibilité ou nécessitant des compromis dans la conception ou les choix opérés.</p>
+  
+
+
+  <h4 id="Responsables-editoriaux">2.6.4. Responsables éditoriaux</h4>
+  
+    <p>Dans le cas de contenus éditoriaux en ligne, la mise à jour est souvent l’œuvre de plusieurs contributeurs pas nécessairement tous parfaitement formés. Le responsable éditorial a le devoir de former les contributeurs ou de mettre en place un dispositif pour prendre en compte l’accessibilité dans la mise à disposition de nouveaux contenus.</p>
+  
+
+
+  <h4 id="Direction-des-systemes-d-information">2.6.5. Direction des systèmes d’information</h4>
+  
+    <p>Le maintien de systèmes et navigateurs trop anciens ne permet pas aux personnes dotées de technologies d’assistance de profiter des technologies modernes de façon accessible.</p>
+    <p>Il est de la responsabilité des directions des systèmes d’information de mettre à disposition de leurs agents le cadre technique leur permettant de profiter pleinement de l’accessibilité des applications et sites internes des employeurs publics. Le maintien du parc informatique à jour avec des versions récentes de systèmes d’exploitation, de navigateurs et de technologies d’assistance dans des combinaisons compatibles avec l’accessibilité est de leur responsabilité.</p>
+  
+
+
+  <h4 id="Utilisateurs-et-utilisatrices-des-services-en-ligne-sur-Internet">2.6.6. Utilisateurs et utilisatrices des services en ligne sur Internet</h4>
+  
+    <p>Cette section concerne uniquement les personnes accédant à un service en ligne sur Internet et pour lesquels il n’est pas possible de connaître précisément la configuration des outils donnant accès à Internet (système d’exploitation, navigateur, technologie d’assistance).
+      En parallèle de la mise aux normes des contenus et fonctionnalités de ses services en ligne par l’administration, il est nécessaire que les utilisateurs mettent à jour leur navigateur et leur technologie d’assistance pour bénéficier des avancées techniques en matière d’accessibilité.
+    </p>
+    <p>Par ailleurs, toute personne constatant un défaut d’accessibilité doit être en mesure de le signaler à l’administration concernée pour l’alerter et lui donner l’occasion d’améliorer l’accessibilité.</p>
+    <p>Enfin, une personne ne pouvant pas accéder à un service en ligne et n’obtenant pas de réponse de l’administration concernée peut également alerter le défenseur des droits.</p>
+  
+
+
+  <h3 id="Questions--reponses">2.7. Questions - réponses</h3>
+  
+    <p>Cette section constitue une synthèse permettant de répondre aux questions pouvant se poser concernant l’application du RGAA.</p>
+  
+
+
+  <h4 id="Qu-est-ce-que-le-RGAA">2.7.1. Qu’est-ce que le RGAA&nbsp;?</h4>
+  
+    <p>Le RGAA a pour objectif d’encadrer l’accessibilité des contenus diffusés sous forme numérique.</p>
+    <p>Dans sa version actuelle il constitue un référentiel de vérification du respect des standards internationaux WCAG&nbsp;2 0. Il a pour objectif de proposer des critères et des tests vérifiant que les règles d’accessibilité sont respectées.</p>
+    <p>Il ne constitue pas une nouvelle norme ou un nouveau standard mais offre une méthodologie et un cadre opérationnel pour permettre la vérification de la mise en œuvre des standards internationaux d’accessibilité.</p>
+  
+
+
+  <h4 id="Qui-est-concerne-par-l-obligation-de-mise-aux-normes">2.7.2. Qui est concerné par l’obligation de mise aux normes&nbsp;?</h4>
+  
+    <p>La loi de 2005 indique que sont concernés tous les services de communication publique en ligne de l’État, des collectivités territoriales et des établissements publics qui en dépendent.</p>
+    <p>Tout organisme, public ou privé, prenant en charge une activité d’intérêt général sous le contrôle d’une personne publique est concerné.</p>
+  
+
+
+  <h4 id="Quels-sont-les-documents-du-RGAA-legalement-opposables">2.7.3. Quels sont les documents du RGAA légalement opposables&nbsp;?</h4>
+  
+    <p>Tous les documents du RGAA sont opposables, c’est-à-dire l’introduction au RGAA, le document d’accompagnement et le référentiel technique avec ses 5 parties.</p>
+  
+
+
+  <h4 id="Quel-est-le-niveau-d-accessibilite-legalement-exige">2.7.4. Quel est le niveau d’accessibilité légalement exigé&nbsp;?</h4>
+  
+    <p>Le niveau légalement attendu est le niveau double A (AA). À noter qu’il s’agit également du niveau préconisé par le Parlement européen<a id="body-ftn7" href="#ftn7"><sup aria-hidden="true">7</sup></a>.</p>
+   
+  
+
+
+  <h4 id="Quel-est-le-delai-de-mise-en-conformite">2.7.5. Quel est le délai de mise en conformité&nbsp;?</h4>
+  
+    <p>Depuis mai 2012, tous les sites et applications disponibles depuis un navigateur Web doivent respecter le RGAA&nbsp;2.2. Un délai de 18 mois est accordé pour faire la mise à jour vers toute nouvelle version du RGAA à compter de sa publication officielle.</p>
+  
+
+
+  <h4 id="En-plus-de-la-mise-en-conformite-du-site-ou-de-l-application-y-a-t-il-des-documents-à-publier-pour-remplir-l-obligation-legale">2.7.6. En plus de la mise en conformité du site ou de l’application, y a-t-il des documents à publier pour remplir l’obligation légale&nbsp;?</h4>
+  
+    <p><a id="body-ftn8" href="#ftn8">Deux documents<sup aria-hidden="true">8</sup></a> sont attendus&nbsp;:</p>
+      <ul>
+        <li>Une page d’aide à destination des utilisateurs, rédigée dans un langage non technique, pour les informer du niveau d’accessibilité de l’application ou des contenus et les aider à s’orienter. Cette page d’aide doit mentionner les coordonnées d’un contact au sein de l’administration en cas de difficulté et fournir les coordonnées du défenseur des droits. On doit pouvoir y accéder depuis toutes les pages du site&nbsp;;</li>
+      <li>Une déclaration de conformité, destinée à l’administration, qui fait état du niveau précis de conformité au RGAA et des dérogations déclarées et justifiées.</li>
+    </ul>
+		
+
+
+			<h4 id="Quelles-sont-les-sanctions-en-cas-de-non-respect-des-normes">2.7.7. Quelles sont les sanctions en cas de non respect des normes&nbsp;?</h4>
+		
+				<p>L’article 5 du <a id="body-ftn9" href="#ftn9">décret d’application<sup aria-hidden="true">9</sup></a> indique qu’à défaut d’une correction dans les 6 mois suivant une mise en demeure par l’autorité compétente, le nom du service en question sera ajouté sur une liste de services de communication publique en ligne non-conformes publiée par voie électronique par le ministre chargé des personnes handicapées.</p>
+				<p>Au-delà de cette sanction administrative, tout utilisateur lésé peut demander une médiation auprès du défenseur des droits ou obtenir réparation de son préjudice auprès du juge, selon la nature du préjudice subi.</p>
+		
+
+
+			<h4 id="Qui-verifie-que-l-obligation-legale-est-respectee">2.7.8. Qui vérifie que l’obligation légale est respectée&nbsp;?</h4>
+		
+				<p>L’article 5 du décret indique qu’il revient au ministre chargé des personnes handicapées, ou au préfet en ce qui concerne les services déconcentrés, les collectivités territoriales ou les établissements publics qui en dépendent, de constater le défaut de conformité au RGAA.</p>
+				<p>Toutefois, chaque entité publique est responsable de l’accessibilité des contenus publiés. Tout utilisateur empêché d’y accéder peut recourir au défenseur des droits ou à un juge pour demander à ce que son droit soit respecter.</p>
+		
+		<h4 id="Quels-sont-les-canaux-traites-par-le-RGAA">2.7.9. Quels sont les canaux traités par le RGAA&nbsp;?</h4>
+		  
+		    <p>L’accessibilité concerne l’ensemble des canaux de diffusion (Web, radio, télévision, &hellip;). Dans sa version actuelle, il ne traite que l’accessibilité des applications et contenus Web consultables depuis un navigateur Web.</p>
+		  
+
+
+		  <h4 id="Le-RGAA-concerne-t-il-aussi-les-applications-mobiles">2.7.10. Le RGAA concerne-t-il aussi les applications mobiles&nbsp;?</h4>
+		  
+		    <p>Les sites et applications consultables depuis un navigateur Web sur un smartphone sont concernés.</p>
+		    <p>En revanche, bien que les critères du référentiel technique soient applicables à de nombreux contenus au-delà des contenus Web, aucun test ne couvre les applications mobiles. Le RGAA est en effet une transposition des WCAG&nbsp;2.0 pour lesquels aucune technique spécifiquement dédiée aux applications mobiles n’est prévue.</p>
+		    <p>Des ressources complémentaires au RGAA, non normatives, seront mises à disposition pour améliorer l’accessibilité des contenus Web sur les plateformes mobiles.</p>
+	  
+  <h4 id="Le-RGAA-est-il-applicable-pour-rendre-les-postes-de-travail-accessibles">2.7.11. Le RGAA est-il applicable pour rendre les postes de travail accessibles&nbsp;?</h4>
+  
+    <p>Non, le référentiel technique du RGAA concerne uniquement les applications et contenus disponibles <i>via</i> un navigateur Web. Cela inclut les applications métiers disponibles <i>via</i> ce canal, mais pas les logiciels en environnement de bureau.</p>
+  
+  <h4 id="Le-RGAA-impose-t-il-des-solutions-techniques">2.7.12. Le RGAA impose-t-il des solutions techniques&nbsp;?</h4>
+  
+    <p>La composante normative des WCAG, les critères de succès, a été pensée pour être indépendante de toute technologie afin d’assurer une compatibilité des recommandations avec les technologies actuelles et futures. C’est à la fois ce qui assure sa pérennité et ce qui rend son utilisation peu pratique car peu opérationnelle.</p>
+    <p>Les critères du référentiel technique du RGAA ne réfèrent pas non plus à une technologie, mais les tests associés visent explicitement des techniques d’implémentation servant à vérifier que le critère est respecté. Le travail de test pour vérifier la compatibilité avec l’accessibilité est ainsi en partie supportée par le référentiel, ce qui le rend particulièrement opérationnel mais nécessitera des mises à jour régulières pour intégrer les nouvelles techniques qui verront le jour (cf. les plateformes mobiles).</p>
+    <p>Les critères et les tests du référentiel technique RGAA sont normatifs. Toutefois, en cas d’absence de mise à jour du RGAA sous 2 ans pour prendre en compte de nouvelles techniques WCAG mises à disposition par le W3C, il est autorisé de créer ses propres tests en complément de ceux existant, à condition d’assurer la compatibilité avec les critères du référentiel technique et avec les technologies mentionnées dans la base de référence.</p>
+  
+
+
+  <h4 id="Le-RGAA-est-il-exhaustif-dans-ses-preconisations">2.7.13. Le RGAA est-il exhaustif dans ses préconisations&nbsp;?</h4>
+  
+    <p>Le RGAA propose un ensemble de critères techniques permettant d’assurer l’accessibilité des applications et contenus Web. Toutefois, l’évolution des technologies et des outils les exploitant ne permet pas d’être totalement exhaustif dans les recommandations effectuées. C’est pour cette raison qu’il fera l’objet de mises à jour régulières.</p>
+  
+
+
+  <h4 id="Est-il-autorise-d-utiliser-un-autre-referentiel-technique-que-celui-preconise-par-le-RGAA-pour-verifier-la-conformite-aux-WCAG">2.7.14. Est-il autorisé d’utiliser un autre référentiel technique que celui préconisé par le RGAA pour vérifier la conformité aux WCAG&nbsp;2.0&nbsp;?</h4>
+  
+    <p>La loi impose le respect des règles internationales. En cas de conflit juridique, c’est le référentiel technique du RGAA qui sera utilisé pour vérifier la conformité. Il est important de comprendre que si le RGAA est entièrement compatible avec les WCAG&nbsp;2.0, l’inverse n’est pas forcément vrai.</p>
+    <p>Ceci étant, l’usage d’un autre référentiel est autorisé, à une triple condition&nbsp;:</p>
+      <ol>
+        <li>S’assurer qu’il est compatible avec le référentiel technique du RGAA&nbsp;;</li>
+        <li>Produire une table de correspondance explicite entre les critères et tests du référentiel alternatif et ceux du référentiel technique du RGAA en vigueur&nbsp;;</li>
+        <li>Produire une déclaration de conformité basée sur le référentiel technique du RGAA.</li>
+    </ol>
+  
+
+
+  <h4 id="Quels-sont-les-couts-lies-à-la-mise-aux-normes-d-accessibilite-pour-un-dispositif-numerique">2.7.15. Quels sont les coûts liés à la mise aux normes d’accessibilité pour un dispositif numérique&nbsp;?</h4>
+  
+    <p>De façon générale, lorsque la prise en compte de l’accessibilité est faite en amont, le coût est transparent, le temps passé étant lissé dans les différentes tâches inhérentes au projet. Ce cas général est à nuancer lorsque le site propose des contenus spécifiques nécessitant des aménagements particuliers (vidéos, mise à disposition de nombreux documents en téléchargement dont la production n’est pas maîtrisé&hellip;).</p>
+    <p>Le coût le plus important reste cependant celui du changement lorsque l’accessibilité n’a jamais été prise en compte. Dans ce cas, la démarche accessibilité peut nécessiter un effort et représenter un coût quelquefois non négligeable, extrêmement dépendant du contexte.</p>
+    <ol>
+      <li>Formation et communication&nbsp;: selon le niveau initial des développeurs, graphistes, rédacteurs, ainsi que la nature des outils de production utilisés, il est quelquefois nécessaire de mettre en place des actions de sensibilisation et de formation permettant à tous les acteurs impliqués de connaître les bases de la démarche accessibilité.
+        Notons que le décret d’application du RGAA indique dans son article 6 que les services publics doivent inclure dans le contenu de la formation continue de leurs personnels intervenant sur les services de communication publique en ligne un enseignement théorique et pratique sur l’accessibilité et sur la conformité aux règles et standards nationaux et internationaux en cette matière.  
+
+        Il est également nécessaire de veiller à ce que l’ensemble des acteurs internes et externes soient informés des impératifs et des principes de l’accessibilité numérique&nbsp;;
+      </li>
+      <li>Conseil et assistance&nbsp;: le respect des règles d’accessibilité nécessite très fréquemment des arbitrages. Cette expertise peut également être nécessaire pour la production des cahiers des charges ou leur exploitation. Ces arbitrages se font généralement au cas par cas, et peuvent mobiliser une expertise interne ou externe&nbsp;;
+      </li>
+      <li>Temps de développement et de mise en conformité&nbsp;: la reprise des pages existantes pour la mise en conformité peut représenter une charge importante. Même si c’est plus rare, le temps initial de développement de pages accessibles peut également représenter un surcoût par rapport au développement des mêmes pages sans préoccupation spécifique en matière d’accessibilité.  
+
+        Bien que ce ne soit pas le cas le plus fréquent, cette étape peut nécessiter la production de contenus spécifiquement dédiés à l’accessibilité, notamment pour les vidéos (sous-titrage, transcription ou audiodescription par exemple)&nbsp;;
+      </li>
+      <li>Recettes, audit, suivi&nbsp;: les contenus des sites de grande ampleur sont très fréquemment actualisés. De nouvelles pages sont régulièrement mises en ligne et le contenu des pages existantes est régulièrement modifié. Chaque modification peut faire apparaître de nouvelles erreurs. Il est donc nécessaire d’introduire dans le processus de production et de maintenance des étapes de test, de recette, ou de validation des contenus produits ou mis à jour, ce qui peut représenter un coût supplémentaire, ou être intégré au processus de recette continu s’il existe&nbsp;;
+      </li>
+      <li>Déclaration de conformité&nbsp;: l’entité responsable du site devra prévoir de fournir une déclaration de conformité conformément aux dispositions prévues par le décret d’application de la loi de février 2005 sur l’égalité des chances. Ceci suppose qu’un audit ait été fait, de préférence par un expert indépendant pouvant faire partie de l’administration ou d’une société privée tierce.
+      </li>
+    </ol>
+  
+
+
+  <h2 id="Partie-1-Cadre-d-accessibilite-Contexte-demarche-et-evolution-du-RGAA">3. Partie 1&nbsp;: Cadre d’accessibilité&nbsp;: Contexte, démarche et évolution du RGAA</h2>
+
+
+  <h3 id="Contexte-et-environnement">3.1. Contexte et environnement</h3>
+
+
+  <h4 id="Les-enjeux">3.1.1. Les enjeux</h4>
+
+
+  <h5>3.1.1.1. La diversité des publics</h5>
+  
+    <p>La question du nombre de personnes en situation de handicap est souvent débattue, et pas seulement en France. Il est très difficile de savoir précisément, de façon chiffrée, combien de personnes sont en situation de handicap. Se baser sur les statistiques officielles implique de ne recenser que les personnes ayant fait une démarche administrative pour faire reconnaître leur handicap, ce qui est très réducteur.</p>
+    <p>Une <a id="body-ftn10" href="#ftn10">enquête de l’INSEE<sup aria-hidden="true">10</sup></a> indique que les personnes handicapées représenteraient entre 10 et 20&nbsp;% de la population. Ce qui semble confirmé par le <a id="body-ftn11" href="#ftn11">rapport mondial sur le handicap<sup aria-hidden="true">11</sup></a> publié par l’OMS en 2010 et qui recense environ 15&nbsp;% de la population mondiale ayant un handicap. Et le nombre de seniors susceptibles de perdre certaines capacités avec l’âge est en augmentation.</p>
+    <p>La loi n°2005-102 du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fait de l’accessibilité une exigence pour tous les services de communication publique en ligne de l’État, des collectivités territoriales et des établissements publics qui en dépendent.</p>
+    <p>Si le réseau Internet et les ressources du Web ne sont pas accessibles aux personnes handicapées et aux personnes âgées, cela constitue un facteur d’exclusion supplémentaire qui peut aggraver une situation de handicap ou des situations de fragilité.</p>
+    <p>De nombreux utilisateurs peuvent être amenés à opérer dans des contextes très différents de celui de l’internaute moyen&nbsp;:</p>
+    <ul>
+      <li>Ils peuvent ne pas être en mesure de voir, entendre, se mouvoir&nbsp;;</li>
+      <li>Ils peuvent avoir des difficultés à lire ou à comprendre le contenu textuel&nbsp;;</li>
+      <li>Ils peuvent être dans l’impossibilité d’utiliser un clavier ou une souris&nbsp;;</li>
+      <li>Ils peuvent être sujets à des crises d’épilepsie déclenchées par des animations&nbsp;;</li>
+      <li>Ils peuvent être dans l’incapacité de réaliser des tâches dans une limite de temps ou être perturbés par un environnement dont ils ne maîtrisent pas les changements.</li>
+    </ul>
+    <p>Notons que les règles d’accessibilité du Web visent à rendre une même interface accessible à chacun quelles que soient ses capacités, en évitant la multiplication des supports, dans un esprit de conception universelle.</p>
+    <p>Or, la prise en compte du handicap intellectuel nécessite souvent de produire une version alternative des textes pour les simplifier, selon la <a id="body-ftn12" href="#ftn12">méthode «&nbsp;Facile À Lire et à Comprendre&nbsp;»<sup aria-hidden="true">12</sup></a>.</p>
+    <p>La prise en compte du handicap intellectuel consiste à faire simple tant sur le fond que sur la forme, ce qui peut s’avérer fort utile à tous les internautes&nbsp;:</p>
+    <ul>
+      <li>Penser ses contenus textuels dans un langage simple, utilisant des phrases courtes, des mots simples, des sigles explicités&nbsp;;</li>
+      <li>Illustrer les contenus avec des exemples concrets, des visuels explicites en rapport avec le sujet&nbsp;;</li>
+      <li>Structurer les pages et le texte dans un ordre logique et chronologique&nbsp;;</li>
+      <li>Privilégier la lisibilité et la clarté du texte par rapport aux effets graphiques&nbsp;;</li>
+      <li>Utiliser une mise en page claire et aérée faisant ressortir l’information essentielle.</li>
+    </ul>
+    <p>Pour aller au-delà de l’obligation légale (double A), et s’assurer d’une véritable accessibilité de l’information textuelle, il est recommandé de se reporter à la méthode européenne du Facile à lire et à comprendre qui regroupe l’ensemble des préconisations pour écrire et présenter des informations faciles à lire et à comprendre.</p>
+  
+
+
+  <h5>3.1.1.2. La diversité des technologies</h5>
+  
+    <p>Au delà des capacités humaines, l’accélération des évolutions techniques a entraîné une diversité croissante des technologies permettant d’accéder au Web. Les utilisateurs peuvent ainsi être équipés très diversement&nbsp;:</p>
+    <ul>
+      <li>Ils peuvent avoir un ordinateur de bureau doté des dernières versions de système d’exploitation, de navigateur et une technologie d’assistance à jour, ou des versions plus anciennes&nbsp;;</li>
+      <li>Ils peuvent se rendre sur Internet depuis un smartphone, une tablette ou un ordinateur portable ou de bureau, avec des systèmes d’exploitations et des navigateurs d’une grande variété&nbsp;;</li>
+      <li>Ils peuvent avoir un écran n’affichant que le texte, qu’un nombre réduit de couleurs, de petite taille ou avec une résolution particulière&nbsp;;</li>
+      <li>Ils peuvent avoir une version ancienne d’un logiciel de consultation, un logiciel entièrement différent de celui sur lequel les tests ont été faits, ou un système d’exploitation différent de ceux couramment utilisés&nbsp;;</li>
+      <li>Ils peuvent être amenés à se connecter depuis des terminaux mobiles, et accéder aux services en ligne en bas-débit ou avec des écrans de petite taille.</li>
+    </ul>
+  
+
+
+  <h5>3.1.1.3. L’adaptation des contenus</h5>
+  
+    <p>Pour reprendre les quatre grands principes définis dans les règles internationales d’accessibilité des contenus Web, l’adaptation des contenus Web consiste à rendre les contenus perceptibles, compréhensibles, robustes et utilisables&nbsp;:</p>
+    <ul>
+      <li>Soit par la mise à disposition des contenus sous des formes utilisables dans certains contextes&nbsp;: le sous-titrage d’un film pour une personne déficiente auditive, un fichier son décrivant les textes affichés dans le film pour une personne déficiente visuelle&hellip;</li>
+      <li>Soit par les technologies d’assistance permettant de restituer le contenu sous une forme perceptible par la personne (exemple&nbsp;: logiciel de lecture d’écran et restitution vocale des contenus).</li>
+    </ul>
+    <p>Très souvent, c’est la combinaison de ces deux types de solution qui permettra aux utilisateurs d’accéder aux contenus.</p>
+    <p>Le respect des normes et standards de développement Web publiées par le W3C (<span lang="en">World Wide Web Consortium</span>) et la conformité technique des pages Web pourront grandement faciliter l’accès à de nombreux contenus pour toutes et tous, notamment les personnes handicapées et certaines personnes valides navigant dans des contextes variés.</p>
+    <p>Dans de très nombreux cas, la conformité technique sera toutefois largement insuffisante. C’est notamment le cas lorsque la nature du contenu le rend imperceptible par certaines personnes. Dans ce cas, il faudra prévoir des contenus de substitution, appelés aussi contenus alternatifs ou plus simplement «&nbsp;alternatives&nbsp;».</p>
+    <p><strong>Exemple&nbsp;: les équivalents textuels pour les images</strong></p>
+    <p>Une personne non-voyante utilisera par exemple un logiciel appelé lecteur d’écran qui, couplé à une synthèse vocale ou une plage braille, restituera les informations disponibles. Or, si le texte est un contenu compatible avec les technologies d’assistance qui peuvent le traiter et le restituer à l’utilisateur, ce n’est pas le cas des images. Il est donc nécessaire de fournir un texte alternatif pour renseigner les personnes qui ne peuvent pas percevoir le sens véhiculé par l’image lorsque cette dernière apporte une information non présente dans le contexte. Ce recours, qui n’a de valeur ajoutée que lorsque l’image véhicule effectivement un sens, est un des éléments nécessaires pour qu’une page qui comporte des images signifiantes soit accessible.</p>
+    <p>Outre le bénéfice qu’en retirent les utilisateurs de lecteurs d’écran, ces alternatives sont également nécessaires pour certaines personnes en situation de handicap moteur. Une image sans alternative textuelle empêchera un logiciel de dictée vocale de repérer cette image puisqu’il se fie à l’alternative textuelle pour les identifier. En conséquence, une personne en situation de handicap moteur, qui ne peut utiliser ni clavier ni souris, ne pourra pas activer une image lien sans équivalent textuel.</p>
+    <p>À noter que les équivalents textuels peuvent également aider au référencement des pages d’un site puisque les robots de recherche peuvent utiliser ce texte quand ils indexent ces pages.</p>
+  
+
+
+  <h4 id="L-administration-en-ligne">3.1.2. L’administration en ligne</h4>
+  
+    <p>Le développement de l’administration en ligne a profondément modifié les relations entre les usagers, les agents publics et les autorités administratives.</p>
+    <p>Pour assurer l’accès aux services et informations mis en œuvre par ce développement, les autorités administratives doivent proposer des contenus Web accessibles à l’ensemble de la population, quelles que soient ses aptitudes. Cet environnement doit également garantir les éléments suivants&nbsp;:</p>
+    <ul>
+      <li>Sécuriser l’accès à l’information et aux services&nbsp;;</li>
+      <li>Assurer la compatibilité avec les technologies d’assistance utilisées par les personnes handicapées (lecteurs d’écran, claviers virtuels, <span lang="en">trackball</span>&hellip;)&nbsp;;</li>
+      <li>Proposer des solutions alternatives pour les contenus non ou difficilement perceptibles.</li>
+    </ul>
+    <p>Tous ces éléments contribuent à apporter des solutions nécessaires au développement de l’administration électronique, au sein des administrations, entre les administrations et les entreprises, ainsi qu’entre les administrations et les citoyens.</p>
+    <p>Afin d’assurer une accessibilité maximale pour les applications et contenus Web, il est nécessaire de respecter un ensemble de règles et de s’assurer que l’implémentation de ces règles fonctionne effectivement sur les technologies dont se servent les utilisateurs finaux, qu’ils soient en situation de handicap ou non. Le RGAA a été élaboré pour répondre à cette préoccupation.</p>
+  
+
+
+  <h4 id="Le-cadre-legislatif">3.1.3. Le cadre législatif</h4>
+
+
+  <h5>3.1.3.1. Les prémisses</h5>
+  
+    <p>Dès 1999, la France a engagé des actions visant à favoriser l’accessibilité de l’information à tous les internautes sur la base des recommandations d’accessibilité de l’initiative «&nbsp;<span lang="en">Web Accessibility Initiative</span>&nbsp;» (WAI) du W3C.</p>
+    <p>Une circulaire du Premier ministre du 7 octobre 1999 relative aux sites Internet des services et des établissements publics de l’État indique&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;Les responsables des sites veilleront tout particulièrement à favoriser l’accessibilité de l’information à tous les internautes, notamment les personnes handicapées, non voyantes, malvoyantes ou malentendantes.&nbsp;»</p>
+    </blockquote>
+    <p>De nature incitative et exemplaire, les premières actions de sensibilisation ont été accompagnées de référentiels de bonnes pratiques à destination des administrations.</p>
+  
+
+
+  <h5>3.1.3.2. Le contexte international et européen</h5>
+  
+    <p>Les démarches de la France ont eu lieu dans un contexte international redéfinissant de nouveaux droits pour les personnes handicapées, l’accessibilité étant hissée au rang de droit humain.</p>
+    <p>L’Organisation des Nations Unies a ainsi adopté la <a id="body-ftn13" href="#ftn13">Convention relative aux droits des personnes handicapées<sup aria-hidden="true">13</sup></a> (CRDPH) le 13 décembre 2006, que <a id="body-ftn14" href="#ftn14">la France a ratifiée le 18 février 2010<sup aria-hidden="true">14</sup></a>.</p>
+    <p>La CRDPH, dans son article 2, définit notamment la <a id="body-ftn15" href="#ftn15">discrimination fondée sur le handicap<sup aria-hidden="true">15</sup></a> comme résultant non seulement d’une action volontaire d’exclusion, mais également d’un refus d’aménagement raisonnable.</p>
+    <p>L’article 9 de la CRDPH cible précisément le numérique en indiquant que les États Parties doivent prendre des «&nbsp;mesures, parmi lesquelles figurent l’identification et l’élimination des obstacles et barrières à l’accessibilité&nbsp;» et que ces mesures «&nbsp;s’appliquent, entre autres [&hellip;] aux services d’information, de communication et autres services, y compris les services électroniques et les services d’urgence.&nbsp;»</p>
+    <p>Dans le même élan, l’Union européenne a élaboré des plans d’actions visant à renforcer la prise en compte du handicap dans le paysage numérique européen. Avec le «&nbsp;plan eEurope 2002&nbsp;» confirmé par le «&nbsp;plan eEurope 2005&nbsp;», la Commission Européenne a intégré l’accessibilité des personnes handicapées et âgées à la société de l’information comme une priorité de son action.</p>
+    <p>L’<a id="body-ftn16" href="#ftn16">action 64<sup aria-hidden="true">16</sup></a> de l’agenda numérique pour l’Europe 2020 vise à assurer l’accessibilité des sites du secteur public en 2015. La Commission européenne a adopté le 3 décembre 2012 une proposition de directive sur l’accessibilité des sites Web du secteur public, qui préfigure et complète une directive, <a id="body-ftn17" href="#ftn17"><span lang="en">European Accessibility Act</span><sup aria-hidden="true">17</sup></a>, en préparation par la Commission européenne.</p>
+  
+
+
+  <h5>3.1.3.3. Le référentiel de 2004</h5>
+  
+    <p>En février 2004, l’Agence pour le développement de l’administration électronique (Adaé) rattachée aux services du Premier Ministre élabore et publie le «&nbsp;Référentiel accessibilité des services Internet de l’administration&nbsp;» en s’appuyant sur des critères qui permettent d’évaluer l’accessibilité d’un site Web selon les recommandations internationales du guide WCAG&nbsp;1.0 de l’initiative WAI.</p>
+    <p>Ce référentiel de bonnes pratiques à destination des administrations, de nature incitative et exemplaire a permis d’accompagner les premières actions de sensibilisation. Ce référentiel définissait des niveaux d’accessibilité dérivés des standards WCAG&nbsp;1.0, qui ne sont pas repris dans le RGAA.</p>
+  
+
+
+  <h5>3.1.3.4. La loi de février 2005 et son dispositif d’application</h5>
+  
+    <p>La réglementation s’est renforcée en février 2005. La loi n° 2005-102 du 11 février 2005 «&nbsp;pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées&nbsp;» instaure au titre de l’article 47, l’obligation pour les services de communication publique en ligne des services de l’État, des collectivités territoriales et des établissements publics qui en dépendent d’être accessibles aux personnes handicapées.</p>
+    <p>Le décret d’application de l’article 47 a été publié en mai 2009. Ce décret précise à travers 7 articles les modalités générales d’application pour les trois canaux&nbsp;: Web, télévision et téléphonie. Il permet d’introduire le Référentiel général d’accessibilité pour les administrations (RGAA) pour les modalités techniques de mise en &oelig;uvre.</p>
+    <p>Enfin, l’<a id="body-ftn18" href="#ftn18">arrêté ministériel du 21 octobre 2009<sup aria-hidden="true">18</sup></a> relatif au Référentiel général d’accessibilité pour les administrations vient achever le dispositif législatif.</p>
+    
+
+
+  <h5>3.1.3.5. La mise à jour du RGAA en 2014</h5>
+  
+    <p>Cinq ans après la mise en place du RGAA, l’État prend acte des évolutions techniques et prend les dispositions nécessaires pour mettre à jour le RGAA. Un nouvel arrêté est pris fixant la version 3 du RGAA comme celle devant être appliquée.</p>
+  
+
+
+  <h3 id="Demarche-d-elaboration">3.2. Démarche d’élaboration</h3>
+
+
+  <h4 id="Demarche-et-parti-pris">3.2.1. Démarche et parti pris</h4>
+  
+    <p>La méthode retenue est de favoriser le développement de l’accessibilité numérique en mettant en place un cadre de référence clair, pratique, opérationnel et pragmatique.</p>
+    <p>Le Référentiel général d’accessibilité pour les administrations (RGAA) est mis à disposition du public sous forme électronique. Il annule et remplace le «&nbsp;Référentiel d’accessibilité des sites internet de l’administration&nbsp;» qui datait de 2004.</p>
+    <p>L’approche adoptée pour l’élaboration du RGAA repose sur les principes suivants&nbsp;:</p>
+    <ul>
+      <li>Le document doit pouvoir être utilisé dans différents contextes (management, déploiement, formation, gestion de projet, développement, audit&hellip;). Des ressources non normatives associées à sa compréhension seront mise à disposition pour faciliter sa prise en main&nbsp;;</li>
+      <li>Le document s’appuie le plus strictement possible sur le standard international WCAG&nbsp;2.0 et ses différents documents de déploiement&nbsp;;</li>
+      <li>Le RGAA concerne l’ensemble des autorités administratives, c’est-à-dire les collectivités locales, les organismes publics et les services de l’État&nbsp;; aussi, le niveau d’exigence traduit dans les critères de succès du RGAA doit être adapté à l’ensemble des autorités administratives.</li>
+    </ul>
+  
+
+
+  <h4 id="Evolution-du-RGAA-vers-la-version-3">3.2.2. Évolution du RGAA vers la version 3</h4>
+  
+    <p>La version 1.0 du RGAA s’appuyait sur les recommandations internationales en vigueur à l’époque où il a été élaboré, à savoir le guide WCAG&nbsp;1.0. La version 2 du RGAA ne remettait pas en question les fondements de la première version mais constituait une évolution du premier référentiel, pour le mettre en cohérence avec les standards internationaux qui avaient évolué.</p>
+    <p>La version 3 du RGAA est une refonte méthodologique autant qu’une mise à jour technique pour prendre en compte les évolutions de HTML. Elle est basée sur une copie adaptée du référentiel AccessiWeb de l’association BrailleNet.</p>
+  
+
+
+  <h4 id="Mise-à-jour-des-documents-composant-le-RGAA">3.2.3. Mise à jour des documents composant le RGAA</h4>
+  
+    <p>L’émergence et l’évolution de nouvelles technologies ainsi que les problématiques, en termes de développement, liées aux nouvelles plateformes comme le mobile, ont modifié en profondeur la manière de développer des sites Web. Cela a rendu nécessaire l’élaboration d’un nouveau référentiel (RGAA&nbsp;3) adapté aux nouvelles technologies telles que HTML5 ou WAI-ARIA.</p>
+    <p>Cette évolution a entraîné une refonte des différents documents.</p>
+  
+
+
+  <h5>3.2.3.1. Introduction au RGAA</h5>
+  
+    <p>Pour éviter toute confusion entre les différents documents, certains ont été renommés. C’est le cas du document «&nbsp;RGAA&nbsp;», désormais intitulé «&nbsp;Introduction au RGAA&nbsp;».</p>
+    <p>L’objectif du document est inchangé, même si quelques modifications ont été apportées pour prendre en compte les dernières données disponibles sur le handicap et introduire la dernière version du référentiel.</p>
+  
+
+
+  <h5>3.2.3.2. Guide d’accompagnement</h5>
+  
+    <p>Le Guide d’accompagnement a bénéficié d’une mise à jour des références juridiques et des données concernant le handicap, et d’une clarification de certains aspects, que ce soit dans les questions/réponses avec l’ajout de certaines questions issues du terrain, ou la rédaction d’une nouvelle section sur les responsabilités.</p>
+    <p>Par ailleurs, le guide d’accompagnement proposait des ressources non normatives. Elles ont été extraites du guide qui fait partie du RGAA afin de ne pas confondre ce qui relève de l’obligation légale et ce qui n’est proposé qu’à titre indicatif et qui pourra être repris et actualisé dans une section «&nbsp;ressources&nbsp;» distincte du RGAA proprement dit.</p>
+  
+
+
+  <h5>3.2.3.3. Référentiel technique</h5>
+  
+    <p>C’est la partie qui a subi les changements les plus importants. Les annexes 1, 2 et 3 du RGAA&nbsp;2.2 ont été supprimées et remplacées dans le RGAA&nbsp;3 par le référentiel technique.</p>
+    <p>Nous listons ici succinctement les principales différences entre la version actuelle de RGAA&nbsp;2.2 et la nouvelle version de RGAA&nbsp;3.</p>
+  
+
+
+  <h6>3.2.3.3.1. Principales différences avec RGAA&nbsp;2.2</h6>
+  
+    <p>RGAA&nbsp;3 est basé sur le référentiel AccessiWeb HTML5/ARIA. RGAA&nbsp;3 comporte 13 thématiques contre 12 auparavant&nbsp;:</p>
+      <ol>
+        <li>Images</li>
+        <li>Cadres</li>
+        <li>Couleurs</li>
+        <li>Multimédia</li>
+        <li>Tableaux</li>
+        <li>Liens</li>
+        <li>Scripts</li>
+        <li>Éléments obligatoires</li>
+        <li>Structuration de l’information</li>
+        <li>Présentation de l’information</li>
+        <li>Formulaires</li>
+        <li>Navigation</li>
+        <li>Consultation</li>
+     </ol>
+    <p>Il existe quelques différences dans l’intitulé des thématiques&nbsp;:</p>
+    <ul>
+      <li>La thématique «&nbsp;Standards&nbsp;» dans le RGAA&nbsp;2.2 s’intitule désormais «&nbsp;Éléments obligatoires&nbsp;»&nbsp;;</li>
+      <li>L’ancienne thématique «&nbsp;Textes&nbsp;» disparaît&nbsp;;</li>
+      <li>Deux nouvelles thématiques apparaissent&nbsp;: «&nbsp;Liens&nbsp;» et «&nbsp;Consultation&nbsp;».</li>
+    </ul>
+    <p>La répartition des critères au sein de certaines thématiques change également&nbsp;:</p>
+    <ul>
+      <li>Les critères de la thématique «&nbsp;Navigation&nbsp;» sont désormais répartis au sein de deux thématiques&nbsp;: «&nbsp;Liens&nbsp;» et «&nbsp;Navigation&nbsp;»&nbsp;;</li>
+      <li>Les critères de la thématique «&nbsp;Textes&nbsp;» sont désormais répartis dans «&nbsp;Éléments obligatoires&nbsp;» et «&nbsp;Consultation&nbsp;».</li>
+    </ul>
+    <p>Cela ne change pas la portée du référentiel&nbsp;: RGAA&nbsp;3 couvre l’ensemble des 12 thématiques de RGAA&nbsp;2.2 et continue à s’appuyer sur les WCAG&nbsp;2.0 dont il constitue un référentiel de vérification opérationnelle de la conformité.</p>
+  
+
+
+  <h6>3.2.3.3.2. Implémentation des nouveaux éléments et attributs HTML5</h6>
+  
+    <p>En l’absence de techniques WCAG pour prendre en compte HTML5, la spécification HTML5 elle-même a servi de référence, en s’assurant de la compatibilité des nouveaux éléments avec l’accessibilité.</p>
+    <p>RGAA&nbsp;3 couvre ainsi l’ensemble du langage HTML5 et propose des critères et des tests spécifiques pour prendre en charge ce nouveau langage de façon accessible.</p>
+  
+
+
+  <h6>3.2.3.3.3. Abandon de l’exigence d’une alternative systématique à JavaScript</h6>
+  
+    <p>JavaScript est un langage basé sur la norme ECMA, standard ouvert faisant partie intégrante de HTML5/ARIA dont il pilote les APIs notamment. Dans ce contexte, exiger des alternatives systématiques à JavaScript serait contre-productif.</p>
+  
+
+
+  <h6>3.2.3.3.4. Implémentation de l’API WAI-ARIA</h6>
+  
+    <p>L’API WAI-ARIA permet de rendre les dispositifs basés sur JavaScript (fonctionnalités ou nouveaux composants) accessibles <i>via</i> des rôles, des états et des propriétés. L’API WAI-ARIA est supportée par l’ensemble des navigateurs à partir d’<span lang="en">Internet Explorer</span> 8 et les principales technologies d’assistance.</p>
+    <p>Une partie importante de l’API décrit des motifs de conception (<span lang="en">design patterns</span>) qui permettent de guider le développeur dans l’élaboration de nouveaux composants comme une fenêtre modale (rôle <code lang="en">dialog</code> ou <code lang="en">alertdialog</code>) ou un système d’onglets (rôle <code lang="en">tabpanel</code>) parfaitement accessibles.</p>
+    <p>RGAA&nbsp;3 prend en charge l’API elle-même et les motifs de conception associés, plus particulièrement&nbsp;:</p>
+    <ul>
+      <li>L’utilisation cohérente des rôles WAI-ARIA est vérifiée pour les interdictions de certains rôles sur des éléments particuliers&nbsp;;</li>
+      <li>Les composants développés avec JavaScript et correspondant à un motif de conception (par exemple une fenêtre modale ou un système d’onglets) doivent respecter le motif de conception, tel qu’il est défini par l’API, et implémenter le comportement clavier correspondant&nbsp;;</li>
+      <li>La restitution des composants JavaScript utilisant WAI-ARIA doit être testée sur un ensemble de technologies d’assistance, de navigateurs et de systèmes d’exploitation (base de référence).</li>
+    </ul>
+  
+
+
+  <h6>3.2.3.3.5. Suppression des exigences liées à des éléments et attributs HTML devenus obsolètes en HTML5</h6>
+  
+    <p>C’est le cas par exemple de l’attribut <code lang="en">summary</code> pour les tableaux de données.</p>
+  
+
+
+  <h4 id="Gouvernance-du-processus-de-mise-à-jour">3.2.4. Gouvernance du processus de mise à jour</h4>
+  
+    <p>Tout comme la première version du RGAA, le document a été soumis à un échantillon représentatif d’experts en accessibilité. Mais en plus de cette consultation, la Direction interministérielle du numérique et du système d’information et de communication de l’État (DInSIC) a élargi la consultation en procédant par étapes successives de manière à faciliter le travail d’élaboration et de mise à jour du RGAA&nbsp;3&nbsp;:</p>
+    <ol>
+      <li>Création d’une version modifiée du référentiel AccessiWeb HTML5/ARIA sur lequel est basée la mise à jour du document technique RGAA&nbsp;3&nbsp;;</li>
+      <li>Sur la base de cette copie modifiée et annotée, consultation d’un groupe de travail restreint et formé dont les membres sont issus des différentes entités en charge de la gestion et de la production des sites et applications Web publics. Cette consultation a permis de définir et valider le socle technique du RGAA&nbsp;3&nbsp;;</li>
+      <li>Appel à commentaires auprès d’un groupe d’experts plus large composé du groupe de travail AccessiWeb, sur une liste de questions précises qui illustrent les orientations techniques et d’encadrement du RGAA&nbsp;3 et permet d’affiner le document technique&nbsp;: cette consultation a eu lieu du 7 au 15 juillet 2014&nbsp;;</li>
+      <li>Appel à commentaires public concernant une version beta du RGAA&nbsp;3 avec ses documents d’accompagnement du 1er au 30 septembre 2014.</li>
+    </ol>
+
+  <h3 id="Modalites-d-evolution-du-document">3.3. Modalités d’évolution du document</h3>
+    <h4 id="Evolution-du-document">3.3.1. Évolution du document</h4>
+  
+    <p>Les conditions d’élaboration, d’approbation, de modification et de publication du RGAA sont fixées par décret. </p>
+    <p>Ceci se traduit notamment par&nbsp;:</p>
+    <ul>
+      <li>La publication du document sur un site Web public, afin qu’il soit consultable par tous&nbsp;;</li>
+      <li>Des mises à jour régulières, afin de tenir compte des évolutions des technologies liées à l’accessibilité et des usages des autorités administratives.</li>
+    </ul>
+    <p>Sa mise à jour est assurée par les services du ministre chargé des personnes handicapées en liaison avec les services du ministre chargé du développement de l’économie numérique.</p>
+    <p>La fréquence de mise à jour du RGAA dépendra notamment de facteurs tels que&nbsp;:</p>
+    <ul>
+      <li>Les évolutions technologiques&nbsp;;</li>
+      <li>Les évolutions en matière de normes ou de standards&nbsp;;</li>
+      <li>Les évolutions législatives et juridiques&nbsp;;</li>
+      <li>La politique de l’État en matière de handicap.</li>
+    </ul>
+    <p>Les critères et les tests du référentiel technique RGAA sont normatifs. Toutefois, en cas d’absence de mise à jour du RGAA sous 2 ans pour prendre en compte de nouvelles techniques WCAG mises à disposition par le W3C, il est autorisé de créer ses propres tests en complément de ceux existant, dans les conditions définies ci-dessous.</p>
+  
+
+
+  <h5>3.3.1.1. Gestion des tests créés hors du cadre du RGAA en cas d’absence de mise à jour</h5>
+
+
+  <h6>3.3.1.1.1. Conditions de création de tests non prévus par le RGAA</h6>
+  
+    <p>Il y a trois conditions concernant la création de nouveaux tests non définis par la version applicable du RGAA en vigueur&nbsp;:</p>
+    <ul>
+      <li>L’absence de mise à jour du RGAA alors que les techniques WCAG ont été mises à jour entraîne des problèmes d’application de la norme&nbsp;;</li>
+      <li>La mise à jour des WCAG est intervenue depuis 2 ans au moins sans que le RGAA n’est été mis à jour&nbsp;;</li>
+      <li>Les nouveaux tests créés doivent assurer la compatibilité avec les critères du référentiel technique du RGAA et avec les technologies mentionnées dans la base de référence.</li>
+    </ul>
+  
+
+
+  <h6>3.3.1.1.2. Traçabilité et documentation des tests créés en dehors du RGAA</h6>
+  
+    <p>Tout nouveau test doit être référencé dans une section dédiée intitulée «&nbsp;Tests créés hors du cadre RGAA&nbsp;» de la déclaration de conformité. Cette section doit lister les nouveaux tests créés, les critères du RGAA auxquels ils se rattachent, et les correspondances avec les critères de succès et techniques WCAG (avec un lien vers ces techniques).</p>
+    <p>La date de création de ces tests doit également être mentionnée.</p>
+  
+
+
+  <h6>3.3.1.1.3. Priorité à l’interprétation officielle du RGAA</h6>
+  
+    <p>Considérons le cas où de nouveaux tests auraient été créés en l’absence de mise à jour du RGAA prenant en charge de nouvelles techniques WCAG depuis plus de 2 ans, et que la publication d’une nouvelle version du RGAA prenant en charge ces mises à jour intervienne quelques mois après.</p>
+    <p>Ces nouveaux tests ne se justifiant plus, ils devront être retirés des futurs audits. Et c’est bien l’interprétation de la version officielle du RGAA qui doit primer sur tout test créé hors de ce cadre lorsque les techniques sont prises en charge.</p>
+  
+
+
+  <h4 id="Propriete-et-responsabilite">3.3.2. Propriété et responsabilité</h4>
+  
+    <p>Le RGAA et son contenu sont la propriété de l’État. Il est élaboré par les services du ministre chargé de la réforme de l’État qui doivent respecter les conditions d’élaboration, d’approbation, de modification et de publication fixées par décret.</p>
+    <p>Cela se traduit notamment par&nbsp;:</p>
+    <ul>
+      <li>La publication sur un site Web public afin qu’il soit consultable par toutes et tous. Actuellement, la version officielle du RGAA et de ses documents d’accompagnement sont accessibles à l’adresse suivante&nbsp;: <a href="../rgaa/index.html">../rgaa</a>&nbsp;;</li>
+      <li>La mise à jour régulière afin de tenir compte des évolutions des technologies et des usages des autorités administratives soumises à l’application de la loi du 11 février 2005.</li>
+    </ul>
+    <p>Comme tous les documents disponibles sur references.modernisation.gouv.fr, le RGAA est placé sous <a id="body-ftn19" href="#ftn19">licence ouverte 1.0<sup aria-hidden="true">19</sup></a>.
+      Vous êtes libres de&nbsp;:
+    </p>
+    <ul>
+      <li>Reproduire, copier, publier et transmettre ces informations&nbsp;;</li>
+      <li>Diffuser et redistribuer ces informations&nbsp;;</li>
+      <li>Adapter, modifier, extraire et transformer ces information, notamment pour créer des informations dérivées&nbsp;;</li>
+      <li>Exploiter ces informations à titre commercial, par exemple en les combinant avec d’autres informations, ou en l’incluant dans votre propre produit ou application.</li>
+    </ul>
+    <p>Ces libertés s’appliquent sous réserve de mentionner la paternité de l’information d’origine&nbsp;: sa source et la date de sa dernière mise à jour. Le réutilisateur peut notamment s’acquitter de cette condition en indiquant un ou des liens hypertextes (URL) renvoyant vers le présent site et assurant une mention effective de sa paternité.</p>
+    <p>Cette mention de paternité ne doit ni conférer un caractère officiel à la réutilisation de ces informations, ni suggérer une quelconque reconnaissance ou caution par le producteur de l’information, ou par toute autre entité publique, du réutilisateur ou de sa réutilisation.</p>
+    
+
+
+  <h2 id="Partie-2-Guide-d-application-du-RGAA">4. Partie 2&nbsp;: Guide d’application du RGAA</h2>
+
+
+  <h3 id="Perimetre-d-application-du-RGAA">4.1. Périmètre d’application du RGAA</h3>
+
+
+  <h4 id="Services-concernes">4.1.1. Services concernés</h4>
+  
+    <p>Il s’agit des services de l’État, des collectivités territoriales, des agences, des établissements publics, des entreprises publiques, et des personnes privées investies d’une mission de service public.</p>
+    <p>Le RGAA concerne aussi bien les agents publics pour les applications métier, que le grand public et les fonctionnaires pour les sites Internet, Intranet et les applications Web.</p>
+  
+
+
+  <h4 id="Contenus-concernes">4.1.2. Contenus concernés</h4>
+  
+    <p>Comme le définit l’article 47 de la loi 2005-102 du 11 février 2005, est concerné par l’obligation légale  tout type d’information sous forme numérique quels que soient le moyen d’accès, les contenus et le mode de consultation.</p>
+    <p>Plus précisément, sont concernés tous les documents ou applications disponibles depuis un navigateur Web&nbsp;: les sites Internet et Intranet (ces derniers étant des outils de travail courants pour les salariés handicapés, lesquels doivent pouvoir accéder à toutes les informations nécessaires à l’exécution de leurs missions), et les applications Web. Par application Web, on entend toute application «&nbsp;métier&nbsp;» à laquelle on accède au moyen d’un navigateur Web et qui vise tout ou partie des agents d’un ministère ou le grand public (exemple&nbsp;: inscription aux concours, logiciel de gestion de congés, déclaration d’impôts&hellip;).</p>
+  
+
+
+  <h5>4.1.2.1. Cas des contenus mis en ligne sur des sites externes</h5>
+  
+    <p>Les contenus mis en ligne sur des sites externes sont le résultat d’une volonté du maître d’ouvrage d’atteindre le public <i>via</i> ces sites. Ils sont donc soumis à l’obligation d’accessibilité. Si la mise en ligne sur ces sites support a pour conséquence de rendre les contenus inaccessibles, c’est le producteur du contenu qui en sera responsable.</p>
+    <p>Exemple&nbsp;: un ministère qui met ses vidéos sur Daily Motion ou Youtube, doit au minimum créer un lien vers un contenu textuel accessible alternatif, selon le principe de la compensation. Il procédera de même s’il diffuse des contenus par l’intermédiaire de réseaux sociaux.
+      En revanche des informations publiées par un agent d’un ministère et décrivant ses activités ne doivent pas être considérées comme une communication publique en ligne (sur un réseau social par exemple).
+    </p>
+  
+
+
+  <h5>4.1.2.2. Cas des liens vers des documents téléchargeables publiés sur d’autres sites</h5>
+  
+    <p>La mise en place de liens externes vers des documents à télécharger peut se justifier par la nécessité de fournir des informations complémentaires relatives au contenu. Dans ce cas, la responsabilité revient au producteur du contenu publié sur le site externe. Il s’agit d’un cas de dérogation autorisé décrit dans la section Liste des dérogations admises et principe de la compensation.</p>
+  
+
+
+  <h3 id="Modalites-d-application-du-RGAA">4.2. Modalités d’application du RGAA</h3>
+  
+    <p>L’objectif du RGAA est de donner aux responsables de services de communication publique en ligne mettant en place une démarche de mise en accessibilité ou de création d’un nouveau service en ligne, les moyens de pouvoir le faire dans les meilleures conditions possibles. L’exigence d’accessibilité numérique doit être incluse dans les cahiers des charges d’appels d’offres. Il est recommandé de mettre à la disposition des services concernés les ressources utiles.</p>
+    <p>L’appropriation du RGAA ne peut se concrétiser que par une démarche volontariste d’évolution de l’accessibilité de chaque service de communication publique en ligne. Elle repose sur une procédure d’auto-évaluation (ou d’évaluation par un tiers selon les compétences disponibles localement) et sur une démarche de mise en accessibilité qui devra s’adapter au type de projet (création d’un nouveau contenu Web, refonte d’un site existant, amélioration continue, échantillonnage).</p>
+  
+
+
+  <h4 id="Niveaux-de-conformite-aux-normes-d-accessibilite">4.2.1. Niveaux de conformité aux normes d’accessibilité</h4>
+  
+    <p>La traduction française agréée des WCAG&nbsp;2.0 indique&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;Afin de répondre aux besoins de divers groupes et de différents contextes, trois niveaux de conformité ont été définis&nbsp;: <span aria-label="simple-A"><span aria-hidden="true">A</span></span> (le plus bas), <span aria-label="double-A"><span aria-hidden="true">AA</span></span> et <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> (le plus élevé).<a id="body-ftn20" href="#ftn20" title="note de pied de page numéro 20"><sup>20</sup></a>&nbsp;».</p>
+    </blockquote>
+    <p>Les critères de succès ont donc été associés à l’un des niveaux <span aria-label="simple-A"><span aria-hidden="true">A</span></span>, <span aria-label="double-A"><span aria-hidden="true">AA</span></span> et <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> sur la base de divers facteurs (<a href="http://www.w3.org/Translations/NOTE-UNDERSTANDING-WCAG20-fr/conformance.html#uc-levels-head">liste des facteurs d’attribution du niveau WCAG</a>).</p>
+    <p>Par ailleurs, le niveau <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> possède la particularité de ne pas s’appliquer à tous les contenus ou dans tous les contextes&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;Il n’est pas recommandé de se fixer le niveau <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> comme objectif à l’échelle de sites entiers car il n’est pas possible de satisfaire à tous les critères de succès du niveau <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> pour certains contenus<a id="body-ftn21" href="#ftn21" title="note de pied de page numéro 21"><sup>21</sup></a>.&nbsp;»</p>
+    </blockquote>
+    <p>Le niveau <a id="body-ftn22" href="#ftn22">recommandé par l’Union européenne est le niveau double A (AA)<sup aria-hidden="true">22</sup></a>. C’est également le niveau attendu pour les sites concernés par le RGAA et à ce titre, pour être conforme au RGAA, il est nécessaire de valider l’ensemble des critères ayant un niveau WCAG déduit <span aria-label="simple-A"><span aria-hidden="true">A</span></span> et <span aria-label="double-A"><span aria-hidden="true">AA</span></span>. Les critères de succès associés au niveau <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> peuvent être pris en compte dans certains contextes, lorsque cela est possible et pertinent.</p>
+    <table>
+    <caption>Niveaux de conformité WCAG&nbsp;:</caption>
+      <thead>
+      <tr>
+        <th scope="col">Niveau</th>
+        <th scope="col">Définition de la conformité</th>
+        <th scope="col">Critères</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span aria-label="simple-A"><span aria-hidden="true">A</span></span></td>
+        <td>pour une conformité de niveau <span aria-label="simple-A"><span aria-hidden="true">A</span></span> (le niveau minimal), la page Web satisfait à tous les critères de succès de niveau <span aria-label="simple-A"><span aria-hidden="true">A</span></span> ou une version de remplacement est fournie.</td>
+        <td>Critères de succès essentiels pouvant raisonnablement s’appliquer à toutes les ressources Web.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="double-A"><span aria-hidden="true">AA</span></span></td>
+        <td>pour une conformité de niveau <span aria-label="double-A"><span aria-hidden="true">AA</span></span>, la page Web remplit tous les critères de succès de niveau <span aria-label="simple-A"><span aria-hidden="true">A</span></span> et <span aria-label="double-A"><span aria-hidden="true">AA</span></span> ou une version de remplacement conforme au niveau <span aria-label="double-A"><span aria-hidden="true">AA</span></span> est fournie.</td>
+        <td>Critères de succès pouvant raisonnablement s’appliquer à toutes les ressources Web.</td>
+      </tr>
+      <tr>
+        <td><span aria-label="triple-A"><span aria-hidden="true">AAA</span></span></td>
+        <td>pour une conformité de niveau <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>, la page Web remplit tous les critères de succès de niveau <span aria-label="simple-A"><span aria-hidden="true">A</span></span>, <span aria-label="double-A"><span aria-hidden="true">AA</span></span> et <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> ou une version de remplacement conforme au niveau <span aria-label="triple-A"><span aria-hidden="true">AAA</span></span> est fournie</td>
+        <td>Critères de succès ne s’appliquant pas à toutes les ressources Web.</td>
+      </tr>
+      </tbody>
+    </table>
+  
+
+
+  <h4 id="Demarche-de-mise-en-accessibilite">4.2.2. Démarche de mise en accessibilité</h4>
+  
+    <p>L’objectif du RGAA est d’accompagner les démarches de mise en accessibilité par la fourniture des critères techniques à mettre en œuvre et des tests correspondants. En fonction du projet de mise en accessibilité, des objectifs d’accessibilité et des différentes phases du projet, le RGAA doit servir de référence en répondant aux questions d’accessibilité qui se posent dans différents contextes.</p>
+    <p>Le RGAA pourra notamment être utilisé dans les contextes suivants&nbsp;:</p>
+    <ul>
+      <li>La mise en œuvre d’un nouveau site (refonte)&nbsp;: Cette approche consiste à prendre en compte les recommandations du RGAA du début à la fin du projet de création du site (analyse, production, mise en ligne, maintenance, vie du site).</li>
+      <li>L’amélioration d’un site existant et la réalisation de la déclaration de conformité&nbsp;: Cette approche consiste à évaluer l’accessibilité d’un site déjà en production, de façon à extraire des indicateurs, des résultats globaux, des recommandations opérationnelles, et des résultats pour le site et pour ses pages.</li>
+    </ul>
+    <p>Concrètement, une démarche de prise en compte de l’accessibilité nécessite la mise en place d’engagements concrets. Inspirés de la <a id="body-ftn23" href="#ftn23">norme ISO 9001:2008<sup aria-hidden="true">23</sup></a>, voici quelques éléments à mettre en œuvre sans lesquels une démarche accessibilité ne peut réussir sur la durée.</p>
+  
+
+
+  <h5>4.2.2.1. Engagement de la direction</h5>
+  
+    <p>La direction de l’entité publique, c’est-à-dire les personnes ayant la responsabilité suffisante pour réaliser les actions suivantes, doit&nbsp;:</p>
+    <ul>
+      <li>Communiquer au sein de l’organisme l’importance à prendre en compte les règles d’accessibilité pour remplir sa mission de service public dans l’intérêt général et satisfaire les exigences réglementaires et légales&nbsp;;</li>
+      <li>&Eacute;tablir la politique accessibilité&nbsp;;</li>
+      <li>Assurer que des objectifs de conformité sont établis&nbsp;;</li>
+      <li>Suivre des indicateurs sur le niveau d’accessibilité&nbsp;;</li>
+      <li>Assurer la disponibilité des ressources.</li>
+    </ul>
+  
+
+
+  <h5>4.2.2.2. Obligation de formation</h5>
+  
+    <p>L’accessibilité numérique est un domaine technique qui nécessite une formation.</p>
+    <p>L’article 6 du décret du 14 mai 2009 indique&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;L’État, les collectivités territoriales et les établissements publics qui en dépendent incluent dans le contenu de la formation continue de leurs personnels intervenant sur les services de communication publique en ligne un enseignement théorique et pratique sur l’accessibilité des services de communication publique en ligne aux personnes handicapées et sur la conformité aux règles et standards nationaux et internationaux en cette matière.&nbsp;»</p>
+    </blockquote>
+    <p>Sans une formation précise et adaptée à leur profil métier, l’accessibilité ne pourra pas être mise en oeuvre par les agents concernés.</p>
+  
+
+
+  <h5>4.2.2.3. Désignation d’un référent accessibilité</h5>
+  
+    <p>La direction doit nommer un membre de l’encadrement de l’organisme en tant que «&nbsp;référent accessibilité&nbsp;». Ce référent qui, nonobstant d’autres responsabilités, doit avoir la responsabilité et l’autorité en particulier pour&nbsp;:</p>
+    <ul>
+      <li>Assurer que les processus nécessaires à la prise en compte de l’accessibilité sont établis, mis en œuvre et entretenus&nbsp;;</li>
+      <li>Rendre compte à la direction du niveau d’accessibilité et de tout besoin d’amélioration&nbsp;;</li>
+      <li>Assurer que la sensibilisation aux exigences d’accessibilité dans tout l’organisme est encouragée&nbsp;;</li>
+      <li>&Ecirc;tre le point d’entrée unique sur les sujets d’accessibilité numérique.</li>
+    </ul>
+  
+
+
+  <h5>4.2.2.4. Audits d’accessibilité réguliers</h5>
+  
+    <p>Seul un audit sur un échantillon représentatif de pages peut permettre de connaître le niveau de conformité du site ou de l’application au RGAA.</p>
+    <p>Cet audit est conduit sous la responsabilité du «&nbsp;référent accessibilité&nbsp;» de l’entité publique et doit se conformer aux points suivants&nbsp;:</p>
+    <ul>
+      <li>Il est réalisé sur au moins une partie du périmètre du site, et sur un échantillon représentatif de <strong>l’ensemble du système d’information</strong> selon une fréquence à définir&nbsp;;</li>
+      <li>Il revient à l’entité de veiller à la fiabilité de sa déclaration par tous moyens (recours à un prestataire externe, formation d’experts internes, audits croisés&hellip;)&nbsp;;</li>
+      <li>Il vise à produire un score de conformité pour les niveaux simple A et double A (AA) du RGAA sur un échantillon représentatif de pages Web&nbsp;;</li>
+      <li>Le résultat doit être remonté à la direction au minimum.</li>
+    </ul>
+  
+
+
+  <h4 id="Obligation-d-amenagement-raisonnable">4.2.3. Obligation d’aménagement raisonnable</h4>
+  
+    <p>La Convention relative aux droit des personnes handicapées (CRDPH) des Nations Unies, en même temps qu’elle consacre l’accessibilité comme un droit humain et crée une obligation d’action pour inclure les personnes handicapées, précise que cette action doit consister en des «&nbsp;aménagements raisonnables&nbsp;».</p>
+    <p>La notion est définie à l’article 2 de la CRDPH comme suit&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;On entend par "aménagement raisonnable" les modifications et ajustements nécessaires et appropriés n’imposant pas de charge disproportionnée ou indue apportés, en fonction des besoins dans une situation donnée, pour assurer aux personnes handicapées la jouissance ou l’exercice, sur la base de l’égalité avec les autres, de tous les droits de l’homme et de toutes les libertés fondamentales&nbsp;»</p>
+    </blockquote>
+    <p>Les standards WCAG&nbsp;2.0 sont des recommandations qui ont valeur d’obligation légale en France. Ils contiennent notamment un certain nombre de règles techniques très précises qui peuvent être déployées facilement et même quelquefois être testées automatiquement. Notons toutefois que seuls <a id="body-ftn24" href="#ftn24">20&nbsp;% des critères d’accessibilité semblent permettre une vérification de façon entièrement automatique<sup aria-hidden="true">24</sup></a>.</p>
+    <p>De nombreux critères sont donc à vérifier manuellement, par une personne formée, notamment lorsqu’il s’agit de critères de pertinence. Il est important de comprendre la notion de pertinence qui n’est pas à entendre dans le sens d’optimisation, mais dans le sens de l’accès à l’information, ce qui constitue un critère qu’il est possible d’évaluer de façon objective. Ainsi, la qualité des alternatives apportées ne devrait pas être appréciée par l’auditeur qui doit se contenter de vérifier si l’accès à l’information est possible.</p>
+    <p>Ces deux types de recommandations (celles vérifiables automatiquement et celles devant faire l’objet d’un test manuel) doivent se déployer sur toutes les pages d’un site.</p>
+    <p>En pratique, il est difficile et extrêmement chronophage de tester l’intégralité des contenus au regard de l’intégralité des règles WCAG&nbsp;2.0. La volonté de rendre un site totalement accessible sur l’intégralité de ses pages et pour l’intégralité des critères peut conduire à une débauche d’énergie qui peut s’avérer contre-productive.</p>
+    <p>Il va donc être nécessaire&nbsp;:</p>
+    <ul>
+      <li>De fixer des limites&nbsp;: analyser un échantillon de pages représentatives et non l’intégralité du site&nbsp;;</li>
+      <li>D’effectuer des arbitrages&nbsp;: déterminer les contenus et fonctionnalités essentiels du site ou de l’application qu’il n’est pas possible de ne pas rendre accessible, et décider dans quel cas une amélioration s’avère trop lourde ou contre-productive&nbsp;;</li>
+      <li>De planifier les opérations de façon à faire de l’accessibilité une démarche d’amélioration continue.</li>
+    </ul>
+    <p>La première attente fondamentale des utilisateurs est de pouvoir accéder aux contenus et fonctionnalités des sites publics, mais pas nécessairement sous la même forme. Mettre en place des alternatives peut être un compromis acceptable à condition qu’elles fournissent le même niveau d’information et des fonctionnalités équivalentes.</p>
+  
+
+
+  <h4 id="La-notion-de-base-de-reference">4.2.4. La notion de «&nbsp;base de référence&nbsp;»</h4>
+  
+    <p>Avec <a id="body-ftn25" href="#ftn25">le saut technologique opéré ces dernières années<sup aria-hidden="true">25</sup></a>, il n’est pas possible de mettre à disposition une même version d’un service pour des technologies modernes, c’est-à-dire supportant les dernières évolutions techniques et majoritairement utilisées, et des <a id="body-ftn26" href="#ftn26">technologies considérées aujourd’hui comme obsolètes<sup aria-hidden="true">26</sup></a>.</p>
+    <p>L’accessibilité consiste à respecter une <a id="body-ftn27" href="#ftn27">obligation d’aménagement raisonnable<sup aria-hidden="true">27</sup></a>, et le maintien de plusieurs versions d’une même interface n’est pas réalisable en pratique car complexe et excessivement coûteux à maintenir.</p>
+    <p>En parallèle de la mise aux normes des contenus et fonctionnalités de ses services en ligne par l’administration, il est nécessaire que les utilisateurs mettent à jour leur navigateur et leur technologie d’assistance pour bénéficier des avancées techniques en matière d’accessibilité.</p>
+    <p>La réalisation du référentiel technique a reposé sur un ensemble de tests pour vérifier leur compatibilité avec les navigateurs et technologies d’assistance. Étant donné la diversité des systèmes existant, les tests se sont concentrés sur les configurations majoritairement utilisées.</p>
+    <p>Il a été pris en compte l’existence de solutions libres et gratuites pour effectuer les tests afin de permettre aux utilisateurs souhaitant se mettre à jour de pouvoir le faire sans coût supplémentaire.</p>
+    <p>Cette <a href="base-de-reference.html">base de référence</a> est explicitée en détail dans une sous-section du référentiel technique.
+      Elle concerne les cas où il n’est pas possible de connaître la configuration des postes de travail des utilisateurs (configuration des logiciels utilisés et leur version).
+    </p>
+    <p>Dans le cas où le parc informatique est maîtrisé, on parle alors d’«&nbsp;<a href="glossaire.html#environnement-matris">environnement maîtrisé</a>&nbsp;». La base de référence pour les tests est alors constituée des logiciels utilisés dans cet environnement maîtrisé.</p>
+    <p>Notons que cette base de référence est un socle technique minimal sur lequel des tests doivent être effectués. Mais rien n’empêche de compléter cette base de référence, notamment si vous souhaitez étendre la compatibilité avec des technologies plus anciennes.</p>
+  
+
+
+  <h4 id="Declaration-de-conformite">4.2.5. Déclaration de conformité</h4>
+
+
+  <h5>4.2.5.1. Principe</h5>
+  
+    <p>La «&nbsp;déclaration de conformité&nbsp;» est l’étape finale de la vérification de la conformité au RGAA&nbsp;; elle est réalisée préalablement à la mise à disposition du service en ligne et correspond à un engagement sur l’honneur de satisfaire à l’ensemble des tests (sauf dérogation dûment justifiée) ayant un niveau WCAG déduit <span aria-label="simple-A"><span aria-hidden="true">A</span></span> et <span aria-label="double-A"><span aria-hidden="true">AA</span></span> dans la version du RGAA en vigueur.</p>
+    <p>Elle peut donc comporter des écarts en nombre limité au regard des tests du RGAA. Dans certains cas, l’administrateur du site sera dans l’impossibilité matérielle de mettre en œuvre une partie des critères. Il sera alors possible de signaler les contenus correspondant comme non-accessibles.</p>
+    <p>En tout état de cause, les écarts devront être justifiés et expliqués suivant le principe de la dérogation (cf. section Liste des dérogations admises et principe de la compensation).</p>
+    <p>La mise en œuvre de ce principe de dérogation ne remet pas en question l’objectif de conformité totale aux tests du RGAA, mais elle permet aux administrateurs&nbsp;:</p>
+    <ul>
+      <li>De démontrer les avancées de leur démarche de mise en conformité&nbsp;;</li>
+      <li>De signaler les futures améliorations du site&nbsp;;</li>
+      <li>De montrer aux utilisateurs que les problèmes sont connus et anticipés&nbsp;;</li>
+      <li>De faire remonter au Ministère chargé des personnes handicapées les problèmes de mise en œuvre sur le terrain&nbsp;;</li>
+      <li>De faciliter l’ajustement ou la mise en œuvre des actions de formation, de sensibilisation ou de mise à disposition d’outils.</li>
+    </ul>
+  
+
+
+  <h5>4.2.5.2. Contenu de la déclaration</h5>
+  
+    <p>La déclaration de conformité porte au minimum sur la liste de pages suivantes du site, lorsqu’elles existent&nbsp;:</p>
+    <ul>
+      <li>Page d’accueil (page constituant le point d’entrée principale du service de communication publique en ligne, elle est généralement accessible par une adresse de la forme <code>http://www.urldusite.extension</code>)&nbsp;;</li>
+      <li>Page contact (page contenant les informations de contact ou le ou les formulaires permettant de contacter directement le ou les responsables du service de communication publique en ligne)&nbsp;;</li>
+      <li>Page mentions légales&nbsp;;</li>
+      <li>Page politique d’accessibilité&nbsp;: outre les informations relatives à l’évolution globale de l’accessibilité du site, cette page contiendra les renseignements relatifs à la déclaration de conformité dont la liste des pages ou secteurs du service dérogeant aux exigences d’accessibilité, leur type de contenu et les solutions alternatives pour y accéder&nbsp;;</li>
+      <li>Page aide (page contenant les informations facilitant l’utilisation du site, raccourcis claviers, éventuels, logiciels/plug-in nécessaires à la consultation du site). La page d’aide, obligatoire, doit mentionner les coordonnées d’un <a id="body-ftn28" href="#ftn28">contact<sup aria-hidden="true">28</sup></a> au sein de l’administration et les coordonnées du défenseur des droits&nbsp;;</li>
+      <li>Page plan du site (page récapitulant l’arborescence du site ou permettant plus largement une navigation au sein des différentes pages composant le services de communication publique en ligne)&nbsp;;</li>
+      <li>Page recherche (page dont l’objet principal est la mise à disposition d’un formulaire de recherche ou des résultats d’une recherche)&nbsp;;</li>
+      <li>Toutes les pages composant le processus d’un service en ligne (un formulaire ou une transaction sur plusieurs pages).</li>
+    </ul>
+    <p>S’ajoute à ces pages impératives un certain nombre de pages dans la liste suivante&nbsp;:</p>
+    <ul>
+      <li>Pages d’accès aux contenus ou fonctionnalités principaux (ex&nbsp;: rubriques de 1er niveau dans l’arborescence&hellip;)&nbsp;;</li>
+      <li>Pages représentatives des types de contenus disponibles sur le site (ex.&nbsp;: page contenant des tableaux de données, des éléments multimédia, des illustrations, des formulaires, etc.)&nbsp;;</li>
+      <li>Pages ayant le plus grand nombre de visiteurs.</li>
+    </ul>
+    <p>Le choix exact des pages dans cette liste complémentaire et leur nombre nécessitent une appréciation humaine. Cette appréciation dépend des contenus et services, et de la capacité à mettre en œuvre le RGAA, dans votre environnement technique, en fonction de vos compétences et de vos ressources.</p>
+    <p>À noter que dans le cas d’application de type <span lang="en">Single Page Application</span> (SPA), toutes les pages requises dans l’échantillon décrites ci-dessus ne sont pas forcément présente. Il faudra alors ajuster l’échantillon pour le rendre représentatif.</p>
+    <p>Le RGAA ne fournit pas de format spécifique pour la déclaration de conformité mais précise les informations minimums à faire figurer, en se basant sur le principe de la <a id="body-ftn29" href="#ftn29">déclaration de conformité WCAG&nbsp;2.0<sup aria-hidden="true">29</sup></a>&nbsp;:</p>
+    <ul>
+      <li>Date de réalisation&nbsp;;</li>
+      <li>Version du RGAA de référence&nbsp;;</li>
+      <li>Nom et adresse email du déclarant&nbsp;;</li>
+      <li>Technologies utilisées sur le site&nbsp;;</li>
+      <li>Liste des agents utilisateurs et technologies d’assistance utilisées pour vérifier l’accessibilité des contenus&nbsp;;</li>
+      <li>Liste des pages du site ayant fait l’objet de la vérification de conformité&nbsp;;</li>
+      <li>Résultat des tests et justification des dérogations.</li>
+    </ul>
+  
+
+
+  <h5>4.2.5.3. Qui vérifie la conformité&nbsp;?</h5>
+  
+    <p>Il faut distinguer la vérification effectuée à l’initiative du créateur du contenu Web par un expert indépendant et qui peut être effectuée tout au long de la mise en œuvre des contenus, de la vérification effectuée par l’administration sur la base ou non d’une déclaration de conformité et dont l’objectif est de contrôler le respect du RGAA.</p>
+    <p>Selon le décret n° 2009-546 du 14 mai 2009, la vérification de la conformité au RGAA est assurée par le ministère chargé des personnes handicapées. C’est ce principe de vérification qui est décrit ici. C’est également ce principe qui peut être retenu pour vérifier le site lors de sa production ou dans le cadre d’une démarche d’amélioration d’un site existant.</p>
+  
+
+
+  <h5>4.2.5.4. Que vérifie-t-on&nbsp;?</h5>
+  
+    <p>Il est le plus souvent impossible de vérifier l’intégralité des critères du RGAA sur l’intégralité des pages d’un site (qu’il vienne d’être refondu ou qu’il soit en cours d’amélioration). C’est pourquoi l’administrateur du site va devoir déterminer un échantillon de pages représentatives dont certaines seront obligatoires au regard de la déclaration de conformité (cf section Contenu de la déclaration). La taille de cet échantillon peut varier suivant le nombre de pages, les contenus proposés, le nombre de formulaires, les processus transactionnels, etc&hellip;</p>
+    <p>L’administrateur de site aura intérêt à choisir un échantillon de pages le plus représentatif possible, tout en veillant à ne pas provoquer une masse de travail exagérée pour la vérification. À titre indicatif, l’échantillon standard comprend généralement une quinzaine de pages.</p>
+    <p>Pour qu’une page soit déclarée conforme au RGAA, elle doit vérifier les éléments suivants&nbsp;:</p>
+    <ul>
+      <li>Le niveau double A (AA) doit être atteint&nbsp;;</li>
+      <li>La conformité (et le niveau de conformité) s’entend uniquement pour des pages Web complètes et ne peut être atteinte si une partie de la page Web est exclue&nbsp;;</li>
+      <li>Quand une page Web fait partie d’un ensemble représentant un processus (comme une succession d’étapes devant être complétées afin d’accomplir une activité), toutes les pages Web du processus sont conformes au moins au niveau spécifié. (La conformité à un certain niveau est impossible s’il existe une page de ce processus qui n’atteint pas au moins ce niveau)&nbsp;;</li>
+      <li>Si des technologies sont employées de manière non compatible avec l’accessibilité ou non-conforme, alors elles n’empêchent pas les utilisateurs d’accéder au reste de la page.</li>
+    </ul>
+  
+
+
+  <h5>4.2.5.5. Comment vérifie-t-on la conformité au RGAA&nbsp;?</h5>
+  
+    <p>Les actions à effectuer par le responsable de la vérification de la conformité au RGAA sont&nbsp;:</p>
+    <ul>
+      <li>Identification des pages composant l’échantillon&nbsp;: ce choix relèvera le plus souvent de décisions locales eu égard à la disparité des contextes et donc de la politique d’accessibilité définie. L’échantillon contient au minimum l’ensemble des pages obligatoires&nbsp;;</li>
+      <li>Réalisation des tests sur chacune des pages de l’échantillon&nbsp;;</li>
+      <li>Production d’un compte-rendu sous la forme d’une grille d’audit renseignée et/ou d’un rapport plus ou moins détaillé selon le besoin.</li>
+    </ul>
+    <p>Lors d’un audit, les tests RGAA&nbsp;2.2 pouvaient avoir l’un des trois statuts suivants&nbsp;: conforme, non-conforme et non applicable.</p>
+    <p>Le référentiel technique du RGAA&nbsp;3 propose d’étendre ces statuts, en se basant sur le <a id="body-ftn30" href="#ftn30">schéma EARL (<span lang="en">Evaluation And Report Language</span>) du W3C<sup aria-hidden="true">30</sup></a> afin d’enrichir les dispositifs de mesure.</p>
+    <p>Pour le référentiel technique du RGAA&nbsp;3, un critère peut désormais avoir l’un des 4 statuts suivants&nbsp;:</p>
+    <ul>
+      <li>Conforme ou validé&nbsp;: le critère est conforme&nbsp;;</li>
+      <li>Non-conforme ou invalidé&nbsp;: le critère est non-conforme&nbsp;;</li>
+      <li>Non applicable&nbsp;: le critère est non applicable&nbsp;;</li>
+      <li>Non testé&nbsp;: le critère est non testé (nouveau statut permettant de mesurer la progression de l’audit).</li>
+    </ul>
+    <p>En plus de ces 4 statuts est créé un état particulier, traité à part, concernant les contenus dérogés. Cela se traduira par une colonne supplémentaire dans la grille d’audit permettant d’indiquer quand un contenu dérogé est présent et qu’il impacte des critères. Un même critère peut donc avoir un état dérogé quand il concerne un contenu dérogé, mais il reste applicable pour le reste des contenus de la page.</p>
+    <p>Cet état particulier viendra en complément des quatre premiers statuts et servira à signaler que des contenus dérogés sont applicables au critère et à conserver la trace de ces dérogations.</p>
+    <p>Les modalités d’accès et d’utilisation de la déclaration de conformité seront définies par les services du ministre chargé des personnes handicapées.</p>
+  
+
+
+  <h5>4.2.5.6. Mise en ligne de la déclaration</h5>
+  
+    <p>la déclaration sera accessible sur le service de communication publique en ligne <i>via</i> une page dédiée ou au sein d’une autre page (aide/politique d’accessibilité/mentions légales). Cette page devrait être accessible depuis n’importe quelle autre page du service de communication publique en ligne.</p>
+  
+
+
+  <h5>4.2.5.7. Validité de la déclaration</h5>
+  
+    <p>La déclaration de conformité est considérée comme valide pour la version en cours du RGAA à la date de sa mise en ligne. Dès qu’une nouvelle version du RGAA sera publiée, la déclaration liée à une version antérieure ne sera plus valide. Les administrations auront alors 18 mois pour se mettre en conformité avec la dernière version publiée.</p>
+    <p>Il est à noter qu’une déclaration de conformité peut être mise à jour à plusieurs reprises pour un même site et une même version du RGAA, afin de mettre en évidence les efforts de mise en accessibilité et de mettre à jour le niveau atteint.</p>
+  
+
+
+  <h4 id="Liste-des-derogations-admises-et-principe-de-la-compensation">4.2.6. Liste des dérogations admises et principe de la compensation</h4>
+  
+    <p>À noter qu’une dérogation ne s’applique qu’à un contenu et non à un critère du RGAA. Une fois le contenu dérogé, il sort du champ de l’audit.</p>
+    <p>Lorsqu’il s’agit d’un contenu ou d’une fonctionnalité essentielle dans le cadre du site ou de l’application Web, il ne peut y avoir de dérogation sans une alternative sophistiquée permettant d’apporter le même niveau d’information à l’utilisateur.</p>
+  
+
+
+  <h5>4.2.6.1. Dérogations prévues par WCAG&nbsp;2.0</h5>
+  
+    <p>Les WCAG prévoient un certain nombre de cas permettant de déroger à l’accessibilité complète d’une page Web en faisant une <a id="body-ftn31" href="#ftn31">déclaration de conformité partielle<sup aria-hidden="true">31</sup></a>.</p>
+
+
+
+  <h6>4.2.6.1.1. Contenus fournis par un tiers</h6>
+     
+    <p><strong>Contenus générés par l’utilisateur</strong>&nbsp;: il peut arriver qu’il soit impossible lors de l’affichage original de savoir quel sera le contenu non contrôlé de ces pages. C’est le cas notamment des contenus générés par l’utilisateur, comme par exemple dans une application Web de courrier électronique, un blog, un article permettant l’ajout de commentaires par les utilisateurs ou toute application acceptant du contenu généré par l’utilisateur comme un wiki.</p>
+    
+    <p><strong>Contenus non contrôlés provenant de sources extérieures</strong>&nbsp;: un autre exemple fourni par WCAG concerne les pages, telles que celles d’un portail ou d’un site d’informations, composées d’une somme de contenus rédigés par de multiples contributeurs ou des sites insérant automatiquement, au fur et à mesure, du contenu provenant d’autres sites, tels que des publicités insérées automatiquement.</p>
+    <p>Ce cas de dérogation vaut également pour les liens vers des documents téléchargeables publiés sur d’autres sites, et dont le contenu n’est donc pas contrôlable (cf. Cas des liens vers des documents téléchargeables publiés sur d’autres sites).</p>
+    <p>Les contenus fournis par un tiers peuvent faire l’objet d’une dérogation. Une déclaration précise doit permettre de les identifier. La déclaration peut être sous la forme suivante&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;Cette page n’est pas conforme, mais pourrait être conforme au RGAA niveau X si les parties suivantes, issues de sources non contrôlées, lui étaient retirées&nbsp;: [énumérer les parties concernées].&nbsp;»</p>
+    </blockquote>
+  
+
+
+  <h6>4.2.6.1.2. Langue</h6>
+  
+    <p>Une dérogation est également prévue dans les WCAG&nbsp;2.0 lorsqu’une page n’est pas conforme et pourrait l’être si la compatibilité avec l’accessibilité était assurée pour toutes les langues utilisées dans la page. La déclaration s’énonce alors comme suit&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;Cette page n’est pas conforme, mais serait conforme au RGAA au niveau X si la compatibilité avec l’accessibilité était assurée pour la (les) langue(s) suivante(s)&nbsp;: [énumérer les langues concernées].&nbsp;»</p>
+    </blockquote>
+  
+
+
+  <h5>4.2.6.2. Dérogations supplémentaires</h5>
+
+
+  <h6>4.2.6.2.1. Archivage et obsolescence des contenus</h6>
+  
+    <p>Les contenus relevant de la mission de sauvegarde à titre patrimonial de l’Internet par les acteurs publics désignés par la loi peuvent faire l’objet d’une dérogation.</p>
+    <p>Exemple&nbsp;: un service proposant des archives de contenu. Voir notamment, concernant les archives, les articles 221-1 et suivants du Code du patrimoine, et concernant le dépôt légal, l’article L132-2-1 du Code du patrimoine, ajouté par l’article IV de la <a href="http://www.legifrance.gouv.fr/WAspad/UnTexteDeJorf?numjo=MCCX0300082L">loi n°2006- 961</a> du 1er août 2006 sur le Droit d’auteur et les droits voisins dans la société de l’information, qui charge La Bibliothèque nationale de France (BNF) et l’Institut national de l’audiovisuel (INA) d’effectuer le dépôt légal des &oelig;uvres sous forme numérique.</p>
+  
+
+
+  <h6>4.2.6.2.2. Contenus en téléchargement en nombre important</h6>
+  
+    <p>Il peut être excessivement coûteux et donc déraisonnable de mettre en conformité un nombre important d’archives en téléchargement, au-delà des contenus listés dans la section précédente.</p>
+    <p>Dans ce cas, une dérogation peut être faite pour les documents de plus de 2 ans. Cela ne vaut pas pour la production de nouveaux documents.</p>
+  
+
+
+  <h5>4.2.6.3. Mesures à prendre lorsqu’un contenu est dérogé</h5>
+  
+    <ul>
+      <li>Les contenus non accessibles doivent être signalés à l’utilisateur sur la page d’aide et dans la déclaration de conformité pour qu’il soit informé de la proportion des pages concernées et de leur localisation dans les rubriques du site&nbsp;;</li>
+      <li>Les dérogations en matière d’accessibilité doivent être expliquées et motivées dans le cadre de la déclaration de conformité&nbsp;;</li>
+      <li>Il est nécessaire de prévoir un canal permettant aux personnes handicapées ou qui détectent un problème dans ce domaine de pouvoir le signaler aux administrateurs du service en ligne <i>via</i> un mécanisme accessible (adresse électronique ou formulaire) disponible depuis toutes les pages du site.</li>
+    </ul>
+    <p>La traçabilité de ces contenus dérogés devra également apparaître dans les grilles d’audit comme décrit à la section «&nbsp;Comment vérifie-t-on la conformité au RGAA&nbsp;?&nbsp;».</p>
+  
+
+
+  <h5>4.2.6.4. Droit à la compensation</h5>
+  
+    <p>Il est important de rappeler qu’en vertu de l’article 11 de la loi de février 2005&nbsp;:</p>
+    <blockquote>
+      <p>«&nbsp;la personne handicapée a droit à la compensation des conséquences de son handicap quels que soient l’origine et la nature de sa déficience, son âge ou son mode de vie.&nbsp;»</p>
+    </blockquote>
+    <p>De ce fait, chaque organisme a l’obligation de prendre les moyens nécessaires afin de donner accès, dans un délai raisonnable, aux informations et fonctionnalités recherchées par la personne handicapée, que le contenu fasse l’objet d’une dérogation ou non. La possibilité de demander un contenu alternatif accessible doit être offerte à l’utilisateur sur la page d’aide <i>via</i> un moyen de contact accessible (adresse électronique ou formulaire de contact).</p>
+  
+
+
+  <h2 id="Gestion-des-versions">5. Gestion des versions</h2>
+  
+    <p>Le RGAA est un référentiel composé de différents éléments chacun à l’origine disposant d’un numéro de version. Cette double numérotation est abandonnée.</p>
+    <p>Pour faciliter la traçabilité, chaque mise à jour d’un des documents du RGAA entraînera un versionage du RGAA lui-même et un archivage des différentes versions disponibles sera proposé en téléchargement.</p>
+    <table>
+    <caption>Versions</caption>
+      <thead>
+      <tr>
+        <th scope="col">Version</th>
+        <th scope="col">Date</th>
+        <th scope="col">Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>0.99</td>
+        <td>25/04/2008</td>
+        <td>Version revue et corrigée suite à l’appel public à commentaires. Validée par le collège d’experts accessibilité le 18 sept. 2007 et publiée sur le Web.</td>
+      </tr>
+      <tr>
+        <td>1.0</td>
+        <td>24/11/2008</td>
+        <td>Version harmonisée en termes de présentation avec les autres référentiels, numérotée et datée. Ajout d’une introduction et d’une présentation détaillée du canal Web.</td>
+      </tr>
+      <tr>
+        <td>pré-2.0</td>
+        <td>17/04/2009</td>
+        <td>Initialisation d’un nouveau document qui annule et remplace la version 1.0 du RGAA. Diffusion restreinte.</td>
+      </tr>
+      <tr>
+        <td>2.0</td>
+        <td>03/06/2009</td>
+        <td>Reprise de la structuration du RGAA. Intégration du chapitre sur les critères de succès et du chapitre sur le WCAG&nbsp;2.0 traduit.</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>03/07/2009</td>
+        <td>Mise en forme du RGAA&nbsp;2.0.</td>
+      </tr>
+      <tr>
+        <td>2.2</td>
+        <td>30/09/2009</td>
+        <td>
+          Mise à jour des parties suivantes&nbsp;:
+          <ul>
+            <li>Présentation générale</li>
+            <li>Organisation du document</li>
+          </ul>
+          Mise à jour des niveaux WCAG déduits sur la base des WCAG&nbsp;2.0 Mise en cohérence avec le document d’accompagnement.
+        </td>
+      </tr>
+      <tr>
+        <td>2.2.1</td>
+        <td>16/11/2009</td>
+        <td>Correction de la liste des thématiques dans le paragraphe «&nbsp;4. Les tests unitaires&nbsp;» (liste correcte dans l’annexe).</td>
+      </tr>
+      <tr>
+        <td>3.0</td>
+        <td>29 avril 2015</td>
+        <td>Mise à jour majeure. Voir le <a href="guide-accompagnement-RGAA.html">guide d’accompagnement</a> pour plus de détails sur les modifications apportées.</td>
+      </tr>
+      <tr>
+        <td>3 2016</td>
+        <td>En cours</td>
+        <td>Mise à jour de contenu et de forme. Voir la <a href="changelog.html">note de révision</a> pour plus de détails sur les modifications apportées.</td>
+      </tr>
+      </tbody>
+    </table>
+</main>
+</section>
+<aside aria-label="Notes de bas de page" class="footnotes">
+  <ol>
+    <li id="ftn1">Source&nbsp;: <a href="http://apps.who.int/iris/bitstream/10665/41003/1/9241541261_eng.pdf"><span lang="en">International classification of Impairments, Disabilities and Handicaps</span> (OMS, 1980)&nbsp;- PDF&nbsp;; 6,4 Méga-octets&nbsp;; en anglais</a> (<a href="#body-ftn1">retour au texte</a>).</li>  
+    <li id="ftn2">Définition issue de la classification internationale du fonctionnement, du handicap et de la santé. Source&nbsp;: <a href="http://www.who.int/classifications/icf/en/"><span lang="en">International Classification of Functioning, Disability and Health (ICF)</span> (en anglais)</a> (<a href="#body-ftn2">retour au texte</a>).</li>  
+    <li id="ftn3">Loi n° 2005-102 du 11 février 2005, ayant donné lieu à une définition reprise à l’<a href="https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=35AC6B7A768A9D93A581BF2882D80F9F.tpdjo08v_3?cidTexte=LEGITEXT000006074069&amp;idArticle=LEGIARTI000006796446&amp;dateTexte=">article L. 114 du code de l’action sociale et des familles</a> (<a href="#body-ftn3">retour au texte</a>).</li>
+    <li id="ftn4"><a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000809647&amp;fastPos=1&amp;fastReqId=732447887&amp;categorieLien=cid&amp;oldAction=rechTexte#LEGIARTI000006682279">Article 47</a> de la loi n° 2005-102 du 11 février 2005,  sur Legifrance (<a href="#body-ftn4">retour au texte</a>).</li>
+    <li id="ftn5">Il s’agit des WCAG&nbsp;2.0, dont vous pouvez consulter la <a href="http://www.w3.org/Translations/WCAG20-fr/">traduction française agréée sur le site du W3C</a> (<a href="#body-ftn5">retour au texte</a>).</li>
+    <li id="ftn6">Il s’agit de la norme ISO/CEI 40500:2012. Voir l’<a href="http://www.iso.org/iso/fr/home/news_index/news_archive/news.htm?refid=Ref1670">actualité en ligne sur le site de l’ISO</a> (<a href="#body-ftn6">retour au texte</a>).</li>
+    <li id="ftn7">Depuis le «&nbsp;plan eEurope 2002&nbsp;» confirmé par le «&nbsp;plan eEurope 2005&nbsp;», la Commission Européenne a intégré l’accessibilité des personnes handicapées et âgées à la société de l’information comme une priorité de son action. Le point 31 de la résolution du parlement européen du 13 juin 2002 précise&nbsp;:  tous les sites publics européens doivent avoir le niveau double A (AA) du W3C/WAI. Voir <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//TEXT+TA+P5-TA-2002-0325+0+DOC+XML+V0//FR">Europe 2002&nbsp;: Accessibilité des sites Web publics et de leur contenu</a> (<a href="#body-ftn7">retour au texte</a>).</li>
+    <li id="ftn8">Des modèles de ces documents seront proposés au sein d’une section «&nbsp;ressources&nbsp;». Cette section, non normative, fournira différents types de ressources administratives, techniques et pédagogiques pour accompagner les employeurs publics dans leurs démarches (<a href="#body-ftn8">retour au texte</a>).</li>
+    <li id="ftn9">Décret n°2009-546 du 14 mai 2009 pris en application de l’article 47 de la loi n° 2005-102 du 11 février 2005 sur l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées et créant un référentiel d’accessibilité des services de communication publique en ligne. NOR&nbsp;: BCFJ0902916D (<a href="#body-ftn9">retour au texte</a>).</li>
+    <li id="ftn10">L’enquête vie quotidienne et santé de l’INSEE de 2007 relève qu’une personne sur 10 déclare avoir un handicap, mais qu’une personne sur 5 est limitée dans ses activités. Les <a href="http://www.insee.fr/fr/themes/document.asp?ref_id=ip1254">résultats</a> sont consultables en ligne (<a href="#body-ftn10">retour au texte</a>).</li>
+    <li id="ftn11">Source&nbsp;: <a href="http://www.who.int/disabilities/world_report/2011/report/fr/">Rapport mondial sur le handicap</a> (<a href="#body-ftn11">retour au texte</a>).</li>  
+    <li id="ftn12">Note&nbsp;: Pour en savoir plus sur la méthode FALC, vous pouvez consulter le <a href="http://www.unapei.org/IMG/pdf/Guide_ReglesFacileAlire.pdf">Guide du langage Facile à Lire et à Comprendre (PDF, 818 ko)</a> sur le site de l’UNAPEI (<a href="#body-ftn12">retour au texte</a>).</li>
+    <li id="ftn13">Voir le <a href="http://www.un.org/french/disabilities/default.asp?id=1413">texte de la CRDPH sur le site de l’ONU</a> (<a href="#body-ftn13">retour au texte</a>).</li>
+    <li id="ftn14">La France a signé la CRDPH le 30 mars 2007, son protocole le 23 septembre 2008, puis a ratifié la convention et le protocole le 18 février 2008. <a href="http://www.un.org/french/disabilities/countries.asp?id=1300#F">Source ONU</a> (<a href="#body-ftn14">retour au texte</a>).</li>  
+    <li id="ftn15">L’expression exacte est la suivante&nbsp;: <q>La discrimination fondée sur le handicap comprend toutes les formes de discrimination, y compris le refus d’aménagement raisonnable</q> (<a href="#body-ftn15">retour au texte</a>).</li>  
+    <li id="ftn16">Source&nbsp;: <a hreflang="en" href="https://ec.europa.eu/digital-single-market/pillar-vi-enhancing-digital-literacy-skills-and-inclusion/action-64-ensure-accessibility-public">Action 64 (en anglais)</a> (<a href="#body-ftn16">retour au texte</a>).</li>  
+    <li id="ftn17">Source&nbsp;: page sur l’<a hreflang="en" href="https://ec.europa.eu/digital-single-market/web-accessibility">accessibilité Web sur le site de la Commission européenne (en anglais)</a> (<a href="#body-ftn17">retour au texte</a>).</li>
+    <li id="ftn18">Référence&nbsp;: NOR&nbsp;: BCFJ0917114A (<a href="#body-ftn18">retour au texte</a>).</li>
+    <li id="ftn19">Source&nbsp;: «&nbsp;<a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">Licence ouverte&nbsp;/ <span lang="en">Open Licence</span></a>&nbsp;» sur le blog de la mission Etalab (<a href="#body-ftn19">retour au texte</a>).</li>
+    <li id="ftn20">Source&nbsp;: traduction française agréée des WCAG&nbsp;2.0, <a href="https://www.w3.org/Translations/WCAG20-fr/#conformance-reqs">chapitre «&nbsp;Les exigences de conformité&nbsp;»</a> (<a href="#body-ftn20">retour au texte</a>).</li>  
+    <li id="ftn21">Source&nbsp;: traduction française agréée des WCAG&nbsp;2.0, <a href="https://www.w3.org/Translations/WCAG20-fr/#conformance-reqs">chapitre «&nbsp;Les exigences de conformité&nbsp;»</a> (<a href="#body-ftn21">retour au texte</a>).</li>  
+    <li id="ftn22">Le point 31 de la <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//TEXT+TA+P5-TA-2002-0325+0+DOC+XML+V0//FR">résolution du parlement européen du 13 juin 2002</a> précise&nbsp;:  Tous les sites publics européens doivent avoir le niveau double A (AA) du W3C/WAI (<a href="#body-ftn22">retour au texte</a>).</li>
+    <li id="ftn23"><a href="http://www.iso.org/iso/fr/catalogue_detail?csnumber=46486">ISO 9001:2008 – Système de management de la qualité</a> (<a href="#body-ftn23">retour au texte</a>).</li>
+    <li id="ftn24">Ce chiffre est communément admis dans la sphère professionnelle de l’accessibilité numérique, sans qu’une étude officielle n’ait jamais été menée (<a href="#body-ftn24">retour au texte</a>).</li>
+    <li id="ftn25">L’arrivée de HTML5 et le recours massif à JavaScript notamment ont bouleversé la vision du Web pour le faire converger de plus en plus vers une approche applicative (<a href="#body-ftn25">retour au texte</a>).</li>  
+    <li id="ftn26">Demander des tests sur un navigateur texte ne disposant pas de JavaScript n’est pas raisonnable dans le contexte du Web moderne et applicatif (<a href="#body-ftn26">retour au texte</a>).</li>  
+    <li id="ftn27">Référence à la Convention relative aux personnes handicapées. Pour en savoir plus, voir la section 4.2.3. Obligation d’aménagement raisonnable (<a href="#body-ftn27">retour au texte</a>).</li>
+    <li id="ftn28">Il peut s’agir d’une adresse non nominative ou d’un formulaire de contact dédié et accessible. Le référent accessibilité devra être informé des demandes envoyées (<a href="#body-ftn28">retour au texte</a>).</li>  
+    <li id="ftn29">Source&nbsp;: traduction française agréée des WCAG&nbsp;2.0, <a href="https://www.w3.org/Translations/WCAG20-fr/#conformance-reqs">chapitre «&nbsp;Déclarations de conformité (optionnelle)&nbsp;»</a> (<a href="#body-ftn29">retour au texte</a>).</li>  
+    <li id="ftn30"><a hreflang="en" href="http://www.w3.org/TR/EARL10-Schema/"><span lang="en">Evaluation and Report Language (EARL) 1.0 Schema</span> (en anglais)</a> (<a href="#body-ftn30">retour au texte</a>).</li>
+    <li id="ftn31">Source&nbsp;: traduction française agréée des WCAG&nbsp;2.0, <a href="https://www.w3.org/Translations/WCAG20-fr/#conformance-partial">chapitre «&nbsp;Déclaration de conformité partielle - Contenu fourni par un tiers&nbsp;»</a> (<a href="#body-ftn31">retour au texte</a>).</li>  
+  </ol>
+</aside>
+</div>
+
+	<footer role="contentinfo">
+		<h2 id="Licence">Licence</h2>
+		<p><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Secrétariat général pour la modernisation de l’action publique" /> Ce document est un document de l’État placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ultérieure</a>, comme tous les documents hébergés sur <a href="../">references.modernisation.gouv.fr</a>. Voir les conditions d’utilisation de la licence dans les <a href="../mentions-legales">mentions légales</a>.</p>
+		<p>Le référentiel technique (liste des critères, glossaire, cas particuliers, notes techniques, base de référence) est une copie adaptée du <a href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">référentiel AccessiWeb HTML5/ARIA</a> - Version de travail du 19/12/2013 - &Eacute;dité par l’association BrailleNet.</p>
+	<hr/>
+	<div class="legal-info">
+		<p>Réalisation SGMAP - 2016</p>
+		<ul>
+			<li><a href="../contact">Contact</a></li>
+			<li><a href="../mentions-legales">Mentions légales</a></li>
+			<li><a href="../declaration-de-conformite-rgaa-30">Déclaration de conformité</a></li>
+		</ul> 
+	</div>
+	</footer>
+<script src="js/filtres.js"></script>
+</body>
+</html>

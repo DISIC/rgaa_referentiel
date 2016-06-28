@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Base de référence - RGAA 3 2016</title>
+    <meta content="Référentiel Général d’Accessibilité des Administrations, version 3 2016. Base de réference." name="description" />
+    <meta content="Accessibilité, RGAA, RGAA 3 2016, Référentiel Général d’Accessibilité des Administrations, base de référence" name="keywords" />
+    <meta content="3 2016" name="version" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" media="all" href="css/rgaa.main.css" />
+    <link rel="shortcut icon" href="/sites/default/files/marianne_0.ico" type="image/vnd.microsoft.icon">
+  </head>
+<body>  
+  	<div class="skiplinks">
+  		<div class="inside">
+		    <p>Accès direct&nbsp;:</p>
+		    <ul>
+		      <li><a href="#menu">Menu principal</a></li>
+		      <li><a href="#nav">Menu secondaire</a></li>
+		      <li><a href="#main">Contenu</a></li>
+		    </ul>
+				<p class="version">RGAA version 3 2016, publié le 23/06/2016 <a href="changelog.html">Note de révision</a></p>
+			</div>
+  	</div>
+    <div class="rgaa-header">
+      <header role="banner" class="main-header">
+        <p class="img"><a title="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" href="../"><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" /></a></p>
+        <p class="slogan">Les documents de référence du S.I. de l’État 
+        <span class="ss-titre">un service proposé par <a href="http://modernisation.gouv.fr/">modernisation.gouv.fr</a></span></p>
+      </header>
+	    <nav id="menu" role="navigation" aria-label="menu principal">
+	      <ul>
+ 	        <li class="link-home"><a href="../">Retour à l'accueil</a></li>
+	        <li><a href=".">RGAA</a></li>
+	        <li><a href="introduction-RGAA.html">Introduction au RGAA</a></li>
+	        <li><a href="guide-accompagnement-RGAA.html">Guide d’accompagnement</a></li>
+	        <li><a href="criteres.html">Référentiel technique</a></li>
+	      </ul>
+	    </nav>
+    </div>
+
+      <nav id="nav" role="navigation" aria-label="menu secondaire">
+        <ul>
+          <li><a href="criteres.html">Critères</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
+          <li><a href="cas-particuliers.html">Cas particuliers</a></li>
+          <li><a href="notes-techniques.html">Notes techniques</a></li>
+          <li><span>Base de référence</span></li>
+          <li><a href="references.html">Références</a></li>
+        </ul>
+      </nav>
+		<div id="wrapper">
+	<section aria-labelledby="main-title">
+	<main id="main" role="main">
+      <h1 id="main-title">Base de référence</h1>
+		<p>Plusieurs critères RGAA font référence à des tests de restitution à effectuer sur un ensemble de technologies d’assistance (TA), de navigateurs et de systèmes d’exploitation. Ce document décrit et explique les combinaisons qui ont été retenues pour constituer la base de référence.</p>
+
+			<h2>Compatible avec les technologies d’assistance - Base de référence</h2>
+		<p>La base de référence est constituée des configurations (technologie d’assistance, système d’exploitation, navigateur) qui permettent de déclarer qu’un dispositif HTML5/ARIA est "<a href="glossaire.html#compatible-avec-les-technologies-dassistance">compatible avec l’accessibilité</a>" tel que défini par WCAG.</p>
+		<p>Elle est établie par consensus à partir de la liste des technologies d’assistance dont l’usage est suffisamment répandu, ou, dans certains cas lorsqu’elle est fournie de manière native et constitue le moyen privilégié d’accès à l’information et aux fonctionnalités.</p>
+		<h2>Base de référence</h2>
+			<p>La base de référence permettant de couvrir la proportion la plus large des usages est constituée de combinaisons associant des technologies d’assistance d’usage suffisamment répandu, les deux systèmes d’exploitation <span lang="en">Windows</span> XP+ et OSX et les trois navigateurs IE9+, <span lang="en">Firefox</span> et Safari.</p>
+				<p>Pour qu’un dispositif HTML5/ARIA ou son alternative soit considéré comme compatible avec l’accessibilité il faut qu’il soit pleinement fonctionnel, en termes de restitution et de fonctionnalités, sur au moins une des combinaisons suivantes&nbsp;:</p>
+				<table>
+				<caption>Base de référence - Combinaison 1</caption>
+				  <thead>
+				  <tr>
+				    <th scope="row">Technologie d’assistance (TA)</th>
+				    <th scope="row">Version TA</th>
+				    <th scope="row">Navigateur</th>
+				  </tr>
+				  </thead>
+				  <tbody>
+				  <tr>
+				    <td>NVDA</td>
+				    <td>Dernière version</td>
+				    <td><span lang="en">Firefox</span></td>
+				  </tr>
+				  <tr>
+				    <td><span lang="en">JAWS</span></td>
+				    <td>Version précédente</td>
+				    <td><span lang="en">Firefox</span> ou <span lang="en">Internet Explorer</span> 9+</td>
+				  </tr>
+				  <tr>
+				    <td><span lang="en">Voice Over</span></td>
+				    <td>Dernière version</td>
+				    <td>Safari</td>
+				  </tr>
+				  </tbody>
+				</table>
+				<table>
+				<caption>Base de référence - Combinaison 2</caption>
+				  <thead>
+				  <tr>
+				    <th scope="row">Technologie d’assistance (TA)</th>
+				    <th scope="row">Version TA</th>
+				    <th scope="row">Navigateur</th>
+				  </tr>
+				  </thead>
+				  <tbody>
+				  <tr>
+				    <td><span lang="en">JAWS</span></td>
+				    <td>Version précédente</td>
+				    <td><span lang="en">Firefox</span></td>
+				  </tr>
+				  <tr>
+				    <td>NVDA</td>
+				    <td>Dernière version</td>
+				    <td><span lang="en">Firefox</span> ou <span lang="en">Internet Explorer</span> 9+</td>
+				  </tr>
+				  <tr>
+				    <td><span lang="en">Voice Over</span></td>
+				    <td>Dernière version</td>
+				    <td>Safari</td>
+				  </tr>
+				  </tbody>
+				</table>
+		<h2>Exigences complémentaires</h2>
+			<p>Les règles suivantes doivent également être respectées&nbsp;:</p>
+				<ol>
+				  <li>L’ensemble des dispositifs HTML5/ARIA ou leurs alternatives doivent être pleinement fonctionnels, sur l’ensemble des pages du site, sans nécessiter de changement de technologie d’assistance en cours d’utilisation&nbsp;;</li>
+				  <li>Lorsque des alternatives à des dispositifs HTML5/ARIA sont proposées, elles ne doivent pas nécessiter la désactivation d’une technologie (par exemple JavaScript ou le plugin Flash) sauf s’il s’agit d’une fonctionnalité proposée par le site lui-même.
+				    Par exemple&nbsp;:
+				    <ul>
+				      <li>Le site met à disposition une version alternative conforme pleinement fonctionnelle sans le recours aux technologies dont l’usage est non compatible avec l’accessibilité&nbsp;;</li>
+				      <li>Le site met à disposition une fonctionnalité de remplacement des dispositifs HTML5/ARIA par des dispositifs alternatifs compatibles&nbsp;;</li>
+				    </ul>
+				  </li>
+				  <li>Un moyen est mis à disposition des utilisateurs de technologies d’assistance pour signaler les problèmes rencontrés et obtenir, <i>via</i> un dispositif de compensation, les informations qui seraient rendues indisponibles&nbsp;;</li>
+				  <li>Si une déclaration de conformité est établie, elle doit comporter la liste des technologies d’assistance avec lesquelles les dispositifs HTML5/ARIA ont été testés et les résultats de ces tests (par exemple "supporté", "non supporté", "supporté partiellement") au moins.</li>
+				</ol>
+
+			<h2>Environnement maîtrisé</h2>
+			<p>Lorsque le site Web est destiné à être diffusé et utilisé dans un <a href="glossaire.html#environnement-matris">environnement maîtrisé</a>, la base de référence est constituée des configurations (technologie d’assistance, système d’exploitation, navigateur) effectivement utilisés dans l’environnement maîtrisé.</p>
+				<p>Par exemple, lorsque le site Web est exclusivement diffusé dans un environnement GNU/Linux, les tests devront être réalisés uniquement sur les navigateurs et les technologies d’assistance utilisés par les agents sur cette plateforme. Cette base de référence se substitue à la base de référence utilisée en environnement non maîtrisé.</p>
+		</main>
+	</section>
+	</div>
+	<footer role="contentinfo">
+		<h2>Licence</h2>
+		<p><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Secrétariat général pour la modernisation de l’action publique" /> Ce document est un document de l’État placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ultérieure</a>, comme tous les documents hébergés sur <a href="../">references.modernisation.gouv.fr</a>. Voir les conditions d’utilisation de la licence dans les <a href="../mentions-legales">mentions légales</a>.</p>
+		<p>Le référentiel technique (liste des critères, glossaire, cas particuliers, notes techniques, base de référence) est une copie adaptée du <a href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html">référentiel AccessiWeb HTML5/ARIA</a> - Version de travail du 19/12/2013 - &Eacute;dité par l’association BrailleNet.</p>
+	<hr/>
+	<div class="legal-info">
+		<p>Réalisation SGMAP - 2016</p>
+		<ul>
+			<li><a href="../contact">Contact</a></li>
+			<li><a href="../mentions-legales">Mentions légales</a></li>
+			<li><a href="../declaration-de-conformite-rgaa-30">Déclaration de conformité</a></li>
+		</ul> 
+	</div>
+	</footer>
+
+</body>
+</html>
