@@ -11,7 +11,7 @@
     <link rel="stylesheet" media="all" href="css/rgaa.main.css" />
     <link rel="shortcut icon" href="/sites/default/files/marianne_0.ico" type="image/vnd.microsoft.icon">
   </head>
-<body>  
+<body>
   	<div class="skiplinks">
   		<div class="inside">
 		    <p>Accès direct&nbsp;:</p>
@@ -26,13 +26,13 @@
     <div class="rgaa-header">
       <header role="banner" class="main-header">
         <p class="img"><a title="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" href="../"><img width="69" height="93" class="sgmap-logo" src="img/modernisation-logo.jpg" alt="Retour à l'accueil, Secrétariat Général pour la modernisation de l'action publique, Premier ministre, République Française" /></a></p>
-        <p class="slogan">Les documents de référence du S.I. de l’État 
+        <p class="slogan">Les documents de référence du S.I. de l’État
         <span class="ss-titre">un service proposé par <a href="http://modernisation.gouv.fr/">modernisation.gouv.fr</a></span></p>
       </header>
 	    <nav id="menu" role="navigation" aria-label="menu principal">
 	      <ul>
 	        <li class="link-home"><a href="../">Retour à l'accueil</a></li>
-	        <li><a href=".">RGAA</a></li>
+	        <li><a href="rgaa-3.2016.html">RGAA</a></li>
 	        <li><a href="introduction-RGAA.html">Introduction au RGAA</a></li>
 	        <li><a href="guide-accompagnement-RGAA.html">Guide d’accompagnement</a></li>
 	        <li><a href="criteres.html">Référentiel technique</a></li>
@@ -54,7 +54,7 @@
 		<div id="wrapper">
 <main id="main" role="main">
 				  <h1>Notes techniques</h1>
-				
+
 				<p>Les notes techniques ci-dessous donnent des explications pour la prise en charge de certains éléments HTML5 dont le support peut être variable et la manière dont le référentiel propose de les prendre en charge.</p>
 
 
@@ -63,14 +63,14 @@
 
 
 			<h3 id="nt-1-2">Critère 1.2 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>Lorsqu’une image est associée à une <a href="glossaire.html#lgende-dimage">légende</a>, la note technique WCAG recommande de renseigner systématiquement l’alternative de l’image (cf. <a href="criteres.html#crit-1-10">critère 1.10</a>). Dans ce cas le critère 1.2 est non applicable.</p>
 				<p>Un attribut WAI-ARIA <code lang="en">role="presentation"</code> ne peut pas être utilisé pour déclarer une image de décoration conformément aux indications données par la spécification sur les restrictions de l’utilisation des rôles WAI-ARIA.</p>
 
 
 
 			<h3 id="nt-1-3-a">Critère 1.3 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]&nbsp;: attribut <code lang="en">title</code></h3>
-		
+
 				<p>La note WCAG interdit l’utilisation de l’attribut <code lang="en">title</code> en remplacement de l’attribut <code lang="en">alt</code>, néanmoins il est souvent utile d’utiliser l’attribut <code lang="en">title</code> pour faire apparaître une infobulle (<span lang="en">tooltip</span>) sur les images particulièrement obscures. Si l’attribut <code lang="en">title</code> est utilisé de cette manière, le contenu de l’attribut <code lang="en">title</code> doit être strictement identique à celui de l’alternative.</p>
 
 			<h3 id="nt-1-3-b">Critère 1.3 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]&nbsp;: balise <code lang="en">&lt;title&gt;</code> dans les éléments SVG</h3>
@@ -80,7 +80,7 @@
 
 
 			<h3 id="nt-1-6">Critère 1.6 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>Le manque de support de l’élément <code lang="en">&lt;title&gt;</code> par les technologies d’assistance crée une difficulté dans le cas de l’utilisation de l’élément <code lang="en">&lt;desc&gt;</code> pour implémenter l’alternative courte de l’image si l’image nécessite une <a href="glossaire.html#description-dtaille-image">description détaillée</a>. Dans ce cas il est recommandé d’utiliser un texte adjacent ou un <a href="glossaire.html#lien-adjacent">lien adjacent</a> pour créer la description détaillée.</p>
 				<p>Si l’élément <code lang="en">&lt;desc&gt;</code> est utilisé pour implémenter la description détaillée, il est recommandé d’utiliser un attribut <code lang="en">aria-label</code> pour implémenter l’alternative courte de l’image.</p>
 				<p>L’utilisation de l’attribut <code lang="en">aria-describedby</code> n’est pas possible pour lier une image à sa description détaillée par manque de support des technologies d’assistance.</p>
@@ -89,13 +89,13 @@
 
 
 			<h3 id="nt-1-8">Critère 1.8 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>] et 1.9 [<span aria-label="triple-A"><span aria-hidden="true">AAA</span></span>]</h3>
-		
+
 				<p>Le texte dans les images vectorielles étant du texte réel, il n’est pas concerné par ce critère.</p>
 
 
 
 			<h3 id="nt-1-10">Critère 1.10 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>L’implémentation d’un <code lang="en">role="group"</code> sur l’élément parent <code lang="en">figure</code> est destiné à pallier le manque de support actuel des éléments <code lang="en">figure</code> par les technologies d’assistance. Bien que recommandée, l’utilisation d’un élément <code lang="en">figcaption</code> dans un élément <code lang="en">figure</code> est optionnelle. En revanche l’utilisation d’un élément <code lang="en">figcaption</code> pour associer une légende à une image impose l’utilisation d’un élément parent <code lang="en">figure</code>. La référence à la légende adjacente peut être une expression du type "image 1" ou équivalent lorsque cette expression est reprise dans la légende.</p>
 				<p>Bien que recommandé par HTML5, la note WCAG stipule que le <code lang="en">title</code> ne peut pas être utilisé pour "labelliser" l’image.</p>
 				<p>Les attributs <code lang="en">aria-labelledby</code> et <code lang="en">aria-describedby</code> ne peuvent pas être utilisés actuellement par manque de support par les technologies d’assistance.</p>
@@ -107,7 +107,7 @@
 
 
 			<h3 id="nt-5-1">Critère 5.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>La spécification propose plusieurs méthodes pour lier un résumé à un tableau (tableau lié à un passage de texte avec <code lang="en">aria-describedby</code>, tableau groupé <i>via</i> <code lang="en">figure</code> avec le résumé en texte adjacent, tableau groupé avec <code lang="en">figure</code> avec le résumé dans un élément <code lang="en">figcaption</code>, résumé dans un élément <code lang="en">details</code> dans l’élément <code lang="en">caption</code>).</p>
 				<p>Ces méthodes n’ont pas un support suffisant pour être utilisées actuellement.</p>
 
@@ -117,7 +117,7 @@
 
 
 			<h3 id="nt-7-1">Critère 7.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>Le critère 7.1 implémente la notion de "<a href="glossaire.html#compatible-avec-les-technologies-dassistance">compatible avec les technologies d’assistance</a>" tel que définie par les WCAG, ainsi que le recours à l’API WAI-ARIA pour rendre un composant ou une fonctionnalité accessible. Le bon usage de l’API WAI-ARIA est vérifié <i>via</i> les tests 7.1.3, 7.1.4, 7.1.5 et 7.1.6.</p>
 				<p><strong>Note importante&nbsp;:</strong> dans un environnement HTML5, beaucoup de composants peuvent nécessiter JavaScript pour fonctionner, en conséquence la fourniture d’une alternative à un composant JavaScript qui ne pourrait pas être rendu accessible devra bénéficier d’une méthode spécifique au composant en cause, permettant de le remplacer par une alternative accessible (et de le réactiver).</p>
 				<p>Cela signifie que la désactivation de JavaScript pour l’ensemble de la page ne sera pas acceptée comme une méthode valable, à moins qu’elle ne remette pas en cause l’utilisation des autres composants.</p>
@@ -125,7 +125,7 @@
 
 
 			<h3 id="nt-7-3">Critère 7.3 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>ARIA définit pour un certain nombre de rôles, dédiés au développement de composants d’interface, un ensemble d’interactions au clavier basées sur les touches <kbd>&Eacute;chap</kbd>, <kbd>Barre d’espace</kbd>, <kbd>Tabulation</kbd> et <kbd>touches de direction</kbd> auxquelles peuvent se rajouter d’autres interactions basées sur les <kbd>touches de pagination</kbd>, de <kbd>début</kbd> ou de <kbd>fin</kbd> par exemple. Afin d’accompagner la prise en charge progressive de ces interactions au clavier, le référentiel limite l’exigence aux touches d’interactions principales (<kbd>&Eacute;chap</kbd>, <kbd>barre d’espace</kbd>, <kbd>tabulation</kbd>, <kbd>flèches de direction</kbd>) telles qu’elles sont définies par les <a href="glossaire.html#motif-de-conception">motifs de conception</a>.</p>
 
 
@@ -134,14 +134,14 @@
 
 
 			<h3 id="nt-9-1">Critère 9.1 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>ARIA permet de définir des titres <i>via</i> le rôle <code lang="en">heading</code> et la propriété <code lang="en">aria-level</code> (indication du niveau de titre). Bien qu’il soit préférable d’utiliser l’élément de titre natif en HTML <code lang="en">&lt;hx&gt;</code>, l’utilisation du rôle WAI-ARIA <code lang="en">heading</code> est compatible avec l’accessibilité.</p>
 				<p>Bien que la spécification HTML5 autorise l’utilisation exclusive de titres de niveau 1 (<code lang="en">h1</code>), le manque de support des technologies d’assistance oblige à utiliser une hiérarchie de titres pertinente.</p>
 
 
 
 			<h3 id="nt-9-2">Critère 9.2 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>L’<a href="glossaire.html#arborescence-du-document">arborescence du document</a> (<span lang="en">outline</span>) est générée par l’utilisation des balises sectionnantes <code lang="en">&lt;nav&gt;</code>, <code lang="en">&lt;article&gt;</code>, <code lang="en">&lt;section&gt;</code>, <code lang="en">&lt;aside&gt;</code> et les sections implicites générées par l’utilisation d’une balise <code lang="en">&lt;hx&gt;</code> (lorsque la balise <code lang="en">&lt;hx&gt;</code> n’est pas le premier enfant d’une section).</p>
 				<p>Une balise sectionnante permet de structurer ou de regrouper un contenu, les parties d’un contenu, ou un ensemble de contenus qui peuvent être considérés de manière indépendante du reste du document.</p>
 				<p>Une <a href="glossaire.html#menu-de-navigation">zone de navigation</a> dans le site ou dans une rubrique, un sommaire ou la zone de navigation d’une <a href="glossaire.html#collection-de-pages">collection de pages</a> (<code lang="en">&lt;nav&gt;</code>), un contenu "complémentaire" au <a href="glossaire.html#zone-main">contenu principal</a> (<code lang="en">&lt;aside&gt;</code>), le contenu principal ou le regroupement de plusieurs contenus comme des articles (<code lang="en">&lt;article&gt;</code> ou <code lang="en">&lt;section&gt;</code>) un ou des contenus secondaires comme un commentaire, un <span lang="en">widget Twitter</span>, un fil RSS (<code lang="en">&lt;article&gt;</code> ou <code lang="en">&lt;section&gt;</code>) sont autant d’exemples de contenus sectionnés.</p>
@@ -157,7 +157,7 @@
 
 
 			<h3 id="nt-9-3">Critère 9.3 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>Les rôles WAI-ARIA <code lang="en">list</code> et <code lang="en">listitem</code> peuvent nécessiter l’utilisation des propriétés <code lang="en">aria-setsize</code> et <code lang="en">aria-posinset</code> dans le cas où l’ensemble de la liste n’est pas disponible <i>via</i> le DOM généré au moment de la consultation.</p>
 				<p>Bien que possédant un rôle <code lang="en">definition</code>, utilisé en combinaison avec la propriété <code lang="en">aria-labelledby</code>, WAI-ARIA ne propose pas de rôle équivalent à une liste de définition HTML. Le rôle <code lang="en">definition</code> ne peut donc pas être utilisée comme équivalent à une liste de définition HTML <code lang="en">dl</code>.</p>
 				<p>Les rôles <code lang="en">tree</code>, <code lang="en">tablist</code>, <code lang="en">menu</code>, <code lang="en">combobox</code> et <code lang="en">listbox</code> ne sont pas équivalents à une liste HTML <code lang="en">ul</code> ou <code lang="en">ol</code>.</p>
@@ -168,7 +168,7 @@
 
 
 			<h3 id="nt-10-13">Critère 10.13 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>WAI-ARIA propose une propriété <code lang="en">aria-hidden</code> (<code lang="en">true</code> ou <code lang="en">false</code>) qui permet d’inhiber la restitution d’un contenu en direction des technologies d’assistance, sans influencer sur sa visibilité en direction des agents utilisateurs&nbsp;: un contenu avec <code lang="en">aria-hidden="true"</code> ne sera donc plus vocalisable, mais restera visible.</p>
 				<p>Sauf si le contenu contrôlé par <code lang="en">aria-hidden</code> n’a pas vocation à être restitué par les technologies d’assistance, la valeur de l’attribut <code lang="en">aria-hidden</code> doit être cohérente avec l’état affiché ou masqué du contenu à l’écran.</p>
 				<p>La spécification HTML5 propose un attribut <code lang="en">hidden</code> qui permet de rendre indisponible (quand l’attribut <code lang="en">hidden</code> est présent) un contenu dans le DOM généré (de manière similaire au <code lang="en">type="hidden"</code> sur un contrôle de formulaire).</p>
@@ -180,7 +180,7 @@
 
 
 			<h3 id="nt-11-11">Critère 11.11 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>]</h3>
-		
+
 				<p>Certains types de formulaire HTML5 proposent des messages d’aide à la saisie automatique, par exemple les types <code lang="en">url</code> et <code lang="en">email</code> affichent un message du type "veuillez saisir une adresse <span lang="en">e-mail</span> valide" dans le cas où l’adresse <span lang="en">e-mail</span> saisie ne correspond pas au format attendu. Ces messages sont personnalisables <i>via</i> l’API <span lang="en">Constraint Validation</span> qui peut permettre de personnaliser les messages d’erreur et valider le critère. Attention cependant, le support de cette API n’est pas encore stabilisé. Le type <code lang="en">pattern</code> qui permet d’effectuer automatiquement des contrôles de format (<i>via</i> des expressions régulières) affiche également un message d’aide, mais ce dernier est personnalisable <i>via</i> l’attribut <code lang="en">title</code>, ce dispositif valide le critère.</p>
 				<p>Référence&nbsp;: <a hreflang="en" href="https://html.spec.whatwg.org/#constraint-validation">WHATWG - 4.10.21.3 <span lang="en">The constraint validation</span> API</a>.</p>
 
@@ -190,7 +190,7 @@
 
 
 			<h3 id="nt-12-10">Critère 12.10 [<span aria-label="simple-A"><span aria-hidden="true">A</span></span>]</h3>
-		
+
 				<p>WAI-ARIA propose des rôles permettant d’indiquer les zones principales (régions) du document. Ces rôles sont très profitables aux utilisateurs de lecteurs d’écran notamment, mais également aux utilisateurs de la navigation au clavier qui peuvent ainsi bénéficier de fonctionnalités de navigation rapide dans la structure du document. Si la plupart des lecteurs d’écran mettent à disposition ces fonctionnalités, les navigateurs n’ont pas encore proposé de fonctionnalité de navigation dédiée pour les utilisateurs qui ne peuvent pas utiliser la souris. La mise en place des liens d’évitement reste donc une exigence.</p>
 
 
@@ -207,7 +207,7 @@
 			<li><a href="../contact">Contact</a></li>
 			<li><a href="../mentions-legales">Mentions légales</a></li>
 			<li><a href="../declaration-de-conformite-rgaa-30">Déclaration de conformité</a></li>
-		</ul> 
+		</ul>
 	</div>
 	</footer>
 
