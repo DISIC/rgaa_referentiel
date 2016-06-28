@@ -13,4 +13,4 @@ Une version est également disponible aux formats pdf et odt. Vous pouvez trouve
 
 ## Suivi des mises à jour
 
-Toutes les corrections apportées à la version 3 2016 sont listées dans [la note de révision](https://disic.github.io/rgaa_referentiel_3-2016/changelog.html). Une version sous forme de grille est également disponible au format odf. Ce fichier est disponible en téléchargement [index-modifs-criteres-RGAA-3-2016.ods (ODS, 17 ko)](https://github.com/DISIC/rgaa_referentiel_3-2016/blob/index-modifs-criteres-RGAA-3-2016.ods).
+Toutes les corrections apportées à la version 3 2016 sont listées dans [la note de révision](https://disic.github.io/rgaa_referentiel_3-2016/changelog.html). Une version sous forme de grille est également disponible au format odf. Ce fichier est disponible en téléchargement [index-modifs-criteres-RGAA-3-2016.ods (ODS, 17 ko)](https://github.com/DISIC/rgaa_referentiel_3-2016/blob/gh-pages/index-modifs-criteres-RGAA-3-2016.ods?raw=true).
