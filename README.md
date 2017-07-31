@@ -1,6 +1,6 @@
 # Version 3 2016 du référentiel général d'accessibilité pour les administrations
 
-Ce dépôt comporte l'ensembe des documents mis à jour dans le cadre de la version 3 2016 du RGAA :
+Ce dépôt comporte l'ensemble des documents mis à jour dans le cadre de la version 3 2016 du RGAA :
 
 * [Introduction au RGAA](https://disic.github.io/rgaa_referentiel_3-2016/introduction-RGAA.html)
 * [Guide d'accompagnement](https://disic.github.io/rgaa_referentiel_3-2016/guide-accompagnement-RGAA.html)
