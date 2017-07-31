@@ -87,10 +87,12 @@ var Config = ( function(){
 	//collapse
 	togglelevel();
 	toggletest();
+	toggleanchor();
 	togglefiltres();
 	togglethem();
 	/*** Events ***/
 	inputtests.addEventListener('click',toggletest, false );
+	window.addEventListener('hashchange',toggleanchor, false);
 	inputA.addEventListener( 'click' , togglelevel , false );
 	inputAA.addEventListener( 'click' , togglelevel , false );
 	inputAAA.addEventListener( 'click', togglelevel , false);
@@ -183,6 +185,32 @@ var Config = ( function(){
 				bloc[i].getElementsByTagName( 'aside' )[0].className = 'is-invisible';
 				bloc[i].getElementsByTagName( 'button' )[0].textContent = cfgLang.testOn[lang];
 				bloc[i].getElementsByTagName( 'button' )[0].className = 'is-inactive';
+			}
+		}
+	}
+	//toggleanchor
+	function toggleanchor(){
+	var anchor = unescape(self.document.location.hash.substring(1));
+	if(anchor){
+			var anchorCrit = anchor.indexOf('crit');
+			var anchorTest = anchor.indexOf('test');
+			var anchorId = document.getElementById(anchor);
+			
+			if(anchorTest !==-1){
+				anchorId.parentNode.className = 'is-visible';
+				anchorId.parentNode.parentNode.className = 'is-visible';
+				anchorId.parentNode.parentNode.getElementsByTagName( 'aside' )[0].className = 'is-visible';
+				anchorId.parentNode.parentNode.getElementsByTagName( 'button' )[0].textContent = cfgLang.testOff[lang];
+				anchorId.parentNode.parentNode.getElementsByTagName( 'button' )[0].removeAttribute('class');
+				anchorId.scrollIntoView();
+			}
+			if(anchorCrit !==-1){
+				anchorId.className = 'is-visible';
+				anchorId.getElementsByTagName( 'ul' )[0].className = 'is-visible';
+				anchorId.parentNode.parentNode.getElementsByTagName( 'aside' )[0].className = 'is-visible';
+				anchorId.parentNode.parentNode.getElementsByTagName( 'button' )[0].textContent = cfgLang.testOff[lang];
+				anchorId.parentNode.parentNode.getElementsByTagName( 'button' )[0].removeAttribute('class');
+				anchorId.scrollIntoView();
 			}
 		}
 	}
@@ -325,4 +353,3 @@ var Config = ( function(){
 		}
 	}
 })();
-

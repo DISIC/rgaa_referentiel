@@ -733,6 +733,7 @@ article[data-level]>ul>li:before{
 }
 article aside a{
 	color:#333;
+	text-decoration:underline;
 }
 
 
@@ -842,14 +843,10 @@ article[data-level]{
 		background:url('img/plus-sm.png') no-repeat center center;	
 	}
 	
-	.principe,
-	.niveau{
+	.principe{
 		font-size:0.9em;
 		margin:0;
 		font-style:italic;
-	}
-
-	.niveau{
 		margin-bottom:1em;
 	}
 
@@ -890,3 +887,18 @@ button.is-inactive:focus{
 	color:#fff;
 }
 
+
+/**changelog**/
+
+.block{
+	border:1px solid #ddd;
+	padding:0 1em;
+	width:95%;
+	margin:auto;
+	font-size:95%;
+	background:#FBFBFB
+}
+
+.block li{
+	margin-bottom:0.5em
+}
