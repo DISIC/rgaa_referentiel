@@ -9,7 +9,7 @@ Ce dépôt comporte l'ensemble des documents mis à jour dans le cadre de la ver
 Cette mise à jour a été mise en ligne le 28 juillet 2017 sur le site http://references.modernisation.gouv.fr/rgaa-accessibilite/
 
 Ces pages peuvent également être consultées ici en cliquant sur les liens ci-dessus.
-Une version est également disponible aux formats pdf et odt. Vous pouvez trouvez ces fichiers dans le répertoire **RGAA-PDF**.
+Une version est également disponible aux formats pdf et odt. Vous pouvez trouvez ces fichiers dans le répertoire [RGAA-PDF](RGAA-PDF).
 
 ## Suivi des mises à jour
 
