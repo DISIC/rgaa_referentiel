@@ -56,8 +56,18 @@ a{
 	color:#2868C9;
 	text-decoration:none;
 }
-
-
+.warning {
+	background: #fffce5 url(../img/message-warning.png) no-repeat 8px 8px;
+	border: 1px solid #ed5;
+	padding: 1em 1em 1em 3em;
+	margin-bottom: 2em;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+body .warning a:focus, body .warning a:hover {
+	color: #fffce5;
+	border: 2px solid #ed5;
+}
 /**
  * LAYOUT
 **/
